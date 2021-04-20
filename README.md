@@ -42,8 +42,8 @@ After you are done, **commit** your final changes.
 The Machines in Motion Lab website is deployed using [Cloudflare Pages](https://pages.cloudflare.com/). Cloudflare Pages will automatically re-deploy the webpage each time you push new changes to the repository. You can find a tutorial [here](https://developers.cloudflare.com/pages/how-to/deploy-a-jekyll-site) on how to deploy a Jekyll site on Cloudflare Pages.
 
 ## How to update your lab profile
-### 1. Add a picture to /assets/img/people
-### 2. Edit the team member data in the YAML file /_data/members.yml
+  1. Add a picture to /assets/img/people
+  2. Edit the team member data in the YAML file /_data/members.yml
 
 ## Features
 
