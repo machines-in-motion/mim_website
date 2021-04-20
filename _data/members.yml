@@ -1,0 +1,23 @@
+- name: Ludovic Righetti
+  degrees: 
+  image: people/lrighetti.jpeg
+  altimage: 
+  position: Principal Investigator
+  email: ludovic.righetti@nyu.edu
+  website: https://engineering.nyu.edu/faculty/ludovic-righetti
+  scholar: LuA1j4oAAAAJ
+  twitter: "ludo_righetti"
+  github: righetti
+  description: 
+
+- name: Huaijiang Zhu
+  degrees: 
+  image: people/hzhu.jpg
+  altimage: 
+  position: PhD student
+  email: hzhu@nyu.edu
+  website: https://hzhu.io
+  scholar: nMIUj84AAAAJ
+  twitter: "huaijiangzhu"
+  github: huaijiangzhu
+  description: 
