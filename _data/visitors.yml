@@ -1,13 +1,7 @@
-- name: Elham Daneshmand
-  degrees: 
-  image: people/edaneshmand.jpeg
-  altimage: 
-  position: Intern
-  email:
-  github: Lhumd
-  website: 
-  scholar: 
-  description: 
+- name: Paarth Shah
+  image: people/pshah.jpeg
+  position: Visiting Researcher (PhD Student, University of Oxford)
+
 
 - name: Andrea Del Prete
   degrees: 

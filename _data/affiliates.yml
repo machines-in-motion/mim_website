@@ -1,3 +1,12 @@
+- name: Shahram Khorshidi
+  image: people/skhorshidi.jpeg
+  position: Intern
+
+- name: Elham Daneshmand
+  image: people/edaneshmand.jpeg
+  position: Intern
+  github: Lhumd
+
 - name: Ahmad Gazar
   image: people/agazar.jpeg
   position: PhD Student
