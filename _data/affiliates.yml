@@ -1,12 +1,29 @@
+- name: Ahmad Gazar
+  image: people/agazar.jpeg
+  position: PhD Student
+
 - name: Sarah Bechtle
-  degrees: 
   image: people/sbechtle.jpeg
-  altimage: 
   position: PhD Student
   email: sbechtle@tuebingen.mpg.de
-  website: https://www.is.mpg.de/person/sbechtle
   scholar: Hxic_iwAAAAJ
-  description: 
+
+- name: Miroslav Bogdanovic
+  image: people/mbogdanovic.png
+  position: PhD Student
+
+- name: Majid Khadiv
+  image: people/mkhadiv.jpeg
+  position: Postdoc
+
+- name: Maximilien Naveau
+  image: people/mnaveau.jpeg
+  position: Postdoc
+
+
+  
+
+
 
 
 

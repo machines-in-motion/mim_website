@@ -10,14 +10,37 @@
   github: righetti
   description: 
 
-- name: Huaijiang Zhu
+- name: Armand Jordana
   degrees: 
+  image: people/ajordana.png
+  position: PhD Student
+
+- name: Sébastien Kleff
+  image: people/skleff.jpeg
+  position: PhD Student
+
+- name: Avadesh Meduri
+  image: people/ameduri.jpeg
+  position: PhD Student
+
+- name: Huaijiang Zhu
   image: people/hzhu.jpg
-  altimage: 
   position: PhD Student
   email: hzhu@nyu.edu
   website: https://hzhu.io
   scholar: nMIUj84AAAAJ
   twitter: "huaijiangzhu"
   github: huaijiangzhu
-  description: 
+
+- name: Bilal Hammoud
+  image: people/bhammoud.jpeg
+  position: PhD Student
+
+- name: Julian Viereck
+  image: people/jviereck.jpeg
+  position: PhD Student
+
+- name: Kai Pfeiffer
+  image: people/kpfeiffer.jpeg
+  position: Postdoc
+ 

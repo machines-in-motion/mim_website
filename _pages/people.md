@@ -15,7 +15,9 @@ order: 1
     <div>
         <h4>{{person.name}}{% if person.degrees %}, {{person.degrees}} {% endif %}</h4> 
         {{person.position}} <br>
-        <i class="fa fa-envelope"></i> <em>{{person.email}}</em> <br>
+        {% if person.email %}
+          <i class="fa fa-envelope"></i> <em>{{person.email}}</em> <br>
+        {% endif %}
         {% if person.twitter %}
           <i class="fab fa-twitter"></i> <a href= "http://twitter.com/{{person.twitter}}" target="_blank"> @{{person.twitter}} </a> <br>
         {% endif %}
@@ -48,7 +50,9 @@ order: 1
     <div>
         <h4>{{person.name}}{% if person.degrees %}, {{person.degrees}} {% endif %}</h4> 
         {{person.position}} <br>
-        <i class="fa fa-envelope"></i> <em>{{person.email}}</em> <br>
+        {% if person.email %}
+          <i class="fa fa-envelope"></i> <em>{{person.email}}</em> <br>
+        {% endif %}
         {% if person.twitter %}
           <i class="fab fa-twitter"></i> <a href= "http://twitter.com/{{person.twitter}}" target="_blank"> @{{person.twitter}} </a> <br>
         {% endif %}
@@ -82,7 +86,9 @@ order: 1
     <div>
         <h4>{{person.name}}{% if person.degrees %}, {{person.degrees}} {% endif %}</h4> 
         {{person.position}} <br>
-        <i class="fa fa-envelope"></i> <em>{{person.email}}</em> <br>
+        {% if person.email %}
+          <i class="fa fa-envelope"></i> <em>{{person.email}}</em> <br>
+        {% endif %}
         {% if person.twitter %}
           <i class="fab fa-twitter"></i> <a href= "http://twitter.com/{{person.twitter}}" target="_blank"> @{{person.twitter}} </a> <br>
         {% endif %}
