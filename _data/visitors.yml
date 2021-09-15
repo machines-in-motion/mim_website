@@ -1,7 +1,27 @@
 - name: Paarth Shah
   image: people/pshah.jpeg
-  position: Visiting PhD Student (University of Oxford)
+  position: Visiting Researcher (PhD Student, University of Oxford)
+  
+- name: Lokesh Krishna 
+  image: people/lkrishna.jpeg
+  position: Visiting Researcher (Undergrad, Indian Institute of Technology BHU)
 
+- name: Adithya Kumar Chinnakkonda Ravi 
+  image: people/akumar.jpeg
+  position: Visiting Researcher (Master Student, Hamburg University of Technology)
+
+- name: Aadhithya Iyer
+  image: people/aiyer.png
+  position: Visiting Researcher (Undergrad, Visvesvaraya National Institute of Technology)
+
+- name: Shahram Khorshidi
+  image: people/skhorshidi.jpeg
+  position: Visiting Researcher (Master Student, Hamburg University of Technology)
+
+- name: Elham Daneshmand
+  image: people/edaneshmand.jpeg
+  position: Visiting Researcher (Undergrad, Amirkabir University of Technology)
+  github: Lhumd
 
 - name: Andrea Del Prete
   degrees: 
