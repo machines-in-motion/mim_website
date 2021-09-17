@@ -2,7 +2,7 @@
 layout: page
 title: state estimation and perception of the environment
 description: 
-img: 
+img: /assets/img/research/estimation_perception.png
 importance: 
 category: making sense of the world
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: model learning and system identification
 description: 
-img: 
+img: /assets/img/research/learning_dynamics.png
 importance: 
 category: making sense of the world
 ---
