@@ -2,12 +2,12 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Machines in Motion Labratory # the website title (if blank, full name will be used instead)
+title: Machines in Motion Laboratory # the website title (if blank, full name will be used instead)
 first_name: 
 middle_name: 
 last_name: 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Machines in Motion Labratory at NYU.
+  Machines in Motion Laboratory at NYU.
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
