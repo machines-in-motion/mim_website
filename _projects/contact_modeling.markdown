@@ -2,7 +2,7 @@
 layout: page
 title: contact modeling
 description: 
-img: 
+img: /assets/img/research/contact_modeling.png
 importance: 
 category: making sense of the world
 ---

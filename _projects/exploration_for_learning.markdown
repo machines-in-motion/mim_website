@@ -2,7 +2,7 @@
 layout: page
 title: exploration for learning
 description: 
-img: 
+img: /assets/img/research/exploration_for_learning.png
 importance: 
 category: making sense of the world
 ---
