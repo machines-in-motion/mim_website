@@ -7,7 +7,7 @@ nav: true
 order: 6
 ---
 
-# Socially Responsible Robotics
+## socially responsible robotics
 
 Technology is never developed in a vacuum and can have profound consequences on people’s lives. We believe that technology should be transparently developed by a diverse group of people and focus on socially responsible applications. It is our duty to think about the social implications of our work, to align our research goals with our societal aspirations, to educate others about our work and ourselves about societal issues raised by technology, and to ensure an equitable and beneficial access to technology for everyone across the world.
 
