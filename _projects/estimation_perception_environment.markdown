@@ -1,6 +1,6 @@
 ---
 layout: page
-title: state estimation and perception of the environment
+title: estimation and perception
 description: 
 img: /assets/img/research/estimation_perception.png
 importance: 
