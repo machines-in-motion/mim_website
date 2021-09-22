@@ -19,6 +19,10 @@
   image: people/skleff.jpeg
   position: PhD Student
 
+- name: Ahmad Gazar
+  image: people/agazar.jpeg
+  position: PhD Student
+
 - name: Avadesh Meduri
   image: people/ameduri.jpeg
   position: PhD Student
@@ -32,6 +36,12 @@
   twitter: "huaijiangzhu"
   github: huaijiangzhu
 
+- name: Sarah Bechtle
+  image: people/sbechtle.jpeg
+  position: PhD Student
+  email: sbechtle@tuebingen.mpg.de
+  scholar: Hxic_iwAAAAJ
+
 - name: Bilal Hammoud
   image: people/bhammoud.jpeg
   position: PhD Student
@@ -40,7 +50,28 @@
   image: people/jviereck.jpeg
   position: PhD Student
 
+- name: Miroslav Bogdanovic
+  image: people/mbogdanovic.png
+  position: PhD Student
+
 - name: Kai Pfeiffer
   image: people/kpfeiffer.jpeg
   position: Postdoc
+
+- name: Majid Khadiv
+  image: people/mkhadiv.jpeg
+  position: Postdoc
+
+- name: Maximilien Naveau
+  image: people/mnaveau.jpeg
+  position: Postdoc
+
+
+  
+
+
+
+
+
+
  
