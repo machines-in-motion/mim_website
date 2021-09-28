@@ -1,0 +1,47 @@
+@article{daneshmand_variable_2021,
+	title = {Variable {Horizon} {MPC} with {Swing} {Foot} {Dynamics} for {Bipedal} {Walking} {Control}},
+	volume = {6},
+	issn = {2377-3766},
+	url = {https://arxiv.org/abs/2010.08198},
+	doi = {10.1109/LRA.2021.3061381},
+	abstract = {In this paper, we present a novel two-level variable Horizon Model Predictive Control (VH-MPC) framework for bipedal locomotion. In this framework, the higher level computes the landing location and timing (horizon length) of the swing foot to stabilize the unstable part of the center of mass (CoM) dynamics, using feedback from the CoM states. The lower level takes into account the swing foot dynamics and generates dynamically consistent trajectories for landing at the desired time as close as possible to the desired location. To do that, we use a simplified model of the robot dynamics projected in swing foot space that takes into account joint torque constraints as well as the friction cone constraints of the stance foot. We show the effectiveness of our proposed control framework by implementing robust walking patterns on our torque-controlled and open-source biped robot, Bolt. We report extensive simulations and real robot experiments in the presence of various disturbances and uncertainties.},
+	number = {2},
+	journal = {IEEE Robotics and Automation Letters},
+	author = {Daneshmand, E and Khadiv, M and Grimminger, F and Righetti, L},
+	month = apr,
+	year = {2021},
+	keywords = {NYU, journal, website},
+	pages = {2349--2356}
+}
+
+
+
+@inproceedings{kleff_high-frequency_2021,
+	location = {Xi'an, China},
+	title = {High-Frequency Nonlinear Model Predictive Control of a Manipulator},
+	url = {https://hal.archives-ouvertes.fr/hal-02993058/document},
+	abstract = {Model Predictive Control ({MPC}) promises to endow robots with enough reactivity to perform complex tasks in dynamic environments by frequently updating their motion plan based on measurements. Despite its appeal, it has seldom been deployed on real machines because of scaling constraints. This paper presents the ﬁrst hardware implementation of closed-loop nonlinear {MPC} on a 7-{DoF} torque-controlled robot. Our controller leverages a state-of-the art optimal control solver, namely Differential Dynamic Programming ({DDP}), in order to replan state and control trajectories at real-time rates (1kHz). In addition to this experimental proof of concept, an exhaustive performance analysis shows that our controller outperforms open-loop {MPC} on a rapid cyclic end-effector task. We also exhibit the importance of a sufﬁcient preview horizon and full robot dynamics through comparisons with inverse dynamics and kinematic optimization.},
+	eventtitle = {2021 {IEEE}-{RAS} International Conference on Robotics and Automation ({ICRA})},
+	booktitle = {2021 {IEEE}-{RAS} International Conference on Robotics and Automation ({ICRA})},
+	publisher = {{IEEE}},
+	author = {Kleff, Sebastien and Meduri, Avadesh and Budhiraja, Rohan and Mansard, Nicolas and Righetti, Ludovic},
+	date = {2021-05},
+	keywords = {{NYU}, website, conference, {CPS}},
+	file = {Kleff et al. - 2021 - High-Frequency Nonlinear Model Predictive Control .pdf:/Users/righetti/Documents/literature/My papers/Kleff et al. - 2021 - High-Frequency Nonlinear Model Predictive Control .pdf:application/pdf}
+}
+
+
+@article{khadiv_walking_2020,
+	title = {Walking Control Based on Step Timing Adaptation},
+	volume = {36},
+	url = {https://arxiv.org/pdf/1704.01271.pdf},
+	doi = {10.1109/TRO.2020.2982584},
+	abstract = {Step adjustment can improve the gait robustness of biped robots; however, the adaptation of step timing is often ne- glected as it gives rise to nonconvex problems when optimized over several footsteps. In this article, we argue that it is not necessary to optimize walking over several steps to ensure gait viability and show that it is sufficient to merely select the next step timing and location. Using this insight, we propose a novel walking pattern generator that optimally selects step location and timing at every control cycle. Our approach is computationally simple compared to standard approaches in the literature, yet guarantees that any viable state will remain viable in the future. We propose a swing foot adaptation strategy and integrate the pattern generator with an inverse dynamics controller that does not explicitly control the center of mass nor the foot center of pressure. This is particularly useful for biped robots with limited control authority over their foot center of pressure, such as robots with point feet or passive ankles. Extensive simulations on a humanoid robot with passive ankles demonstrate the capabilities of the approach in various walking situations, including external pushes and foot slippage, and emphasize the importance of step timing adaptation to stabilize walking.},
+	pages = {629 -- 643},
+	number = {3},
+	journaltitle = {{IEEE} Transactions on Robotics},
+	author = {Khadiv, M and Herzog, A. and Moosavian, S A A and Righetti, L},
+	date = {2020-04},
+	keywords = {{NYU}, website, journal},
+	file = {Khadiv et al. - 2020 - Walking Control Based on Step Timing Adaptation.pdf:/Users/righetti/Documents/literature/My papers/Khadiv et al. - 2020 - Walking Control Based on Step Timing Adaptation.pdf:application/pdf}
+}
