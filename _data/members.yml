@@ -45,6 +45,11 @@
 - name: Bilal Hammoud
   image: people/bhammoud.jpeg
   position: PhD Student
+  email: bah436@nyu.edu
+  website: https://www.hammoudbilal.com
+  scholar: HJH7T2AAAAAJ
+  twitter: "bilalhammoud"
+  github: hammoudbilal
 
 - name: Julian Viereck
   image: people/jviereck.jpeg
