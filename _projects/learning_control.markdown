@@ -2,7 +2,7 @@
 layout: page
 title: Learning Based Control 
 description: 
-img: 
+img: /assets/img/research/learning_control.png
 importance: 1
 category: decision-making and control
 ---

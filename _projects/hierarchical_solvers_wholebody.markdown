@@ -2,7 +2,7 @@
 layout: page
 title: Hierarchical Solvers for Whole-Body Control
 description: 
-img: 
+img: /assets/img/research/heirarchical.png
 importance: 1
 category: decision-making and control
 ---

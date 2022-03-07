@@ -2,7 +2,7 @@
 layout: page
 title: Multi-Contact Rapid Motion Planning
 description: 
-img: 
+img: /assets/img/research/multicontact_motion_planning.png
 importance: 1
 category: decision-making and control
 ---

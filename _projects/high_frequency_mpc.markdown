@@ -2,7 +2,7 @@
 layout: page
 title: High frequency MPC - 1KHz and Beyond
 description: 
-img: 
+img: /assets/img/research/high_freq_mpc.png
 importance: 1
 category: decision-making and control
 ---
