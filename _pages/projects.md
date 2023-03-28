@@ -12,7 +12,7 @@ nav_order: 2
 <div class="row align-items-top justify-content-around">
     {% for project in site.projects  %}
     <div class="col-sm-12 col-md-6 col-lg-4 text-center" style="padding-bottom: 30px">
-        <a href="{{ project.url }}">
+        <a href="{{ project.url | prepend: site.baseurl}}">
         <div class="row align-items-top">
         <div class="col-sm-12">
             <img src="{{ project.image | prepend: '/assets/img/' | prepend: site.baseurl }}" alt="image of {{project.title}}" class="img-fluid" style="width:75%; height=auto">
