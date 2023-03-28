@@ -13,15 +13,14 @@ nav_bar: true
         <i class="bi bi-github" style="font-size:2rem;padding-right:10px; padding-left:0px"></i>
     </a>
     Most of our software is open-source. Check out the laboratory <a href="https://github.com/machines-in-motion">Github</a> to access them.
-
+     <!-- In particular, you can check out the following packages:
     <div class="container">
-    
         <ul>
-            <li>mim_website</li>
+            <li>MPC with Sensor-Based Online Cost Adaptation</li>
             <li>Tea</li>
             <li>Milk</li>
         </ul> 
-    </div>
+    </div> -->
 </div>
 
 

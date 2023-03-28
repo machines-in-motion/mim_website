@@ -34,6 +34,19 @@ twitter_username: machines_motion
 github_username:  machines-in-motion
 scholar_userid: LuA1j4oAAAAJ
 
+# this is forced by github
+lsi: false
+safe: true
+# source: [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+
 # Build settings
 # theme: minima
 plugins:
@@ -41,6 +54,16 @@ plugins:
   - jekyll-scholar
   - jekyll-email-protect
   - jekyll-youtube
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

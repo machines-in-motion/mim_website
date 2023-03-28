@@ -19,6 +19,15 @@ group :jekyll_plugins do
   gem 'jekyll-scholar'
   gem 'jekyll-email-protect'
   gem "jekyll-youtube"
+  gem 'jekyll-coffeescript'
+  gem 'jekyll-default-layout'
+  gem 'jekyll-gist'
+  gem 'jekyll-github-metadata'
+  gem 'jekyll-optional-front-matter'
+  gem 'jekyll-paginate'
+  gem 'jekyll-readme-index'
+  gem 'jekyll-titles-from-headings'
+  gem 'jekyll-relative-links'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
