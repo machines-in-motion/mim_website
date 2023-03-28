@@ -1,0 +1,66 @@
+- name: Ludovic Righetti
+  degrees: 
+  image: people/lrighetti.jpeg
+  altimage: 
+  position: Principal Investigator
+  email: ludovic.righetti@nyu.edu
+  website: https://engineering.nyu.edu/faculty/ludovic-righetti
+  scholar: LuA1j4oAAAAJ
+  github: righetti
+  description: 
+
+- name: Armand Jordana
+  image: people/ajordana.png
+  position: PhD Student
+
+- name: Sébastien Kleff
+  image: people/skleff.jpeg
+  position: PhD Student
+
+- name: Ahmad Gazar
+  image: people/agazar.jpeg
+  position: PhD Student <br> (Max-Planck Institute for Intelligent Systems)
+
+- name: Avadesh Meduri
+  image: people/ameduri.jpeg
+  position: PhD Student
+
+- name: Huaijiang Zhu
+  image: people/hzhu.jpg
+  position: PhD Student
+  email: hzhu@nyu.edu
+  website: https://hzhu.io
+  scholar: nMIUj84AAAAJ
+  twitter: "huaijiangzhu"
+  github: huaijiangzhu
+
+- name: Bilal Hammoud
+  image: people/bhammoud.jpeg
+  position: PhD Student
+  email: bah436@nyu.edu
+  website: https://www.hammoudbilal.com
+  scholar: HJH7T2AAAAAJ
+  twitter: "bilalhammoud"
+  github: hammoudbilal
+
+
+- name: Majid Khadiv
+  image: people/mkhadiv.jpeg
+  position: Senior Researcher
+
+- name: Paarth Shah
+  image: people/pshah.jpeg
+  position: PhD Student <br> (University of Oxford)
+  
+- name: Qiushi Zhang
+  image: people/qzhang.jpg
+  position: Undergraduate student
+
+- name: Joseph Amigo
+  image: people/jamigo.jpg
+  position: Visiting MS student <br> (Ecole Normale Supérieure)
+
+
+
+
+ 

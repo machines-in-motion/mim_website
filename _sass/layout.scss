@@ -1,0 +1,192 @@
+$white-color: #ffffff !default;
+$black-color: #000000 !default;
+
+$grey-color: #828282 !default;
+$red-color: crimson !default;
+$blue-color: cornflowerblue !default;
+$purple-color: slateblue !default;
+
+:root {
+  --global-bg-color: #{$white-color};
+  --global-text-color: #{$black-color};
+  --global-text-color-light: #{$grey-color};
+  --global-theme-color: #{$purple-color};
+  --global-hover-color: #{$purple-color};
+  --global-divider-color: rgba(0, 0, 0, 0.3);
+
+  --global-max-width: 960px
+}
+
+body{
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+  padding-top: 100px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.1rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
+  color: var(--global-text-color);
+}
+
+hr {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+a, table.table a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: underline;
+  }
+  &:hover:after :not(.nav-item.dropdown) {
+    width: 100%;
+  }
+}
+
+.main_content{
+  text-align: justify;
+  padding-bottom: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+
+.container, 
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl{
+  max-width: var(--global-max-width);
+}
+
+///Navigation bar
+.navbar {
+  box-shadow: none;
+  border-bottom: 1px solid var(--global-divider-color);
+  background-color: var(--global-bg-color);
+  padding-bottom: 0;
+  font-size: 1em;
+}
+.navbar .dropdown-menu {
+  background-color: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  a:not(.active) {
+    color: var(--global-text-color);
+  }
+  a:hover {
+    color: var(--global-hover-color);
+  }
+  .dropdown-divider {
+    border-top: 1px solid var(--global-divider-color) !important;
+  }
+}
+.dropdown-item {
+  color: var(--global-text-color);
+    &:hover {
+      color: var(--global-hover-color);
+      background-color: var(--global-bg-color);
+    }
+}
+
+.navbar{
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .navbar-nav .nav-item .nav-link {
+    color: var(--global-text-color);
+    &:hover {
+      color: var(--global-hover-color);
+    }
+  }
+  .navbar-nav .nav-item .nav-link.active {
+      background-color: inherit;
+      font-weight: bolder;
+      color: var(--global-theme-color);
+      &:hover {
+        color: var(--global-hover-color);
+      }
+  }
+}
+
+// responsive contact icons
+.contacts{
+  text-align: center;
+  i{
+    font-size: 4rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: var(--global-text-color);
+  }
+  i:hover{
+    // color: var(--global-text-color);
+    color: var(--global-theme-color);
+  }
+}
+
+// BIBTEX related
+.abstract-popover{
+  --bs-popover-max-width: 700px;
+  --bs-popover-border-color: #{$blue-color};
+  --bs-popover-header-bg: var(--global-bg-color);
+  --bs-popover-header-color: var(--global-text-color-light);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: 1rem;
+  --bs-popover-border-width: 0.15rem;
+}
+
+.btn_bib {
+  --bs-btn-padding-x: 0;
+  --bs-btn-padding-y: 0;
+  --bs-btn-padding-x-sm: 0;
+  --bs-btn-padding-y-sm: 0;
+  --bs-btn-border-width: 0.1rem;
+  --bs-btn-border-color: #{$blue-color};
+  --bs-btn-hover-border-color: #{$blue-color};
+  --bs-btn-active-border-color: #{$blue-color};
+  --bs-btn-padding-x: 0.1rem
+}
+
+.bib_section {
+  .year {
+    color: var(--global-text-color-light)
+  }
+  li{
+    font-size: 1rem;
+    padding-bottom: 1em;
+    margin-left: -1.5rem;
+  }
+  li::marker {
+    content: '';
+  }
+  h4{
+    scroll-margin-top: 100px;
+  }
+}
+
+// FOOTER
+
+footer.fixed-bottom {
+  background-color: var(--global-bg-color);
+  font-size: 0.75rem;
+  .container {
+    color: var(--global-text-color);
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  a {
+    color: var(--global-text-color);
+    &:hover {
+      color: var(--global-text-color);
+      text-decoration: none;
+    }
+  }
+}

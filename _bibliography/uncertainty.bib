@@ -1,0 +1,54 @@
+ @inproceedings{Gazar_Khadiv_Del Prete_Righetti_2021, 
+ address={Munich, Germany}, 
+ title={Stochastic and Robust MPC for Bipedal Locomotion: A Comparative Study on Robustness and Performance}, 
+ url={https://arxiv.org/abs/2005.07555}, 
+ DOI={10.1109/HUMANOIDS47582.2021.9555783}, 
+ abstract={Linear Model Predictive Control (MPC) has been successfully used for generating feasible walking motions for humanoid robots. However, the effect of uncertainties on constraints satisfaction has only been studied using Robust MPC (RMPC) approaches, which account for the worst-case realization of bounded disturbances at each time instant. In this letter, we propose for the first time to use linear stochastic MPC (SMPC) to account for uncertainties in bipedal walking. We show that SMPC offers more flexibility to the user (or a high level decision maker) by tolerating small (user-defined) probabilities of constraint violation. Therefore, SMPC can be tuned to achieve a constraint satisfaction probability that is arbitrarily close to 100%, but without sacrificing performance as much as tube-based RMPC. We compare SMPC against RMPC in terms of robustness (constraint satisfaction) and performance (optimality). Our results highlight the benefits of SMPC and its interest for the robotics community as a powerful mathematical tool for dealing with uncertainties.}, 
+ booktitle={2021 IEEE-RAS 18th International Conference on Humanoid Robots (Humanoids)}, 
+ publisher={IEEE}, 
+ author={Gazar, Ahmad and Khadiv, Majid and Del Prete, Andrea and Righetti, Ludovic}, 
+ year={2021}, 
+ month={Jul} 
+}
+ @inproceedings{Gazar_Khadiv_Kleff_Del Prete_Righetti_2022, 
+ address={Geneva, Switzerland}, 
+ title={Nonlinear Stochastic Trajectory Optimization for Centroidal Momentum Motion Generation of Legged Robots}, 
+ url={http://arxiv.org/abs/2205.13264}, 
+ abstract={Generation of robust trajectories for legged robots remains a challenging task due to the underlying nonlinear, hybrid and intrinsically unstable dynamics which needs to be stabilized through limited contact forces. Furthermore, disturbances arising from unmodelled contact interactions with the environment and model mismatches can hinder the quality of the planned trajectories leading to unsafe motions. In this work, we propose to use stochastic trajectory optimization for generating robust centroidal momentum trajectories to account for additive uncertainties on the model dynamics and parametric uncertainties on contact locations. Through an alternation between the robust centroidal and whole-body trajectory optimizations, we generate robust momentum trajectories while being consistent with the whole-body dynamics. We perform an extensive set of simulations subject to diﬀerent uncertainties on a quadruped robot showing that our stochastic trajectory optimization problem reduces the amount of foot slippage for diﬀerent gaits while achieving better performance over deterministic planning.}, 
+ note={arXiv:2205.13264 [cs]}, 
+ booktitle={International Symposium of Robotic Research}, 
+ author={Gazar, Ahmad and Khadiv, Majid and Kleff, Sébastien and Del Prete, Andrea and Righetti, Ludovic}, 
+ year={2022} 
+}
+ @article{Hammoud_Khadiv_Righetti_2021, 
+ title={Impedance Optimization for Uncertain Contact Interactions Through Risk Sensitive Optimal Control}, 
+ volume={6}, 
+ url={https://arxiv.org/abs/2011.04684}, 
+ DOI={10.1109/LRA.2021.3068951}, 
+ abstract={This paper addresses the problem of computing optimal impedance schedules for legged locomotion tasks involving complex contact interactions. We formulate the problem of impedance regulation as a trade-off between disturbance rejection and measurement uncertainty. We extend a stochastic optimal control algorithm known as Risk Sensitive Control to take into account measurement uncertainty and propose a formal way to include such uncertainty for unknown contact locations. The approach can efficiently generate optimal state and control trajectories along with local feedback control gains, i.e. impedance schedules. Extensive simulations demonstrate the capabilities of the approach in generating meaningful stiffness and damping modulation patterns before and after contact interaction. For example, contact forces are reduced during early contacts, damping increases to anticipate a high impact event and tracking is automatically traded-off for increased stability. In particular, we show a significant improvement in performance during jumping and trotting tasks with a simulated quadruped robot.}, 
+ number={3}, 
+ journal={IEEE Robotics and Automation Letters}, 
+ author={Hammoud, B. and Khadiv, M. and Righetti, L.}, 
+ year={2021}, 
+ month={Jul}, 
+ pages={4766–4773} 
+}
+ @inproceedings{Hammoud_Jordana_Righetti_2022, 
+ title={iRiSC: Iterative Risk Sensitive Control for Nonlinear Systems with Imperfect Observations}, 
+ url={https://arxiv.org/abs/2110.06700}, 
+ abstract={This work addresses the problem of risk-sensitive control for nonlinear systems with imperfect state observations, extending results for the linear case. In particular, we derive an algorithm that can compute local solutions with computational complexity similar to the iterative linear quadratic regulator algorithm. The proposed algorithm introduces feasibility gaps to allow the initialization with non-feasible trajectories. Moreover, an approximation for the expectation of the general nonlinear cost is proposed to enable an iterative line search solution to the planning problem. The optimal estimator is also derived along with the controls minimizing the general stochastic nonlinear cost. Finally extensive simulations are carried out to show the increased robustness the proposed framework provides when compared to the risk neutral iLQG counter part. To the authors’ best knowledge, this is the first algorithm that computes risk aware optimal controls that are a function of both the process noise and measurement uncertainty.}, 
+ booktitle={American Control Conference}, 
+ author={Hammoud, Bilal and Jordana, Armand and Righetti, Ludovic}, 
+ year={2022} 
+}
+ @article{Jordana_Hammoud_Righetti_2022, 
+ title={Stagewise Newton Method for Dynamic Game Control with Imperfect State Observation}, 
+ volume={6}, 
+ url={https://arxiv.org/abs/2206.11341}, 
+ DOI={10.1109/LCSYS.2022.3184657}, 
+ abstract={In this letter, we study dynamic game optimal control with imperfect state observations and introduce an iterative method to find a local Nash equilibrium. The algorithm consists of an iterative procedure combining a backward recursion similar to minimax differential dynamic programming and a forward recursion resembling a risksensitive Kalman smoother. A coupling equation renders the resulting control dependent on the estimation. In the end, the algorithm is equivalent to a Newton step but has linear complexity in the time horizon length. Furthermore, a merit function and a line search procedure are introduced to guarantee convergence of the iterative scheme. The resulting controller reasons about uncertainty by planning for the worst case disturbances. Lastly, the low computational cost of the proposed algorithm makes it a promising method to do output-feedback model predictive control on complex systems at high frequency. Numerical simulations on realistic robotic problems illustrate the risk-sensitive behavior of the resulting controller.}, 
+ journal={IEEE Control Systems Letters}, 
+ author={Jordana, Armand and Hammoud, Bilal and Righetti, Ludovic}, 
+ year={2022}, 
+ pages={3241–3246} 
+}
