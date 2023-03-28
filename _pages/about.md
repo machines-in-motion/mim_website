@@ -7,9 +7,9 @@ title:
 nav_bar: false
 ---
 
-<!-- <img src="{{ 'mim_logo_black.png' | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" class="img-fluid float-md-start mx-auto d-block" alt="machines in motion logo" style="width:350px; height:auto; padding-left:0px; padding-right:50px;"> -->
+<!-- <img src="{{ 'mim_logo_black.png' | prepend: '/assets/img/' | prepend: site.baseurl }}" class="img-fluid float-md-start mx-auto d-block" alt="machines in motion logo" style="width:350px; height:auto; padding-left:0px; padding-right:50px;"> -->
 <video autoplay playsinline width="450px" class="float-md-start mx-auto d-block" style="padding-left:10px; padding-right:50px;">
-<source src="{{ 'output.mp4' | prepend: '/assets/video/' | prepend: site.baseurl | prepend: site.url }}"></video>
+<source src="{{ 'output.mp4' | prepend: '/assets/video/' | prepend: site.baseurl }}"></video>
 
 <div class="container">
 <p>We are the <b>Machines in Motion laboratory</b> and we conduct fundamental and applied research in robotics.

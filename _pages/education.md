@@ -12,10 +12,10 @@ nav_bar: true
 We teach graduate and undergraduate robotics classes at NYU including classes for the [M.Sc. Mechatronics and Robotics](https://engineering.nyu.edu/academics/programs/mechatronics-and-robotics-ms) and for the [Undergraduate Minor in Robotics](http://bulletin.engineering.nyu.edu/preview_program.php?catoid=17&poid=5016&hl=robotics&returnto=search)
 
 **Fall semester (not taught in Fall 2023)**
-* ROB-GY 6323 Reinforcement learning and optimal control for robotics - [Class flyer]({{ 'ROB6323flyer.pdf' | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}) and [Class material](https://github.com/righetti/optlearningcontrol)
+* ROB-GY 6323 Reinforcement learning and optimal control for robotics - [Class flyer]({{ 'ROB6323flyer.pdf' | prepend: '/assets/pdf/' | prepend: site.baseurl }}) and [Class material](https://github.com/righetti/optlearningcontrol)
   
 **Spring semester**
-* ROB-UY 2004 Robotic Manipulation and Locomotion - [Class flyer]({{ 'ROB2004flyer.pdf' | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}) and [Class material](https://github.com/righetti/ROB2004)
+* ROB-UY 2004 Robotic Manipulation and Locomotion - [Class flyer]({{ 'ROB2004flyer.pdf' | prepend: '/assets/pdf/' | prepend: site.baseurl }}) and [Class material](https://github.com/righetti/ROB2004)
 
 **Previous classes**
 * (Fall 2021) ROB-GY 6003 Foundations of robotics - [Class material](https://github.com/righetti/ROB6003)

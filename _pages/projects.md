@@ -15,7 +15,7 @@ nav_order: 2
         <a href="{{ project.url }}">
         <div class="row align-items-top">
         <div class="col-sm-12">
-            <img src="{{ project.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" alt="image of {{project.title}}" class="img-fluid" style="width:75%; height=auto">
+            <img src="{{ project.image | prepend: '/assets/img/' | prepend: site.baseurl }}" alt="image of {{project.title}}" class="img-fluid" style="width:75%; height=auto">
         </div>
             <div class="col-sm-12" style="font-size: 1.3rem;">{{ project.title }}</div>
         </div>

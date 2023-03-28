@@ -16,7 +16,7 @@ nav_order: 1
     {% if person.website %}
     <a href="{{person.website}}">
     {% endif %}
-      <img style="border-radius:50%; float: right; max-height: 120px; max-width: 120px;" src="{{ person.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" alt="photo of {{person.name}}">
+      <img style="border-radius:50%; float: right; max-height: 120px; max-width: 120px;" src="{{ person.image | prepend: '/assets/img/' | prepend: site.baseurl }}" alt="photo of {{person.name}}">
     {% if person.website %}
     </a>
     {% endif %}
