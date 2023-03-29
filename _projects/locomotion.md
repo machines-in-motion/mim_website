@@ -4,28 +4,20 @@ title: Legged locomotion
 
 
 project_order: 5
-image: projects/mpc.png
-bibliography: mpc
+image: projects/bolt.png
+bibliography: locomotion
 
 videos:
   - https://www.youtube.com/embed/Oz5eYBGoiok
   - https://www.youtube.com/watch?v=xzCn1nQiVPI
+  - https://www.youtube.com/watch?v=lDPJzpVzLIk
+  - https://www.youtube.com/watch?v=vkw-xFF5b9c
 ---
 
-Computing a globally optimal control policy is generally intractable, especially when hard constraints need to be satisfied.
-Model-predictive control (MPC) circumvents the issue by instead re-computing at every control cycle an optimal control "trajectory",
- i.e. a sequence of optimal actions to be taken from the current state of the system.
-Hence, the controller needs to solve an optimization problem at each control cycle to find a command that optimizes 
-the future behavior of the robot.
-This approach enables the creation of very versatile and reactive behaviors. A simple change in the cost function
-defining the goal of the controller leads to a different behavior without the need for a new algorithm.
-We are also guaranteed that optimal actions are taken at every instant of time while ensuring constraint satisfaction.
+We are fascinated by movements, especially locomotion behaviors. Beyond this interest, robots with legs open a wide range of potential applications as they
+can move on complicated environments, whether with clutter, obstacles or holes.
+A major axis of research in our laboratory is concerned with the design
+of general purpose algorithms to endow robots with any number of legs with
+the ability to walk, run, jump and climb across any type of unknown terrains.
 
-However, the use of MPC on real, complex robots, lead to important challenges, as the dynamics of complex robots is typically nonlinear and
-often non-smooth, which leads to non-convex optimization problems which need to be solved at a very high frequency.
-In this research focus, we tackle these issues to create generic algorithms for MPC that can be used on any types of robots.
-In particular
-1. We develop generic MPC algorithms that can be used with any types of robots
-2. We design efficient solvers that exploit the structure of robotics problems and modern optimization techniques
-3. We use machine learning to speed-up optimization
-4. We demonstrate our algorithms on complex tasks with legged robots and manipulators
+<br><br><br>

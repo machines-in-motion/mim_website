@@ -24,7 +24,7 @@ We are also guaranteed that optimal actions are taken at every instant of time w
 However, the use of MPC on real, complex robots, lead to important challenges, as the dynamics of complex robots is typically nonlinear and
 often non-smooth, which leads to non-convex optimization problems which need to be solved at a very high frequency.
 In this research focus, we tackle these issues to create generic algorithms for MPC that can be used on any types of robots.
-In particular
+In particular:
 1. We develop generic MPC algorithms that can be used with any types of robots
 2. We design efficient solvers that exploit the structure of robotics problems and modern optimization techniques
 3. We use machine learning to speed-up optimization

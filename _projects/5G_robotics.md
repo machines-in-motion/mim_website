@@ -4,28 +4,12 @@ title: 5G robotics
 
 
 project_order: 4
-image: projects/mpc.png
-bibliography: mpc
+image: projects/5Grobotics.png
+bibliography: 5Grobotics
 
-videos:
-  - https://www.youtube.com/embed/Oz5eYBGoiok
-  - https://www.youtube.com/watch?v=xzCn1nQiVPI
 ---
 
-Computing a globally optimal control policy is generally intractable, especially when hard constraints need to be satisfied.
-Model-predictive control (MPC) circumvents the issue by instead re-computing at every control cycle an optimal control "trajectory",
- i.e. a sequence of optimal actions to be taken from the current state of the system.
-Hence, the controller needs to solve an optimization problem at each control cycle to find a command that optimizes 
-the future behavior of the robot.
-This approach enables the creation of very versatile and reactive behaviors. A simple change in the cost function
-defining the goal of the controller leads to a different behavior without the need for a new algorithm.
-We are also guaranteed that optimal actions are taken at every instant of time while ensuring constraint satisfaction.
+Wireless communication based on fifth generation (5G) technology offers unprecedented opportu- nities for the deployment of mobile robots in industry and consumer environments as it promises to both high data bandwidth and low latency communication. High bandwidth and low latency in turn enable mobile robots to remotely execute computationally demanding perception, planning and control algorithms instead of executing them locally. In particular, the low-latency guarantees of 5G wireless can potentially be leveraged to offload even fast millisecond-scale force and torque control loops to the edge. At the same time, the rich multi-modal sensor data that mobile robots use for visual perception can be transmitted over high data-rate 5G links. Finally, 5G enables high-throughput robot-to-robot communication, enabling complex interactions between teams of robots. Together, these new capabilities can enable mobile robots with improved autonomy, range, form-factor, cost and reliability.
 
-However, the use of MPC on real, complex robots, lead to important challenges, as the dynamics of complex robots is typically nonlinear and
-often non-smooth, which leads to non-convex optimization problems which need to be solved at a very high frequency.
-In this research focus, we tackle these issues to create generic algorithms for MPC that can be used on any types of robots.
-In particular
-1. We develop generic MPC algorithms that can be used with any types of robots
-2. We design efficient solvers that exploit the structure of robotics problems and modern optimization techniques
-3. We use machine learning to speed-up optimization
-4. We demonstrate our algorithms on complex tasks with legged robots and manipulators
+In this line of research, in collaboration wireless and low-power computing experts Profs. <a href="https://engineering.nyu.edu/faculty/elza-erkip">E. Erkip</a>, <a href="https://engineering.nyu.edu/faculty/siddharth-garg">S. Garg</a>, and <a href="https://engineering.nyu.edu/faculty/sundeep-rangan">S. Rangan</a>,
+we investigate how 5G wireless can benefit robotics.

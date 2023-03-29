@@ -49,7 +49,6 @@ nav_order: 2
         Socially responsible science
     </div> -->
 
-<h3>Past projects</h3>
 
 
 <h3>Sponsors</h3>

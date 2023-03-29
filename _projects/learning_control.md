@@ -4,20 +4,21 @@ title: Learning to control
 
 
 project_order: 3
-image: projects/mpc.png
-bibliography: uncertainty
+image: projects/learning.png
+bibliography: learning
 
 videos:
-  - https://www.youtube.com/embed/Oz5eYBGoiok
-  - https://www.youtube.com/watch?v=xzCn1nQiVPI
+  - https://www.youtube.com/watch?v=lDPJzpVzLIk
+  - https://www.youtube.com/watch?v=P3WAdhZv-Y4
+  - https://www.youtube.com/watch?v=qcBwlyZjnRA
 ---
 
-Model-predictive control is a control approach which consists in solving an optimal control
-problem at every control cycle given the current state of the robot and its environment.
-This means that at each control cycle, the controller finds a control command that tries
-to optimize the future behavior of the robot.
-This approach promises to create very versatile and reactive behaviors.
+Robots are increasingly equipped with multiple, redundant, sensing modalities (inertial, force, tactile or visual perception) and it remains a significant challenge to efficiently use this information to create robust behaviors in unknown environments. 
+Further, robots are seldom capable of learning new or improving known behaviors as they collect more real-world experience.
+To address this challenge, we design learning algorithms capable of using multi-modal sensory data to:
+1. learn dynamic models to anticipate the consequences of robot actions
+2. learn control policies from simulation, trial and error or human demonstrations
+3. learn cost and value functions to capture desired goals and behaviors
 
-In this research focus:
-1. We design numerically efficient optimizers tailored for robotics problems
-2. We test our algorithms on complex tasks with legged robots and manipulators
+Importantly, we test all of our learning algorithms on real robot for
+manipulation and locomotion tasks to ensure that they are robust to real noisy sensors and imperfect actuators.

@@ -54,16 +54,6 @@ plugins:
   - jekyll-scholar
   - jekyll-email-protect
   - jekyll-youtube
-  - jekyll-coffeescript
-  - jekyll-default-layout
-  - jekyll-gist
-  - jekyll-github-metadata
-  - jekyll-optional-front-matter
-  - jekyll-paginate
-  - jekyll-readme-index
-  - jekyll-titles-from-headings
-  - jekyll-relative-links
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.

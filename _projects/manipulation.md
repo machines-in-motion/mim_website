@@ -4,28 +4,16 @@ title: Robotic manipulation
 
 
 project_order: 6
-image: projects/mpc.png
-bibliography: mpc
+image: projects/manipulation.png
+bibliography: manipulation
 
 videos:
-  - https://www.youtube.com/embed/Oz5eYBGoiok
-  - https://www.youtube.com/watch?v=xzCn1nQiVPI
+  - https://www.youtube.com/watch?v=fcvdVgE7of0
 ---
 
-Computing a globally optimal control policy is generally intractable, especially when hard constraints need to be satisfied.
-Model-predictive control (MPC) circumvents the issue by instead re-computing at every control cycle an optimal control "trajectory",
- i.e. a sequence of optimal actions to be taken from the current state of the system.
-Hence, the controller needs to solve an optimization problem at each control cycle to find a command that optimizes 
-the future behavior of the robot.
-This approach enables the creation of very versatile and reactive behaviors. A simple change in the cost function
-defining the goal of the controller leads to a different behavior without the need for a new algorithm.
-We are also guaranteed that optimal actions are taken at every instant of time while ensuring constraint satisfaction.
-
-However, the use of MPC on real, complex robots, lead to important challenges, as the dynamics of complex robots is typically nonlinear and
-often non-smooth, which leads to non-convex optimization problems which need to be solved at a very high frequency.
-In this research focus, we tackle these issues to create generic algorithms for MPC that can be used on any types of robots.
-In particular
-1. We develop generic MPC algorithms that can be used with any types of robots
-2. We design efficient solvers that exploit the structure of robotics problems and modern optimization techniques
-3. We use machine learning to speed-up optimization
-4. We demonstrate our algorithms on complex tasks with legged robots and manipulators
+For robots to be truly useful in human environments, they need to be able to grap and manipulate objects and even use tools. Ideally, they should be able to handle
+new objects, new tools and be able to quickly learn new manipulation skills
+when necessary, either through human demonstration or through trial and error.
+Towards this goal, we design control, planning, perception and learning algorithms toward this goal.
+We further build complete manipulation systems capable of robustly achieving complex manipulation tasks.
+<br><br><br>

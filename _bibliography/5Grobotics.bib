@@ -1,0 +1,35 @@
+ @inproceedings{Pfeiffer_Jia_Yin_Veldanda_Hu_Trivedi_Zhang_Garg_Erkip_Rangan_et al._2023, 
+ address={London, UK}, 
+ title={Path Planning Under Uncertainty to Localize mmWave Sources}, 
+ url={http://arxiv.org/abs/2303.03739}, 
+ abstract={In this paper, we study a navigation problem where a mobile robot needs to locate a mmWave wireless signal. Using the directionality properties of the signal, we propose an estimation and path planning algorithm that can efﬁciently navigate in cluttered indoor environments. We formulate Extended Kalman ﬁlters for emitter location estimation in cases where the signal is received in line-of-sight or after reﬂections. We then propose to plan motion trajectories based on belief-space dynamics in order to minimize the uncertainty of the position estimates. The associated non-linear optimization problem is solved by a state-of-the-art constrained iLQR solver. In particular, we propose a method that can handle a large number of obstacles (∼ 300) with reasonable computation times. We validate the approach in an extensive set of simulations. We show that our estimators can help increase navigation success rate and that planning to reduce estimation uncertainty can improve the overall task completion speed.}, 
+ note={arXiv:2303.03739 [cs]}, 
+ booktitle={2023 IEEE-RAS International Conference on Robotics and Automation (ICRA)}, 
+ publisher={IEEE}, 
+ author={Pfeiffer, Kai and Jia, Yuze and Yin, Mingsheng and Veldanda, Akshaj Kumar and Hu, Yaqi and Trivedi, Amee and Zhang, Jeff and Garg, Siddharth and Erkip, Elza and Rangan, Sundeep and Righetti, Ludovic}, 
+ year={2023}, 
+ month={May} 
+}
+ @article{Yin_Veldanda_Trivedi_Zhang_Pfeiffer_Hu_Garg_Erkip_Righetti_Rangan_2022, 
+ title={Millimeter Wave Wireless Assisted Robot Navigation with Link State Classification}, 
+ volume={3}, 
+ url={https://arxiv.org/abs/2110.14789}, 
+ DOI={10.1109/OJCOMS.2022.3155572}, 
+ abstract={The millimeter wave (mmWave) bands have attracted considerable attention for high precision localization applications due to the ability to capture high angular and temporal resolution measurements. This paper explores mmWave-based positioning for a target localization problem where a fixed target broadcasts mmWave signals and a mobile robotic agent attempts to capture the signals to locate and navigate to the target. A three-stage procedure is proposed: First, the mobile agent uses tensor decomposition methods to detect the multipath channel components and estimate their parameters. Second, a machine-learning trained classifier is then used to predict the link state, meaning if the strongest path is line-of-sight (LOS) or non-LOS (NLOS). For the NLOS case, the link state predictor also determines if the strongest path arrived via one or more reflections. Third, based on the link state, the agent either follows the estimated angles or uses computer vision or other sensor to explore and map the environment. The method is demonstrated on a large dataset of indoor environments supplemented with ray tracing to simulate the wireless propagation. The path estimation and link state classification are also integrated into a state-of-the-art neural simultaneous localization and mapping (SLAM) module to augment camera and LIDAR-based navigation. It is shown that the link state classifier can successfully generalize to completely new environments outside the training set. In addition, the neural-SLAM module with the wireless path estimation and link state classifier provides rapid navigation to the target, close to a baseline that knows the target location.}, 
+ journal={IEEE Open Journal of the Communications Society}, 
+ author={Yin, Mingsheng and Veldanda, Akshaj Kumar and Trivedi, Amee and Zhang, Jeff and Pfeiffer, Kai and Hu, Yaqi and Garg, Siddharth and Erkip, Elza and Righetti, Ludovic and Rangan, Sundeep}, 
+ year={2022}, 
+ pages={493–507} 
+}
+ @inproceedings{Zhu_Sharma_Pfeiffer_Mezzavilla_Shen_Rangan_Righetti_2020, 
+ address={Las Vegas}, 
+ title={Enabling Remote Whole-Body Control with 5G Edge Computing}, 
+ url={https://arxiv.org/abs/2008.08243}, 
+ DOI={10.1109/IROS45743.2020.9341113}, 
+ abstract={Real-world applications require light-weight, energy-efficient, fully autonomous robots. Yet, increasing autonomy is oftentimes synonymous with escalating computational requirements. It might thus be desirable to offload intensive computation--not only sensing and planning, but also low-level whole-body control--to remote servers in order to reduce on-board computational needs. Fifth Generation (5G) wireless cellular technology, with its low latency and high bandwidth capabilities, has the potential to unlock cloud-based high performance control of complex robots. However, state-of-the-art control algorithms for legged robots can only tolerate very low control delays, which even ultra-low latency 5G edge computing can sometimes fail to achieve. In this work, we investigate the problem of cloud-based whole-body control of legged robots over a 5G link. We propose a novel approach that consists of a standard optimization-based controller on the network edge and a local linear, approximately optimal controller that significantly reduces on-board computational needs while increasing robustness to delay and possible loss of communication. Simulation experiments on humanoid balancing and walking tasks that includes a realistic 5G communication model demonstrate significant improvement of the reliability of robot locomotion under jitter and delays likely to experienced in 5G wireless links.}, 
+ booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems}, 
+ publisher={IEEE}, 
+ author={Zhu, H and Sharma, M and Pfeiffer, K and Mezzavilla, M and Shen, J and Rangan, S and Righetti, L}, 
+ year={2020}, 
+ month={Oct} 
+}
