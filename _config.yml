@@ -23,12 +23,12 @@ email: ludovic.righetti@nyu.edu
 first_name: Ludovic
 last_name: Righetti
 description: >- # this means to ignore newlines until "baseurl:"
-  Machines in motion laboratory is a robotics research laboratory at new york university
+  Machines in motion laboratory is a robotics research laboratory at New York University
   headed by Ludovic Righetti. It conducts research in autonomous robotic manipulation and locomotion.
   The website lists the labs activities, publications, group members and latest news.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with custom theme.
-baseurl: "/mim_website" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://machines-in-motion.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: machines_motion
 github_username:  machines-in-motion
