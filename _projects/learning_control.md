@@ -4,7 +4,7 @@ title: Learning to control
 
 
 project_order: 3
-image: projects/learning.png
+image: projects/learning.jpg
 bibliography: learning
 
 videos:

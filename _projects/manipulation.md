@@ -4,7 +4,7 @@ title: Robotic manipulation
 
 
 project_order: 6
-image: projects/manipulation.png
+image: projects/manipulation.jpg
 bibliography: manipulation
 
 videos:

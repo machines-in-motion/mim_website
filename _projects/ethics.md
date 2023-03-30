@@ -4,7 +4,7 @@ title: Socially-responsible robotics
 
 
 project_order: 8
-image: projects/responsible.png
+image: projects/responsible.jpg
 bibliography: ethics
 
 ---

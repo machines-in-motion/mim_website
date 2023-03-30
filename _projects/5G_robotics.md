@@ -4,7 +4,7 @@ title: 5G robotics
 
 
 project_order: 4
-image: projects/5Grobotics.png
+image: projects/5Grobotics.jpg
 bibliography: 5Grobotics
 
 ---

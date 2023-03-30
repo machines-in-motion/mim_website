@@ -4,7 +4,7 @@ title: Model-predictive control
 
 
 project_order: 1
-image: projects/mpc.png
+image: projects/mpc.jpg
 bibliography: mpc
 
 videos:
