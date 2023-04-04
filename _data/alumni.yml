@@ -1,26 +1,26 @@
 - name: Shahram Khorshidi
-  description: intern at MPI
+  description: intern at MPI then PhD student at the University of Bonn
 
 - name: Julian Viereck
-  description: received his PhD in May 2022
+  description: received his PhD in May 2022 then went to Amazon
 
 - name: Sarah Bechtle
-  description: received her PhD in May 2022 (MPI)
+  description: received her PhD in May 2022 (MPI) then went to Deepmind
 
 - name: Miroslav Bogdanovic
   description: received his PhD in January 2022 (MPI)
 
 - name: Elham Daneshmand
-  description: intern at MPI
+  description: intern at MPI, then PhD student at McGill University
 
 - name: Kai Pfeiffer
-  description: Postdoc
+  description: Postdoc, then went to NTU Singapore as a postdoc
 
 - name: Maximilien Naveau
-  description: Postdoc
+  description: Postdoc, went to the LAAS/CNRS as a research engineer
 
 - name: Andrea Del Prete
-  description: Postdoc
+  description: Postdoc, then went to the University of Trento as a professor
 
 - name: John Rebula
   description: Postdoc
@@ -29,13 +29,13 @@
   description: received his PhD in July 2019 (MPI)
 
 - name: Sean Mason
-  description: received his PhD in May 2018 (USC)
+  description: received his PhD in May 2018 (USC) then went to Boston Dynamics
 
 - name: Nick Rotella
-  description: received his PhD in November 2017 (USC)
+  description: received his PhD in November 2017 (USC) then went to Garmin
 
 - name: Alexander Herzog
-  description: received his PhD in August 2017 (MPI / ETH Zürich)
+  description: received his PhD in August 2017 (MPI / ETH Zürich) then went to Google X
   
   
   

@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Open-dynamic robot initiative
+title: Open Dynamic Robot Initiative
 
 
 project_order: 7
