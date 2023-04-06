@@ -56,6 +56,8 @@ GEM
       jekyll (~> 4.0)
     jekyll-seo-tag (2.8.0)
       jekyll (>= 3.8, < 5.0)
+    jekyll-sitemap (1.4.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jekyll-youtube (1.0.0)
@@ -102,6 +104,8 @@ DEPENDENCIES
   jekyll-email-protect
   jekyll-feed (~> 0.12)
   jekyll-scholar
+  jekyll-seo-tag
+  jekyll-sitemap
   jekyll-youtube
   minima (~> 2.5)
 

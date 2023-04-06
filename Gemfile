@@ -19,4 +19,6 @@ group :jekyll_plugins do
   gem 'jekyll-scholar'
   gem 'jekyll-email-protect'
   gem "jekyll-youtube"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
 end

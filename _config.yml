@@ -18,33 +18,24 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Machines in Motion laboratory
+title: Machines in Motion Laboratory
 email: ludovic.righetti@nyu.edu
 first_name: Ludovic
 last_name: Righetti
+tagline: robotics research results, publications, videos and general activities of the lab
 description: >- # this means to ignore newlines until "baseurl:"
-  Machines in motion laboratory is a robotics research laboratory at New York University
-  headed by Ludovic Righetti. It conducts research in autonomous robotic manipulation and locomotion.
+  This is the website of the machines in motion laboratory, a robotics research laboratory at New York University
+  headed by Ludovic Righetti. We conduct fundamental and applied robotics research with a particular focus on
+  autonomous dexterous manipulation and legged locomotion.
   The website lists the labs activities, publications, group members and latest news.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with custom theme.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://machines-in-motion.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.machinesinmotion.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: machines_motion
 github_username:  machines-in-motion
 scholar_userid: LuA1j4oAAAAJ
-
-# this is forced by github
-lsi: false
-safe: true
-# source: [your repo's top level directory]
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
+logo: /assets/img/mim_logo_black.png
 
 
 # Build settings
@@ -54,6 +45,8 @@ plugins:
   - jekyll-scholar
   - jekyll-email-protect
   - jekyll-youtube
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.

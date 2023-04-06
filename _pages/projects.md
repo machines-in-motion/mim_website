@@ -2,7 +2,7 @@
 layout: default
 permalink: /projects/
 title: Research
-description: 
+description: a list of the most relevant projects conducted in the laboratory
 
 nav_bar: true
 nav_order: 2

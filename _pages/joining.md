@@ -2,7 +2,7 @@
 layout: default
 permalink: /joining/
 title: Joining
-description:
+description: instructions on how to apply join the lab for a project, phd or postodc position
 
 nav_order: 6
 nav_bar: true

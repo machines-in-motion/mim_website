@@ -56,7 +56,7 @@ Our laboratory was established in September 2017 at New York University's
     <div class="col-md-4 col-sm-12" style="padding-bottom: 30px">
       <h3>Location</h3> 
       Tandon School of Engineering  <br>
-      Rodgers Hall (RH 515)  <br>
+      Rogers Hall (RH 515)  <br>
       6 MetroTech Center  <br>
       Brooklyn, NY 11201, USA    
     </div>

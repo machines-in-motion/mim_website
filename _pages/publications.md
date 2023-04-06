@@ -3,6 +3,8 @@ layout: default
 title: Publications
 permalink: /publications/
 
+description: the list of scientific publications of the lab
+
 nav_bar: true
 nav_order: 5
 

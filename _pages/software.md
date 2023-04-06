@@ -2,7 +2,7 @@
 layout: default
 permalink: /software/
 title: Software
-description:
+description: open-source software developed in the lab
 
 nav_order: 4
 nav_bar: true

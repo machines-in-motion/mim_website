@@ -2,7 +2,7 @@
 layout: default
 permalink: /people/
 title: People
-description: 
+description: the machines in motion lab team
 
 nav_bar: true
 nav_order: 1

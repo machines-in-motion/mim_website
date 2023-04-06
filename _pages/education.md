@@ -2,7 +2,7 @@
 layout: default
 permalink: /education/
 title: Education
-description:
+description: all the educational activities of the laboratory including links to educational material we design
 
 nav_order: 3
 nav_bar: true
