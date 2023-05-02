@@ -10,6 +10,8 @@ bibliography: mpc
 videos:
   - https://www.youtube.com/embed/Oz5eYBGoiok
   - https://www.youtube.com/watch?v=xzCn1nQiVPI
+  - https://www.youtube.com/watch?v=ZtyCJYsGf4U
+  - https://www.youtube.com/watch?v=EErwxOrCnnQ
 ---
 
 Computing a globally optimal control policy is generally intractable, especially when hard constraints need to be satisfied.

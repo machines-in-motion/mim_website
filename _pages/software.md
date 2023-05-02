@@ -27,7 +27,7 @@ nav_bar: true
 <br><br>
 <div class="contacts" style="text-align:left">
 <h2>Open dynamic robot initiative</h2>
-      <a href="https://open-dynamic-robot-initiative.github.io/">
+      <a href="https://github.com/open-dynamic-robot-initiative">
         <i class="bi bi-github" style="font-size:2rem;padding-right:10px; padding-left:0px"></i>
       </a>
       You can also access all the information, software and open hardware for the <a href="https://open-dynamic-robot-initiative.github.io/">Open Dynamic Robot Initiative </a> including the robots Solo8, Solo12 and Bolt or directly access the <a href="https://github.com/open-dynamic-robot-initiative">Github repository</a>.

@@ -8,7 +8,7 @@ image: projects/manipulation.jpg
 bibliography: manipulation
 
 videos:
-  - https://www.youtube.com/watch?v=fcvdVgE7of0
+  - https://www.youtube.com/watch?v=2Dc3LD7mfnM
 ---
 
 For robots to be truly useful in human environments, they need to be able to grap and manipulate objects and even use tools. Ideally, they should be able to handle

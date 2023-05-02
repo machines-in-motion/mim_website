@@ -30,7 +30,7 @@ Jump to:
   
   {% for y in page.years %}
     <h4 class="year" id="{{y}}">{{y}}</h4>
-    {% bibliography -f all -q @*[year={{y}}] %}
+    {% bibliography -f all -q @*[year={{y}} && note!=preprint] %}
   {% endfor %}
 
   <h4 class="year" id="older_pubs">Older publications (pre 2017)</h4>
