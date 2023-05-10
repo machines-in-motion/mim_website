@@ -25,7 +25,7 @@ Jump to:
 
 
 <div class="bib_section" style="padding-top: 20px">
-  <h4 class="year" id="older_pubs">Preprints</h4>
+  <h4 class="year" id="preprints">Preprints</h4>
     {% bibliography -f all -q @*[note=preprint] %}
   
   {% for y in page.years %}

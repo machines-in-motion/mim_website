@@ -19,7 +19,7 @@ We teach graduate and undergraduate robotics classes at NYU including classes fo
 
 **Previous classes**
 * (Fall 2021) ROB-GY 6003 Foundations of robotics - [Class material](https://github.com/righetti/ROB6003)
-* (Fall 2017-2020) ROB-GY 6333 Networked robotics systems, cooperative control and swarming [Class material](https://github.com/righetti/swarmrobotics)
+* (Fall 2017-2020) ROB-GY 6333 Networked robotics systems, cooperative control and swarming - [Class material](https://github.com/righetti/swarmrobotics)
 
 ### Projects / internships
 We offer a limited number of opportunities each semester for NYU students to do research in our laboratory. Please refer to [this page](../joining) for more information on how to apply.
