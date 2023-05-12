@@ -25,15 +25,15 @@ Jump to:
 
 
 <div class="bib_section" style="padding-top: 20px">
-  <h4 class="year" id="preprints">Preprints</h4>
+  <h3 class="year" id="preprints">Preprints</h3>
     {% bibliography -f all -q @*[note=preprint] %}
   
   {% for y in page.years %}
-    <h4 class="year" id="{{y}}">{{y}}</h4>
+    <h3 class="year" id="{{y}}">{{y}}</h3>
     {% bibliography -f all -q @*[year={{y}} && note!=preprint] %}
   {% endfor %}
 
-  <h4 class="year" id="older_pubs">Older publications (pre 2017)</h4>
+  <h3 class="year" id="older_pubs">Older publications (pre 2017)</h3>
   {% bibliography -f all -q @*[year<=2016] %}
 
 </div>

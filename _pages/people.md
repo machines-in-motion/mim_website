@@ -21,9 +21,9 @@ nav_order: 1
     </a>
     {% endif %}
     </div>
-    <div class="col">
-      <h4>{{person.name}}</h4>
-      {{person.position}}
+    <div class="col people">
+      <div class="name">{{person.name}}</div>
+      <div class="position">{{person.position}}</div>
     </div>
   </div>
 </div>
@@ -32,13 +32,13 @@ nav_order: 1
 
 ---
 
-## Past members
+<h2> Past members</h2>
 {% for person in site.data.alumni %}
 <!-- The paddingtop and margin-top edits allow anchors to link properly. -->
-<div class="row" style="padding-left: 30px">
+<div class="row" style="padding-left: 20px">
 <span>
-  <strong>{{person.name}}</strong>{% if person.description %}, {{person.description}} {% endif %}
-  </span>
+  <b>{{person.name}}</b>{% if person.description %}, {{person.description}} {% endif %}
+</span>
 </div>
 {% endfor %}
 

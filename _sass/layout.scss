@@ -1,7 +1,8 @@
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
-$grey-color: #828282 !default;
+$grey-color: #7c7c7c !default;
+$dark-grey-color: #555555 !default;
 $red-color: crimson !default;
 $blue-color: cornflowerblue !default;
 $purple-color: slateblue !default;
@@ -23,6 +24,7 @@ body{
   padding-top: 100px;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.1rem;
+  font-weight: 300;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -30,6 +32,28 @@ body{
 
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
+  font-weight: 300;
+}
+
+ul {
+  list-style-type: '- ';
+}
+
+h1{
+  font-size: 1.7em;
+}
+h2{
+  font-size: 1.5em;
+  color: #{$dark-grey-color}
+}
+h3{
+  font-size: 1.2em;
+  color: var(--global-text-color-light);
+}
+h4{
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #{$dark-grey-color};
 }
 
 hr {
@@ -64,6 +88,16 @@ a, table.table a {
 .container-xl,
 .container-xxl{
   max-width: var(--global-max-width);
+}
+
+.people{
+  .name{
+    font-size: 1.2rem;
+    color: var(--global-text-color);
+  }
+  .position{
+    color: var(--global-text-color-light);
+  }
 }
 
 ///Navigation bar
@@ -109,7 +143,7 @@ a, table.table a {
   }
   .navbar-nav .nav-item .nav-link.active {
       background-color: inherit;
-      font-weight: bolder;
+      font-weight: normal;
       color: var(--global-theme-color);
       &:hover {
         color: var(--global-hover-color);

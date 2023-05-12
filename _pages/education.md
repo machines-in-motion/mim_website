@@ -8,23 +8,32 @@ nav_order: 3
 nav_bar: true
 ---
 
-### Classes
-We teach graduate and undergraduate robotics classes at NYU including classes for the [M.Sc. Mechatronics and Robotics](https://engineering.nyu.edu/academics/programs/mechatronics-and-robotics-ms) and for the [Undergraduate Minor in Robotics](http://bulletin.engineering.nyu.edu/preview_program.php?catoid=17&poid=5016&hl=robotics&returnto=search)
+<h2>Classes</h2>
+<p>We teach graduate and undergraduate robotics classes at NYU including classes for the <a href="https://engineering.nyu.edu/academics/programs/mechatronics-and-robotics-ms">M.Sc. Mechatronics and Robotics</a> and for the <a href="http://bulletin.engineering.nyu.edu/preview_program.php?catoid=17&poid=5016&hl=robotics&returnto=search">Undergraduate Minor in Robotics</a></p>
 
-**Fall semester (not taught in Fall 2023)**
-* ROB-GY 6323 Reinforcement learning and optimal control for robotics - [Class flyer]({{ 'ROB6323flyer.pdf' | prepend: '/assets/pdf/' | prepend: site.baseurl }}) and [Class material](https://github.com/righetti/optlearningcontrol)
-  
-**Spring semester**
-* ROB-UY 2004 Robotic Manipulation and Locomotion - [Class flyer]({{ 'ROB2004flyer.pdf' | prepend: '/assets/pdf/' | prepend: site.baseurl }}) and [Class material](https://github.com/righetti/ROB2004)
+<h4>Fall semester (not taught in Fall 2023)</h4>
+<p style="padding-left:15px">ROB-GY 6323 Reinforcement learning and optimal control for robotics - <a href="{{ 'ROB6323flyer.pdf' | prepend: '/assets/pdf/' | prepend: site.baseurl }}">Class flyer</a> and <a href="https://github.com/righetti/optlearningcontrol">Class material</a></p>
 
-**Previous classes**
-* (Fall 2021) ROB-GY 6003 Foundations of robotics - [Class material](https://github.com/righetti/ROB6003)
-* (Fall 2017-2020) ROB-GY 6333 Networked robotics systems, cooperative control and swarming - [Class material](https://github.com/righetti/swarmrobotics)
+<h4>Spring semester</h4> 
+<p style="padding-left:15px">ROB-UY 2004 Robotic Manipulation and Locomotion - <a href="{{ 'ROB2004flyer.pdf' | prepend: '/assets/pdf/' | prepend: site.baseurl }}">Class flyer</a> and <a href="https://github.com/righetti/ROB2004">Class material</a></p>
 
-### Projects / internships
+
+<h4> Previous classes</h4>
+ <p style="padding-left:15px">(Fall 2021) ROB-GY 6003 Foundations of robotics - <a href="https://github.com/righetti/ROB6003">Class material</a><br>
+ (Fall 2017-2020) ROB-GY 6333 Networked robotics systems, cooperative control and swarming - <a href="https://github.com/righetti/swarmrobotics">Class material</a></p>
+
+<br>
+
+---
+
+## Projects / internships
 We offer a limited number of opportunities each semester for NYU students to do research in our laboratory. Please refer to [this page](../joining) for more information on how to apply.
 
-### K-12 Education
+<br>
+
+---
+
+## K-12 Education
 
 We participate in several programs in K-12 STEM education at NYU. This includes
 the [Applied Research Innovations in Science and Engineering (ARISE)](https://engineering.nyu.edu/academics/programs/k12-stem-education/arise) program, which

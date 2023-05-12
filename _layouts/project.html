@@ -8,14 +8,14 @@
 
         <div class="container" style="padding-bottom: 100px">
             <div class="container">
-            <h2 style="padding-bottom: 20px">{{page.title}}</h2>
+            <h1 style="padding-bottom: 20px">{{page.title}}</h1>
             <img src="{{ page.image | prepend: '/assets/img/' | prepend: site.baseurl }}" class="img-fluid float-md-start mx-auto d-block" alt="{{page.title}} illustration" style="width:350px; height:auto; padding-left:0px; padding-right:50px;">
             {{ content }}
             </div>
             <div class="container" style="padding-top: 50px; padding-left:0px">
             {% if page.videos %}
             <div class="container">
-                <h3>Videos</h3>
+                <h2>Videos</h2>
                 <div class="row align-items-top justify-content-around">
                     {% for vid in page.videos %}
                     <div class="col-sm-12 col-md-6" style="padding-top: 20px; padding-bottom: 50px">
@@ -27,7 +27,7 @@
             {% endif %}
             </div>
             <div class="bib_section" style="padding-left:0px">
-            <h3>Selected publications</h3>
+            <h2>Selected publications</h2>
             {% bibliography -f {{page.bibliography}} %} 
             </div>
         </div>
