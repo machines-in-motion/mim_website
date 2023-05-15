@@ -22,14 +22,12 @@ nav_bar: true
  <p style="padding-left:15px">(Fall 2021) ROB-GY 6003 Foundations of robotics - <a href="https://github.com/righetti/ROB6003">Class material</a><br>
  (Fall 2017-2020) ROB-GY 6333 Networked robotics systems, cooperative control and swarming - <a href="https://github.com/righetti/swarmrobotics">Class material</a></p>
 
-<br>
 
 ---
 
 ## Projects / internships
 We offer a limited number of opportunities each semester for NYU students to do research in our laboratory. Please refer to [this page](../joining) for more information on how to apply.
 
-<br>
 
 ---
 

@@ -32,9 +32,10 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with custom theme.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.machinesinmotion.org" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: machines_motion
-github_username:  machines-in-motion
-scholar_userid: LuA1j4oAAAAJ
+twitter_link: "https://twitter.com/machines_motion"
+github_link:  "https://github.com/machines-in-motion"
+scholar_link: "https://scholar.google.com/citations?user=LuA1j4oAAAAJ&sortby=pubdate"
+youtube_link: "https://www.youtube.com/@machinesinmotionlabmovemen6833"
 logo: /assets/img/mim_logo_black.png
 
 

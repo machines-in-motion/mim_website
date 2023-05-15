@@ -27,22 +27,24 @@ nav_order: 2
 ---
 
 <h2 id="software">Software</h2>
-<p>Most of our software is open-source. Check out the laboratory <a href="https://github.com/machines-in-motion">Github</a> to access them. In particular, you might be interested in the following packages:    
+<p>Most of our software is open-source and available on the laboratory <a href="https://github.com/machines-in-motion">Github</a>. In particular, you might be interested in the following packages:    
     <ul>
         <li><a href="https://github.com/machines-in-motion/biconvex_mpc">BiConMP</a>, a solver for whole-body nonlinear trajectory optimizer used on a variety of legged robots, both for closed-loop MPC and offline trajectory generation.</li>
-        <li><a href="https://github.com/machines-in-motion/dynamic_game_optimizer">a stagewise Newton method</a> for dynamic game control with imperfect state observation</li>
+        <li><a href="https://github.com/machines-in-motion/dynamic_game_optimizer">A stagewise Newton method</a> for dynamic game control with imperfect state observation</li>
         <li><a href="https://github.com/machines-in-motion/irisc">iRiSC</a>, an efficient solver for risk sensitive optimal control for nonlinear systems with imperfect observations</li>
+        <li><a href="https://github.com/machines-in-motion/contact_mcts">Contact planning</a> for object manipulation using Monte-Carlo Tree Search and learned value functions using trajectory optimization</li>
     </ul> 
-You can also find a lot of our code on the
+All our contributions related to ODRI are available on the
       <a href="https://github.com/open-dynamic-robot-initiative">
         Open Dynamic Robot Initiative
-      </a> Github repository, which includes hardware designs, low-level real-time control code, simulation tools and basic controllers for legged robots.
+      </a> Github. It includes hardware designs, low-level real-time control code, simulation tools and basic controllers for legged robots.
 </p>
 ---
 
 <h2 id="robots">Robots</h2>
-<p>We work with a wide-range of robots and our laboratory has a Sarcos humanoid robot, a Bolt biped, several Solo12 quadrupeds and several manipulation platforms including a Kuka iiwa14 and a tri-finger platform inside a fully sensorized space equiped with a Vicon motion capture system. The hardware designs
-of the ODRI robots can be found <a href="https://github.com/open-dynamic-robot-initiative/open_robot_actuator_hardware">here</a>.
+<p>We work with a wide range of robots. Our laboratory has a Sarcos humanoid robot, a Bolt biped, several Solo12 quadrupeds, several manipulation and mobile platforms including a Kuka iiwa14 and a tri-finger platform.
+Our laboratory consists of a 1000sqft fully sensorized space including a motion capture system. We also conduct large scale, collaborative experiments in a 3000sqft shared robotics experimental facility. The hardware designs
+of the ODRI robots are open and can be found <a href="https://github.com/open-dynamic-robot-initiative/open_robot_actuator_hardware">here</a>. Check out our <a href="{{ site.youtube_link }}">Youtube channel</a> to see our robots moving!
 </p>
 <div class="container text-center">
         <img src="{{ 'sarcos.jpg' | prepend: '/assets/img/robots/' | prepend: site.baseurl }}" alt="image of the Sarcos humanoid" class="img-fluid" style="width:140px; height=auto">

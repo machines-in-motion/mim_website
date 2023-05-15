@@ -36,16 +36,16 @@ Our laboratory was established in September 2017 at New York University's
       <a href="mailto:{{ site.email | encode_email }}">
         <i class="bi bi-envelope-fill"></i>
       </a>
-      <a href="https://scholar.google.com/citations?user=LuA1j4oAAAAJ&hl=en&oi=ao">
+      <a href="{{ site.scholar_link }}">
         <i class="ai ai-google-scholar"></i>
       </a>
-      <a href="https://github.com/machines-in-motion">
+      <a href="{{ site.github_link }}">
         <i class="bi bi-github"></i>
       </a>
-      <a href="https://www.youtube.com/@machinesinmotionlabmovemen6833">
+      <a href="{{ site.youtube_link }}">
         <i class="bi bi-youtube"></i>
       </a>
-      <a href="https://twitter.com/machines_motion">
+      <a href="{{ site.twitter_link }}">
         <i class="bi bi-twitter"></i>
       </a>
 </div>

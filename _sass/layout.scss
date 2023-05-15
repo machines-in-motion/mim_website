@@ -60,6 +60,10 @@ hr {
   border-top: 1px solid var(--global-divider-color);
 }
 
+li {
+  padding-bottom: 0.5rem;
+}
+
 a, table.table a {
   color: var(--global-theme-color);
   text-decoration: none;
@@ -195,8 +199,8 @@ a, table.table a {
   }
   li{
     font-size: 1rem;
-    padding-bottom: 1em;
-    margin-left: -1.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: -1rem;
   }
   li::marker {
     content: '';
