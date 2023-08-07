@@ -19,7 +19,7 @@
     </contributor>
     <category citation-format="label"/>
     <category field="generic-base"/>
-    <updated>2022-05-10T18:01:57+00:00</updated>
+    <updated>2023-08-07T18:01:57+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <macro name="zotero2bibtexType">
@@ -132,8 +132,8 @@
   </macro>
   <citation disambiguate-add-year-suffix="true" disambiguate-add-names="false" disambiguate-add-givenname="false" collapse="year">
     <sort>
-      <key macro="author"/>
       <key variable="issued"/>
+      <key macro="author"/>
     </sort>
     <layout delimiter="_">
       <text macro="citeKey"/>
@@ -141,8 +141,8 @@
   </citation>
   <bibliography hanging-indent="false">
     <sort>
-      <key macro="author"/>
       <key variable="issued"/>
+      <key macro="author"/>
     </sort>
     <layout>
       <text macro="zotero2bibtexType" prefix=" @"/>
