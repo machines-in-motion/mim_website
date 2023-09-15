@@ -24,15 +24,6 @@
   position: PhD Student
   website: https://hzhu.io
 
-- name: Bilal Hammoud
-  image: people/bhammoud.jpeg
-  position: PhD Student
-  website: https://www.hammoudbilal.com
-
-- name: Majid Khadiv
-  image: people/mkhadiv.jpeg
-  position: Senior Researcher
-
 - name: Paarth Shah
   image: people/pshah.jpeg
   position: PhD Student <br> (University of Oxford)
@@ -41,11 +32,17 @@
   image: people/qzhang.jpg
   position: Undergraduate student
 
+- name: Jianghan Zhang
+  image: people/jzhang.jpg
+  position: Undergraduate student
+
 - name: Joseph Amigo
   image: people/jamigo.jpg
   position: Visiting MS student <br> (Ecole Normale Supérieure)
 
-
+- name: Svenja Breuer
+  image: people/sbreuer.jpg
+  position: Visiting PhD student <br> (TU Münich)
 
 
  

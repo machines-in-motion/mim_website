@@ -1,11 +1,17 @@
+- name: Majid Khadiv
+  description: postdoc / senior researcher, then assistant professor at TU Münich
+
+- name: Bilal Hammoud
+  description: received his PhD in May 2023, then Boston Dynamics AI Institute
+
 - name: Shahram Khorshidi
   description: intern at MPI then PhD student at the University of Bonn
 
 - name: Julian Viereck
-  description: received his PhD in May 2022 then went to Amazon
+  description: received his PhD in May 2022 then Amazon
 
 - name: Sarah Bechtle
-  description: received her PhD in May 2022 (MPI) then went to Deepmind
+  description: received her PhD in May 2022 (MPI) then Deepmind
 
 - name: Miroslav Bogdanovic
   description: received his PhD in January 2022 (MPI)
@@ -14,28 +20,28 @@
   description: intern at MPI, then PhD student at McGill University
 
 - name: Kai Pfeiffer
-  description: Postdoc, then went to NTU Singapore as a postdoc
+  description: postdoc, then postdoc at NTU Singapore
 
 - name: Maximilien Naveau
-  description: Postdoc, went to the LAAS/CNRS as a research engineer
+  description: postdoc, then research engineer at LAAS/CNRS
 
 - name: Andrea Del Prete
-  description: Postdoc, then went to the University of Trento as a professor
+  description: postdoc, then assistant professor at University of Trento
 
 - name: John Rebula
-  description: Postdoc
+  description: postdoc
 
 - name: Brahayam Ponton
-  description: received his PhD in July 2019 (MPI)
+  description: received his PhD in July 2019 (MPI) then Intrinsic
 
 - name: Sean Mason
-  description: received his PhD in May 2018 (USC) then went to Boston Dynamics
+  description: received his PhD in May 2018 (USC) then Boston Dynamics
 
 - name: Nick Rotella
-  description: received his PhD in November 2017 (USC) then went to Garmin
+  description: received his PhD in November 2017 (USC) then Garmin
 
 - name: Alexander Herzog
-  description: received his PhD in August 2017 (MPI / ETH Zürich) then went to Google X
+  description: received his PhD in August 2017 (MPI / ETH Zürich) then Google X
   
   
   
