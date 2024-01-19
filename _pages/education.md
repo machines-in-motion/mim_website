@@ -11,7 +11,7 @@ nav_bar: true
 <h2>Classes</h2>
 <p>We teach graduate and undergraduate robotics classes at NYU including classes for the <a href="https://engineering.nyu.edu/academics/programs/mechatronics-and-robotics-ms">M.Sc. Mechatronics and Robotics</a> and for the <a href="http://bulletin.engineering.nyu.edu/preview_program.php?catoid=17&poid=5016&hl=robotics&returnto=search">Undergraduate Minor in Robotics</a></p>
 
-<h4>Fall semester (not taught in Fall 2023)</h4>
+<h4>Fall semester</h4>
 <p style="padding-left:15px">ROB-GY 6323 Reinforcement learning and optimal control for robotics - <a href="{{ 'ROB6323flyer.pdf' | prepend: '/assets/pdf/' | prepend: site.baseurl }}">Class flyer</a> and <a href="https://github.com/righetti/optlearningcontrol">Class material</a></p>
 
 <h4>Spring semester</h4> 
