@@ -3,6 +3,10 @@
   position: Principal Investigator
   website: https://righetti.github.io/
 
+- name: Joaquim Ortiz-Haro
+  image: people/jortizharo.jpg
+  position: Postdoc
+
 - name: Armand Jordana
   image: people/ajordana.png
   position: PhD Student
@@ -10,10 +14,6 @@
 - name: Sébastien Kleff
   image: people/skleff.jpeg
   position: PhD Student
-
-- name: Ahmad Gazar
-  image: people/agazar.jpeg
-  position: PhD Student <br> (Max-Planck Institute for Intelligent Systems)
 
 - name: Avadesh Meduri
   image: people/ameduri.jpeg
@@ -24,27 +24,18 @@
   position: PhD Student
   website: https://hzhu.io
 
-- name: Paarth Shah
-  image: people/pshah.jpeg
-  position: PhD Student <br> (University of Oxford)
-  
-- name: Qiushi Zhang
-  image: people/qzhang.jpg
-  position: Undergraduate student
-
-- name: Jianghan Zhang
-  image: people/jzhang.jpg
-  position: Undergraduate student
-
 - name: Joseph Amigo
   image: people/jamigo.jpg
-  position: Visiting MS student <br> (Ecole Normale Supérieure)
-
-- name: Svenja Breuer
-  image: people/sbreuer.jpg
-  position: Visiting PhD student <br> (TU Münich)
+  position: PhD Student
 
 - name: Sarmad Mehrdad
   image: people/smehrdad.jpg
   position: PhD student
- 
+
+- name: Quang Nam Nguyen 
+  image: people/qnguyen.jpg
+  position: PhD student
+
+- name: Jianghan Zhang
+  image: people/jzhang.jpg
+  position: Undergraduate student

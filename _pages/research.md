@@ -29,6 +29,7 @@ nav_order: 2
 <h2 id="software">Software</h2>
 <p>Most of our software is open-source and available on the laboratory <a href="https://github.com/machines-in-motion">Github</a>. In particular, you might be interested in the following packages:    
     <ul>
+        <li><a href="https://github.com/machines-in-motion/mim_solvers">MimSolver</a>, an efficient sparse SQP solver for nonlinear trajectory optimization and MPC with hard constraints.</li>
         <li><a href="https://github.com/machines-in-motion/biconvex_mpc">BiConMP</a>, a solver for whole-body nonlinear trajectory optimizer used on a variety of legged robots, both for closed-loop MPC and offline trajectory generation.</li>
         <li><a href="https://github.com/machines-in-motion/dynamic_game_optimizer">A stagewise Newton method</a> for dynamic game control with imperfect state observation</li>
         <li><a href="https://github.com/machines-in-motion/irisc">iRiSC</a>, an efficient solver for risk sensitive optimal control for nonlinear systems with imperfect observations</li>
@@ -58,13 +59,12 @@ of the ODRI robots are open and can be found <a href="https://github.com/open-dy
 
 <h2 id="sponsors">Sponsors</h2>
 We are grateful to our sponsors for their generous support.
-Our current research is mainly supported by the National Science Foundation grants
-[1925079](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1925079&HistoricalAwards=false)
-[1932187](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1932187&HistoricalAwards=false)
-[2026479](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2026479&HistoricalAwards=false)
-and
-[2222815](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2222815&HistoricalAwards=false),
-Meta and New York University. 
+Our current research is mainly supported by National Science Foundation grants
+[1932187](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1932187)
+[2026479](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2026479)
+[2222815](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2222815) and
+[2315396](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2315396)
+and a generous donation from [Wandercraft](https://www.wandercraft.eu/). 
 
-We are also grateful to our previous sponsors, including the European Union’s Horizon 2020 research and innovation programme, the European Research Council,
-OPPO, NYU Wireless and Google.
+We are also grateful to our previous sponsors and donors, including the European Union’s Horizon 2020 research and innovation programme, the European Research Council,
+OPPO, Intel, Meta, NYU Wireless, Google and NSF grants [1925079](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1925079) and [1825993](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1825993)

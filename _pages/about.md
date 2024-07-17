@@ -20,12 +20,6 @@ to robustly and safely perform any locomotion and manipulation tasks in unknown 
 <p>
 The laboratory commits to conducting socially responsible activities and strives to promote applications of robotic technologies that will demonstrably improve quality of life, empower people and generally help create more open and equal societies.
 </p>
-
-<p>
-Our laboratory was established in September 2017 at New York University's 
-<a href="engineering.nyu.edu/">Tandon School of Engineering</a>.
- It also includes the members of the <a href="https://mg.is.mpg.de/">Movement Generation and Control Group</a> (group established in September 2012 by L. Righetti) at the Max-Planck Institute for Intelligent Systems.
-</p>
 </div>
 
 
