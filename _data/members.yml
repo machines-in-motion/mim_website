@@ -3,20 +3,12 @@
   position: Principal Investigator
   website: https://righetti.github.io/
 
-- name: Joaquim Ortiz-Haro
-  image: people/jortizharo.jpg
-  position: Postdoc
-
 - name: Armand Jordana
   image: people/ajordana.png
-  position: PhD Student
+  position: Postdoc
 
-- name: Sébastien Kleff
-  image: people/skleff.jpeg
-  position: PhD Student
-
-- name: Avadesh Meduri
-  image: people/ameduri.jpeg
+- name: Rooholla Khorrambakht 
+  image: people/rkhorrambakht.jpg
   position: PhD Student
 
 - name: Huaijiang Zhu
@@ -34,6 +26,10 @@
 
 - name: Quang Nam Nguyen 
   image: people/qnguyen.jpg
+  position: PhD student
+
+- name: Haizhou Zhao 
+  image: people/hzhao.jpg
   position: PhD student
 
 - name: Jianghan Zhang

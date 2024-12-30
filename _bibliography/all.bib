@@ -1441,8 +1441,6 @@ of  the  contact  and  vice  versa.},
  DOI={10.48550/arXiv.2309.04469}, 
  abstract={Trajectory optimization under uncertainties is a challenging problem for robots in contact with the environment. Such uncertainties are inevitable due to estimation errors, control imperfections, and model mismatches between planning models used for control and the real robot dynamics. This induces control policies that could violate the contact location constraints by making contact at unintended locations, and as a consequence leading to unsafe motion plans. This work addresses the problem of robust kino-dynamic whole-body trajectory optimization using stochastic nonlinear model predictive control (SNMPC) by considering additive uncertainties on the model dynamics subject to contact location chance-constraints as a function of robot’s full kinematics. We demonstrate the beneﬁt of using SNMPC over classic nonlinear MPC (NMPC) for whole-body trajectory optimization in terms of contact location constraint satisfaction (safety). We run extensive MonteCarlo simulations for a quadruped robot performing agile trotting and bounding motions over small stepping stones, where contact location satisfaction becomes critical. Our results show that SNMPC is able to perform all motions safely with 100% success rate, while NMPC failed 48.3% of all motions.}, 
  note={preprint}, 
- number={arXiv:2309.04469}, 
- publisher={arxiv}, 
  author={Gazar, Ahmad and Khadiv, Majid and Prete, Andrea Del and Righetti, Ludovic}, 
  year={2023} 
 }
@@ -1459,8 +1457,6 @@ of  the  contact  and  vice  versa.},
  url={https://laas.hal.science/hal-04330251}, 
  abstract={The promise of model-predictive control in robotics has led to extensive development of efficient numerical optimal control solvers in line with differential dynamic programming because it exploits the sparsity induced by time. In this work, we argue that this effervescence has hidden the fact that sparsity can be equally exploited by standard nonlinear optimization. In particular, we show how a tailored implementation of sequential quadratic programming achieves state-of-the-art model-predictive control. Then, we clarify the connections between popular algorithms from the robotics community and well-established optimization techniques. Further, the sequential quadratic program formulation naturally encompasses the constrained case, a notoriously difficult problem in the robotics community. Specifically, we show that it only requires a sparsity-exploiting implementation of a state-of-theart quadratic programming solver. We illustrate the validity of this approach in a comparative study and experiments on a torque-controlled manipulator. To the best of our knowledge, this is the first demonstration of nonlinear model-predictive control with arbitrary constraints on real hardware.}, 
  note={preprint}, 
- number={hal-04330251}, 
- publisher={HAL}, 
  author={Jordana, Armand and Kleff, Sébastien and Meduri, Avadesh and Carpentier, Justin and Mansard, Nicolas and Righetti, Ludovic}, 
  year={2023} 
 }
@@ -1558,6 +1554,36 @@ of  the  contact  and  vice  versa.},
  year={2023}, 
  month={Aug} 
 }
+ @inproceedings{Dhédin_Adithya Kumar Chinnakkonda Ravi_Jordana_Zhu_Meduri_Righetti_Schölkopf_Khadiv_2024, 
+ address={Nancy, France}, 
+ title={Diffusion-based learning of contact plans for agile locomotion}, 
+ url={http://arxiv.org/abs/2403.03639}, 
+ DOI={10.1109/Humanoids58906.2024.10769875}, 
+ abstract={Legged robots have become capable of performing highly dynamic maneuvers in the past few years. However, agile locomotion in highly constrained environments such as stepping stones is still a challenge. In this paper, we propose a combination of model-based control, search, and learning to design efficient control policies for agile locomotion on stepping stones. In our framework, we use nonlinear model predictive control (NMPC) to generate whole-body motions for a given contact plan. To efficiently search for an optimal contact plan, we propose to use Monte Carlo tree search (MCTS). While the combination of MCTS and NMPC can quickly find a feasible plan for a given environment (a few seconds), it is not yet suitable to be used as a reactive policy. Hence, we generate a dataset for optimal goal-conditioned policy for a given scene and learn it through supervised learning. In particular, we leverage the power of diffusion models in handling multi-modality in the dataset. We test our proposed framework on a scenario where our quadruped robot Solo12 successfully jumps to different goals in a highly constrained environment.}, 
+ booktitle={IEEE-RAS International Conference on Humanoid Robots}, 
+ publisher={IEEE}, 
+ author={Dhédin, Victor and Adithya Kumar Chinnakkonda Ravi and Jordana, Armand and Zhu, Huaijiang and Meduri, Avadesh and Righetti, Ludovic and Schölkopf, Bernhard and Khadiv, Majid}, 
+ year={2024} 
+}
+ @inproceedings{E Chane-Sane_Amigo_Righetti_Mansard_2024, 
+ address={Munich, Germany}, 
+ title={SoloParkour: Constrained Reinforcement Learning for Visual Locomotion from Privileged Experience}, 
+ url={https://arxiv.org/abs/2409.13678}, 
+ abstract={Parkour poses a significant challenge for legged robots, requiring navigation through complex environments with agility and precision based on limited sensory inputs. In this work, we introduce a novel method for training end-to-end visual policies, from depth pixels to robot control commands, to achieve agile and safe quadruped locomotion. We formulate robot parkour as a constrained reinforcement learning (RL) problem designed to maximize the emergence of agile skills within the robot’s physical limits while ensuring safety. We first train a policy without vision using privileged information about the robot’s surroundings. We then generate experience from this privileged policy to warm-start a sample efficient off-policy RL algorithm from depth images. This allows the robot to adapt behaviors from this privileged experience to visual locomotion while circumventing the high computational costs of RL directly from pixels. We demonstrate the effectiveness of our method on a real Solo-12 robot, showcasing its capability to perform a variety of parkour skills such as walking, climbing, leaping, and crawling.}, 
+ booktitle={Conference on Robot Learning (CoRL)}, 
+ author={E Chane-Sane and Amigo, J and Righetti, L and Mansard, N}, 
+ year={2024} 
+}
+ @article{Kiemel_Righetti_Kröger_Asfour_2024, 
+ title={Safe Reinforcement Learning of Robot Trajectories in the Presence of Moving Obstacles}, 
+ url={https://h2t.iar.kit.edu/pdf/Kiemel2024.pdf}, 
+ DOI={10.1109/LRA.2024.3488402}, 
+ abstract={In this paper, we present an approach for learning collision-free robot trajectories in the presence of moving obstacles. As a first step, we train a backup policy to generate evasive movements from arbitrary initial robot states using model-free reinforcement learning. When learning policies for other tasks, the backup policy can be used to estimate the potential risk of a collision and to offer an alternative action if the estimated risk is considered too high. No matter which action is selected, our action space ensures that the kinematic limits of the robot joints are not violated. We analyze and evaluate two different methods for estimating the risk of a collision. A physics simulation performed in the background is computationally expensive but provides the best results in deterministic environments. If a data-based risk estimator is used instead, the computational effort is significantly reduced, but an additional source of error is introduced. For evaluation, we successfully learn a reaching task and a basketball task while keeping the risk of collisions low. The results demonstrate the effectiveness of our approach for deterministic and stochastic environments, including a human-robot scenario and a ball environment, where no state can be considered permanently safe. By conducting experiments with a real robot, we show that our approach can generate safe trajectories in real time.}, 
+ journal={IEEE Robotics and Automation Letters}, 
+ author={Kiemel, Jonas and Righetti, Ludovic and Kröger, Torsten and Asfour, Tamim}, 
+ year={2024}, 
+ pages={1–8} 
+}
  @article{Kleff_Jordana_Mansard_Righetti_2024, 
  title={Force Feedback in Model Predictive Control: A Soft Contact Approach}, 
  url={https://hal.science/hal-04572399/}, 
@@ -1570,6 +1596,7 @@ of  the  contact  and  vice  versa.},
  @inproceedings{Jordana_Kleff_Carpentier_Mansard_Righetti_2024, 
  address={Yokohama}, 
  title={Force Feedback Model-Predictive Control Via Online Estimation}, 
+ DOI={10.1109/ICRA57147.2024.10611156}, 
  abstract={Nonlinear model-predictive control has recently shown its practicability in robotics. However it remains limited in contact interaction tasks due to its inability to leverage sensed efforts. In this work, we propose a novel model-predictive control approach that incorporates direct feedback from force sensors while circumventing explicit modeling of the contact force evolution. Our approach is based on the online estimation of the discrepancy between the force predicted by the dynamics model and force measurements, combined with high-frequency nonlinear model-predictive control. We report an experimental validation on a torque-controlled manipulator in challenging tasks for which accurate force tracking is necessary. We show that a simple reformulation of the optimal control problem combined with standard estimation tools enables to achieve state-of-the-art performance in force control while preserving the benefits of model-predictive control, thereby outperforming traditional force control techniques. This work paves the way toward a more systematic integration of force sensors in model predictive control.}, 
  booktitle={IEEE international conference on robotics and automation}, 
  publisher={IEEE}, 
@@ -1598,16 +1625,33 @@ of  the  contact  and  vice  versa.},
  year={2024}, 
  month={Jun} 
 }
- @inproceedings{Ortiz-Haro_Hönig_Hartmann_Toussaint_Righetti_2024, 
+ @article{V Boulanin_Ovink_Stoyanovich_Chatila_Gupta_Righetti_Dignum_Prestes_2024, 
+ title={AI Missteps Could Unravel Global Peace and Security: To mitigate risks, developers need more training}, 
+ url={https://spectrum.ieee.org/ai-missteps-unravel-global-security}, 
+ journal={IEEE Spectrum}, 
+ author={V Boulanin and Ovink, C and Stoyanovich, J and Chatila, R and Gupta, A and Righetti, L and Dignum, F and Prestes, E}, 
+ year={2024}, 
+ month={Jul} 
+}
+ @inproceedings{Ortiz-Haro_Wolfgang Hönig_Valentin N. Hartmann_Marc Toussaint_Righetti_2024, 
  address={Abu Dhabi}, 
  title={iDb-RRT: Sampling-based Kinodynamic Motion Planning with Motion Primitives and Trajectory Optimization}, 
  url={http://arxiv.org/abs/2403.10745}, 
  DOI={10.48550/arXiv.2403.10745}, 
  abstract={Rapidly-exploring Random Trees (RRT) and its variations have emerged as a robust and efficient tool for finding collision-free paths in robotic systems. However, adding dynamic constraints makes the motion planning problem significantly harder, as it requires solving two-value boundary problems (computationally expensive) or propagating random control inputs (uninformative). Alternatively, Iterative Discontinuity Bounded A* (iDb-A*), introduced in our previous study, combines search and optimization iteratively. The search step connects short trajectories (motion primitives) while allowing a bounded discontinuity between the motion primitives, which is later repaired in the trajectory optimization step.}, 
- note={arXiv:2403.10745 [cs]}, 
- booktitle={2023 IEEE/RSJ International Conference on Intelligent Robots and Systems}, 
+ booktitle={2024 IEEE/RSJ International Conference on Intelligent Robots and Systems}, 
  publisher={IEEE}, 
- author={Ortiz-Haro, Joaquim and Hönig, Wolfgang and Hartmann, Valentin N. and Toussaint, Marc and Righetti, Ludovic}, 
+ author={Ortiz-Haro, Joaquim and Wolfgang Hönig and Valentin N. Hartmann and Marc Toussaint and Righetti, Ludovic}, 
  year={2024}, 
  month={Oct} 
+}
+ @article{Zhu_Zhao_Ni_Wang_Fang_Righetti_Pang_2024, 
+ title={Should We Learn Contact-Rich Manipulation Policies from Sampling-Based Planners?}, 
+ url={http://arxiv.org/abs/2412.09743}, 
+ DOI={10.48550/arXiv.2412.09743}, 
+ abstract={The tremendous success of behavior cloning (BC) in robotic manipulation has been largely confined to tasks where demonstrations can be effectively collected through human teleoperation. However, demonstrations for contact-rich manipulation tasks that require complex coordination of multiple contacts are difficult to collect due to the limitations of current teleoperation interfaces. We investigate how to leverage modelbased planning and optimization to generate training data for contact-rich dexterous manipulation tasks. Our analysis reveals that popular sampling-based planners like rapidly exploring random tree (RRT), while efficient for motion planning, produce demonstrations with unfavorably high entropy. This motivates modifications to our data generation pipeline that prioritizes demonstration consistency while maintaining solution diversity. Combined with a diffusion-based goal-conditioned BC approach, our method enables effective policy learning and zero-shot transfer to hardware for two challenging contact-rich manipulation tasks.}, 
+ note={preprint}, 
+ author={Zhu, Huaijiang and Zhao, Tong and Ni, Xinpei and Wang, Jiuguang and Fang, Kuan and Righetti, Ludovic and Pang, Tao}, 
+ year={2024}, 
+ month={Dec} 
 }

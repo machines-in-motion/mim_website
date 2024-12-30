@@ -1,8 +1,17 @@
+- name: Joaquim Ortiz-Haro
+  description: postdoc, then Keybotic
+
+- name: Avadesh Meduri
+  description: received his PhD in December 2024, then Reflex Robotics
+
+- name: Sébastien Kleff
+  description: received his PhD in May 2024, then postdoc at INRIA, Bordeaux
+
 - name: Svenja Breuer
-  description: Visiting PhD student (TU Münich)
+  description: visiting PhD student (TU Münich)
 
 - name: Qiushi Zhang
-  description: Undergraduate student (2022-2024), then PhD student at CMU
+  description: undergraduate student (2022-2024), then PhD student at CMU
 
 - name: Ahmad Gazar
   description: received his PhD in December 2023, then postdoc at Delft University of Technology

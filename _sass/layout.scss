@@ -1,19 +1,20 @@
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
-$grey-color: #7c7c7c !default;
-$dark-grey-color: #555555 !default;
-$red-color: crimson !default;
-$blue-color: cornflowerblue !default;
-$purple-color: slateblue !default;
+$blue-color: #3D5A80 !default;
+$grey-color: #5F748F !default;
+$red-color: #D65108 !default;
+$yellow-color: #AA5042 !default;
 
 :root {
   --global-bg-color: #{$white-color};
   --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
-  --global-divider-color: rgba(0, 0, 0, 0.3);
+  --global-text-color-light: #{$blue-color};
+  --global-text-color-lighter: #{$grey-color};
+  --global-theme-color: #{$red-color};
+  --global-theme-color-lighter: #{$yellow-color};
+  --global-hover-color: #{$red-color};
+  --global-divider-color: rgba(61, 90, 128, 0.5);
 
   --global-max-width: 960px
 }
@@ -22,9 +23,15 @@ body{
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
   padding-top: 100px;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 300;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+  // font-size: 1.1rem;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -32,7 +39,7 @@ body{
 
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
-  font-weight: 300;
+  // font-weight: 400;
 }
 
 ul {
@@ -40,28 +47,27 @@ ul {
 }
 
 h1{
-  font-size: 1.7em;
-}
-h2{
-  font-size: 1.5em;
-  color: #{$dark-grey-color}
-}
-h3{
-  font-size: 1.2em;
+  font-size: 1.8em;
   color: var(--global-text-color-light);
 }
+h2{
+  font-size: 1.6em;
+  font-weight: 500;
+  color: var(--global-text-color-light);
+}
+h3{
+  font-size: 1.3em;
+  font-weight: 500;
+  color: var(--global-text-color-lighter);
+}
 h4{
-  font-size: 1.1em;
-  font-weight: 400;
-  color: #{$dark-grey-color};
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--global-text-color-lighter);
 }
 
 hr {
   border-top: 1px solid var(--global-divider-color);
-}
-
-li {
-  padding-bottom: 0.5rem;
 }
 
 a, table.table a {
@@ -100,7 +106,7 @@ a, table.table a {
     color: var(--global-text-color);
   }
   .position{
-    color: var(--global-text-color-light);
+    color: var(--global-text-color-lighter);
   }
 }
 
@@ -110,7 +116,7 @@ a, table.table a {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   padding-bottom: 0;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
@@ -148,7 +154,7 @@ a, table.table a {
   .navbar-nav .nav-item .nav-link.active {
       background-color: inherit;
       font-weight: normal;
-      color: var(--global-theme-color);
+      color: var(--global-text-color-light);
       &:hover {
         color: var(--global-hover-color);
       }
@@ -173,9 +179,9 @@ a, table.table a {
 // BIBTEX related
 .abstract-popover{
   --bs-popover-max-width: 700px;
-  --bs-popover-border-color: #{$blue-color};
+  --bs-popover-border-color: var(--global-theme-color);
   --bs-popover-header-bg: var(--global-bg-color);
-  --bs-popover-header-color: var(--global-text-color-light);
+  --bs-popover-header-color: var(--global-theme-color);
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: 1rem;
   --bs-popover-border-width: 0.15rem;
@@ -187,20 +193,20 @@ a, table.table a {
   --bs-btn-padding-x-sm: 0;
   --bs-btn-padding-y-sm: 0;
   --bs-btn-border-width: 0.1rem;
-  --bs-btn-border-color: #{$blue-color};
-  --bs-btn-hover-border-color: #{$blue-color};
-  --bs-btn-active-border-color: #{$blue-color};
+  --bs-btn-border-color: var(--global-theme-color-lighter);
+  --bs-btn-hover-border-color: var(--global-theme-color);
+  --bs-btn-active-border-color: var(--global-theme-color);
   --bs-btn-padding-x: 0.1rem
 }
 
 .bib_section {
   .year {
-    color: var(--global-text-color-light)
+    color: var(--global-text-color-lighter)
   }
   li{
     font-size: 1rem;
-    padding-bottom: 0.5rem;
-    margin-left: -1rem;
+    padding-bottom: 1em;
+    margin-left: -1.5rem;
   }
   li::marker {
     content: '';
