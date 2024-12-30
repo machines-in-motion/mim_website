@@ -1,0 +1,214 @@
+:root {
+  --global-bg-color: #ffffff;
+  --global-text-color: #000000;
+  --global-text-color-light: #3D5A80;
+  --global-text-color-lighter: #5F748F;
+  --global-theme-color: #D65108;
+  --global-theme-color-lighter: #AA5042;
+  --global-hover-color: #D65108;
+  --global-divider-color: rgba(61, 90, 128, 0.5);
+  --global-max-width: 960px ;
+}
+
+body {
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+  padding-top: 100px;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
+  color: var(--global-text-color);
+}
+
+ul {
+  list-style-type: "- ";
+}
+
+h1 {
+  font-size: 1.8em;
+  color: var(--global-text-color-light);
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 500;
+  color: var(--global-text-color-light);
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: var(--global-text-color-lighter);
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--global-text-color-lighter);
+}
+
+hr {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+a, table.table a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+a:hover, table.table a:hover {
+  color: var(--global-theme-color);
+  text-decoration: underline;
+}
+a:hover:after :not(.nav-item.dropdown), table.table a:hover:after :not(.nav-item.dropdown) {
+  width: 100%;
+}
+
+.main_content {
+  text-align: justify;
+  padding-bottom: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+  max-width: var(--global-max-width);
+}
+
+.people .name {
+  font-size: 1.2rem;
+  color: var(--global-text-color);
+}
+.people .position {
+  color: var(--global-text-color-lighter);
+}
+
+.navbar {
+  box-shadow: none;
+  border-bottom: 1px solid var(--global-divider-color);
+  background-color: var(--global-bg-color);
+  padding-bottom: 0;
+  font-size: 1.1em;
+}
+
+.navbar .dropdown-menu {
+  background-color: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+}
+.navbar .dropdown-menu a:not(.active) {
+  color: var(--global-text-color);
+}
+.navbar .dropdown-menu a:hover {
+  color: var(--global-hover-color);
+}
+.navbar .dropdown-menu .dropdown-divider {
+  border-top: 1px solid var(--global-divider-color) !important;
+}
+
+.dropdown-item {
+  color: var(--global-text-color);
+}
+.dropdown-item:hover {
+  color: var(--global-hover-color);
+  background-color: var(--global-bg-color);
+}
+
+.navbar a:hover {
+  text-decoration: none;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: var(--global-text-color);
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--global-hover-color);
+}
+.navbar .navbar-nav .nav-item .nav-link.active {
+  background-color: inherit;
+  font-weight: normal;
+  color: var(--global-text-color-light);
+}
+.navbar .navbar-nav .nav-item .nav-link.active:hover {
+  color: var(--global-hover-color);
+}
+
+.contacts {
+  text-align: center;
+}
+.contacts i {
+  font-size: 4rem;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: var(--global-text-color);
+}
+.contacts i:hover {
+  color: var(--global-theme-color);
+}
+
+.abstract-popover {
+  --bs-popover-max-width: 700px;
+  --bs-popover-border-color: var(--global-theme-color);
+  --bs-popover-header-bg: var(--global-bg-color);
+  --bs-popover-header-color: var(--global-theme-color);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: 1rem;
+  --bs-popover-border-width: 0.15rem;
+}
+
+.btn_bib {
+  --bs-btn-padding-x: 0;
+  --bs-btn-padding-y: 0;
+  --bs-btn-padding-x-sm: 0;
+  --bs-btn-padding-y-sm: 0;
+  --bs-btn-border-width: 0.1rem;
+  --bs-btn-border-color: var(--global-theme-color-lighter);
+  --bs-btn-hover-border-color: var(--global-theme-color);
+  --bs-btn-active-border-color: var(--global-theme-color);
+  --bs-btn-padding-x: 0.1rem ;
+}
+
+.bib_section .year {
+  color: var(--global-text-color-lighter);
+}
+.bib_section li {
+  font-size: 1rem;
+  padding-bottom: 1em;
+  margin-left: -1.5rem;
+}
+.bib_section li::marker {
+  content: "";
+}
+.bib_section h4 {
+  scroll-margin-top: 100px;
+}
+
+footer.fixed-bottom {
+  background-color: var(--global-bg-color);
+  font-size: 0.75rem;
+}
+footer.fixed-bottom .container {
+  color: var(--global-text-color);
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+footer.fixed-bottom a {
+  color: var(--global-text-color);
+}
+footer.fixed-bottom a:hover {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */
