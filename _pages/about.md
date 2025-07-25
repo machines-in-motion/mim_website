@@ -39,9 +39,6 @@ The laboratory commits to conducting socially responsible activities and strives
       <a href="{{ site.youtube_link }}">
         <i class="bi bi-youtube"></i>
       </a>
-      <a href="{{ site.twitter_link }}">
-        <i class="bi bi-twitter"></i>
-      </a>
 </div>
 
 ---

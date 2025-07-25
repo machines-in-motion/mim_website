@@ -11,11 +11,6 @@
   image: people/rkhorrambakht.jpg
   position: PhD Student
 
-- name: Huaijiang Zhu
-  image: people/hzhu.jpg
-  position: PhD Student
-  website: https://hzhu.io
-
 - name: Joseph Amigo
   image: people/jamigo.jpg
   position: PhD Student
@@ -30,6 +25,10 @@
 
 - name: Haizhou Zhao 
   image: people/hzhao.jpg
+  position: PhD student
+
+- name: Mohamed-Yassine Kabouri
+  image: people/mykabouri.jpg
   position: PhD student
 
 - name: Jianghan Zhang
