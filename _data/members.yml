@@ -3,16 +3,19 @@
   position: Principal Investigator
   website: https://righetti.github.io/
 
-- name: Armand Jordana
-  image: people/ajordana.png
-  position: Postdoc
-
 - name: Rooholla Khorrambakht 
   image: people/rkhorrambakht.jpg
   position: PhD Student
 
 - name: Joseph Amigo
   image: people/jamigo.jpg
+  position: PhD Student
+
+#- name: Margareta Kulcsar
+#  position: PhD Student
+
+- name: Stacy Ashlyn
+  image: people/stacy.jpg
   position: PhD Student
 
 - name: Sarmad Mehrdad
@@ -23,6 +26,10 @@
   image: people/qnguyen.jpg
   position: PhD student
 
+- name: Anastasija Rakic
+  image: people/anastasija.jpg
+  position: Master's Student
+
 - name: Haizhou Zhao 
   image: people/hzhao.jpg
   position: PhD student
@@ -31,6 +38,6 @@
   image: people/mykabouri.jpg
   position: PhD student
 
-- name: Jianghan Zhang
-  image: people/jzhang.jpg
-  position: Undergraduate student
+- name: Lorenzo Balandi
+  image: people/lorenzo.jpg
+  position: Visiting PhD student (Inria Rennes)
