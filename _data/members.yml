@@ -11,8 +11,9 @@
   image: people/jamigo.jpg
   position: PhD Student
 
-#- name: Margareta Kulcsar
-#  position: PhD Student
+- name: Margareta Kulcsar
+  image: people/margareta.jpg
+  position: PhD Student
 
 - name: Stacy Ashlyn
   image: people/stacy.jpg
