@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+    <head>
+            <!-- Metadata, OpenGraph and Schema.org -->
+        <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ludovic Righetti" />
+
+<!-- SEO tags -->
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Model-predictive control | Machines in Motion Laboratory</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Model-predictive control" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is the website of the machines in motion laboratory, a robotics research laboratory at New York University headed by Ludovic Righetti. We conduct fundamental and applied robotics research with a particular focus on autonomous dexterous manipulation and legged locomotion. The website lists the labs activities, publications, group members and latest news." />
+<meta property="og:description" content="This is the website of the machines in motion laboratory, a robotics research laboratory at New York University headed by Ludovic Righetti. We conduct fundamental and applied robotics research with a particular focus on autonomous dexterous manipulation and legged locomotion. The website lists the labs activities, publications, group members and latest news." />
+<link rel="canonical" href="https://www.machinesinmotion.org/_projects/mpc.html" />
+<meta property="og:url" content="https://www.machinesinmotion.org/_projects/mpc.html" />
+<meta property="og:site_name" content="Machines in Motion Laboratory" />
+<meta property="og:image" content="https://www.machinesinmotion.org/projects/mpc.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.machinesinmotion.org/projects/mpc.jpg" />
+<meta property="twitter:title" content="Model-predictive control" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"This is the website of the machines in motion laboratory, a robotics research laboratory at New York University headed by Ludovic Righetti. We conduct fundamental and applied robotics research with a particular focus on autonomous dexterous manipulation and legged locomotion. The website lists the labs activities, publications, group members and latest news.","headline":"Model-predictive control","image":"https://www.machinesinmotion.org/projects/mpc.jpg","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.machinesinmotion.org/assets/img/mim_logo_black.png"}},"url":"https://www.machinesinmotion.org/_projects/mpc.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.3.0/css/fontawesome.min.css" integrity="sha384-IfdMaxM7xApqzQmi9UKLIQPSX+440ganmZq+rMGyqDukniVtKl003KdPruUrtXtK" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha384-wi7fdJzLKizoWPKwP8EkF2Sjc0KPB17yM6hFIZBr5olCzdyJkgB0D89mhhqX+FPI" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans" integrity="sha384-WFY3j4Mz0NysE+uREZjbXop0EKpbaguTp4OC9Lv/cer+h3S9D/KCm+W4bGpZ6+Fa" crossorigin="anonymous">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    </head>
+    <body>
+<header>
+    <!-- Navigation bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+            <a class="navbar-brand" href="/">
+                <img style="float: center; height: 60px; padding-right: 5px;" src="/assets/img/mim_logo_black.png" alt="lab logo">
+            </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/people/">
+                        People
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/research/">
+                        Research
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/education/">
+                        Education
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/publications/">
+                        Publications
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/joining/">
+                        Joining
+                    </a>
+                </li>
+                
+                 
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+        <div class="container" style="padding-bottom: 100px">
+            <div class="container">
+            <h1 style="padding-bottom: 20px">Model-predictive control</h1>
+            <img src="/assets/img/projects/mpc.jpg" class="img-fluid float-md-start mx-auto d-block" alt="Model-predictive control illustration" style="width:350px; height:auto; padding-left:0px; padding-right:50px;">
+            <p>Computing a globally optimal control policy is generally intractable, especially when hard constraints need to be satisfied.
+Model-predictive control (MPC) circumvents the issue by instead re-computing at every control cycle an optimal control “trajectory”,
+ i.e. a sequence of optimal actions to be taken from the current state of the system.
+Hence, the controller needs to solve an optimization problem at each control cycle to find a command that optimizes 
+the future behavior of the robot.
+This approach enables the creation of very versatile and reactive behaviors. A simple change in the cost function
+defining the goal of the controller leads to a different behavior without the need for a new algorithm.
+We are also guaranteed that optimal actions are taken at every instant of time while ensuring constraint satisfaction.</p>
+
+<p>However, the use of MPC on real, complex robots, lead to important challenges, as the dynamics of complex robots is typically nonlinear and
+often non-smooth, which leads to non-convex optimization problems which need to be solved at a very high frequency.
+In this research focus, we tackle these issues to create generic algorithms for MPC that can be used on any types of robots.
+In particular:</p>
+<ol>
+  <li>We develop generic MPC algorithms that can be used with any types of robots</li>
+  <li>We design efficient solvers that exploit the structure of robotics problems and modern optimization techniques</li>
+  <li>We use machine learning to speed-up optimization</li>
+  <li>We demonstrate our algorithms on complex tasks with legged robots and manipulators</li>
+</ol>
+
+            </div>
+            <div class="container" style="padding-top: 50px; padding-left:0px">
+            
+            <div class="container">
+                <h2>Videos</h2>
+                <div class="row align-items-top justify-content-around">
+                    
+                    <div class="col-sm-12 col-md-6" style="padding-top: 20px; padding-bottom: 50px">
+                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>    <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/Oz5eYBGoiok" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6" style="padding-top: 20px; padding-bottom: 50px">
+                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>    <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/xzCn1nQiVPI" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6" style="padding-top: 20px; padding-bottom: 50px">
+                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>    <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/ZtyCJYsGf4U" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6" style="padding-top: 20px; padding-bottom: 50px">
+                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>    <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/EErwxOrCnnQ" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            </div>
+            <div class="bib_section" style="padding-left:0px">
+            <h2>Selected publications</h2>
+            <ol class="bibliography"><li><!-- <span id="Meduri_Shah_Viereck_Khadiv_Havoutis_Righetti_2023">[1]A. Meduri, P. Shah, J. Viereck, M. Khadiv, I. Havoutis, and L. Righetti, “BiConMP: A Nonlinear Model Predictive Control Framework for Whole Body Motion Planning,” <i>IEEE Transactions on Robotics</i>, pp. 1–18, 2023, doi: 10.1109/TRO.2022.3228390.</span>
+<br> -->
+
+
+A. 
+
+Meduri,
+
+
+
+P. 
+
+Shah,
+
+
+
+J. 
+
+Viereck,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+I. 
+
+Havoutis,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"BiConMP: A Nonlinear Model Predictive Control Framework for Whole Body Motion Planning,"
+
+
+
+    <i>IEEE Transactions on Robotics</i>,
+    
+    
+
+ pp. 1–18,
+
+ 2023.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Online planning of whole-body motions for legged robots is challenging due to the inherent nonlinearity in the robot dynamics. In this work, we propose a nonlinear model predictive control (MPC) framework, the BiConMP which can generate whole body trajectories online by efficiently exploiting the structure of the robot dynamics. BiConMP is used to generate various cyclic gaits on a real quadruped robot and its performance is evaluated on different terrain, countering unforeseen pushes, and transitioning online between different gaits. Furthermore, the ability of BiConMP to generate nontrivial acyclic whole-body dynamic motions on the robot is presented. The same approach is also used to generate various dynamic motions in MPC on a humanoid robot (Talos) and another quadruped robot (AnYmal) in simulation. Finally, an extensive empirical analysis on the effects of planning horizon and frequency on the nonlinear MPC framework is reported and discussed.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Meduri_Shah_Viereck_Khadiv_Havoutis_Righetti_2023,
+  title = {BiConMP: A Nonlinear Model Predictive Control Framework for Whole Body Motion Planning},
+  url = {https://arxiv.org/abs/2201.07601},
+  doi = {10.1109/TRO.2022.3228390},
+  journal = {IEEE Transactions on Robotics},
+  author = {Meduri, Avadesh and Shah, Paarth and Viereck, Julian and Khadiv, Majid and Havoutis, Ioannis and Righetti, Ludovic},
+  year = {2023},
+  pages = {1–18}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2201.07601">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Online planning of whole-body motions for legged robots is challenging due to the inherent nonlinearity in the robot dynamics. In this work, we propose a nonlinear model predictive control (MPC) framework, the BiConMP which can generate whole body trajectories online by efficiently exploiting the structure of the robot dynamics. BiConMP is used to generate various cyclic gaits on a real quadruped robot and its performance is evaluated on different terrain, countering unforeseen pushes, and transitioning online between different gaits. Furthermore, the ability of BiConMP to generate nontrivial acyclic whole-body dynamic motions on the robot is presented. The same approach is also used to generate various dynamic motions in MPC on a humanoid robot (Talos) and another quadruped robot (AnYmal) in simulation. Finally, an extensive empirical analysis on the effects of planning horizon and frequency on the nonlinear MPC framework is reported and discussed.</p>
+
+
+<pre>@article{Meduri_Shah_Viereck_Khadiv_Havoutis_Righetti_2023,
+  title = {BiConMP: A Nonlinear Model Predictive Control Framework for Whole Body Motion Planning},
+  url = {https://arxiv.org/abs/2201.07601},
+  doi = {10.1109/TRO.2022.3228390},
+  journal = {IEEE Transactions on Robotics},
+  author = {Meduri, Avadesh and Shah, Paarth and Viereck, Julian and Khadiv, Majid and Havoutis, Ioannis and Righetti, Ludovic},
+  year = {2023},
+  pages = {1–18}
+}
+</pre> --></li>
+<li><!-- <span id="Meduri_Zhu_Jordana_Righetti_2023">[2]A. Meduri, H. Zhu, A. Jordana, and L. Righetti, “MPC with Sensor-Based Online Cost Adaptation,” London, UK, May 2023, [Online]. Available at: http://arxiv.org/abs/2209.09451.</span>
+<br> -->
+
+
+A. 
+
+Meduri,
+
+
+
+H. 
+
+Zhu,
+
+
+
+A. 
+
+Jordana,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"MPC with Sensor-Based Online Cost Adaptation,"
+
+
+
+    in <i>2023 IEEE-RAS International Conference on Robotics and Automation (ICRA)</i>,
+
+
+ May,
+ 2023.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Model predictive control is a powerful tool to generate complex motions for robots. However, it often requires solving non-convex problems online to produce rich behaviors, which is computationally expensive and not always practical in real time. Additionally, direct integration of high dimensional sensor data (e.g. RGB-D images) in the feedback loop is challenging with current state-space methods. This paper aims to address both issues. It introduces a model predictive control scheme, where a neural network constantly updates the cost function of a quadratic program based on sensory inputs, aiming to minimize a general non-convex task loss without solving a non-convex problem online. By updating the cost, the robot is able to adapt to changes in the environment directly from sensor measurement without requiring a new cost design. Furthermore, since the quadratic program can be solved efﬁciently with hard constraints, a safe deployment on the robot is ensured. Experiments with a wide variety of reaching tasks on an industrial robot manipulator demonstrate that our method can efﬁciently solve complex non-convex problems with highdimensional visual sensory inputs, while still being robust to external disturbances.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Meduri_Zhu_Jordana_Righetti_2023,
+  address = {London, UK},
+  title = {MPC with Sensor-Based Online Cost Adaptation},
+  url = {http://arxiv.org/abs/2209.09451},
+  note = {arXiv:2209.09451 [cs]},
+  booktitle = {2023 IEEE-RAS International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Meduri, Avadesh and Zhu, Huaijiang and Jordana, Armand and Righetti, Ludovic},
+  year = {2023},
+  month = may
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="http://arxiv.org/abs/2209.09451">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Model predictive control is a powerful tool to generate complex motions for robots. However, it often requires solving non-convex problems online to produce rich behaviors, which is computationally expensive and not always practical in real time. Additionally, direct integration of high dimensional sensor data (e.g. RGB-D images) in the feedback loop is challenging with current state-space methods. This paper aims to address both issues. It introduces a model predictive control scheme, where a neural network constantly updates the cost function of a quadratic program based on sensory inputs, aiming to minimize a general non-convex task loss without solving a non-convex problem online. By updating the cost, the robot is able to adapt to changes in the environment directly from sensor measurement without requiring a new cost design. Furthermore, since the quadratic program can be solved efﬁciently with hard constraints, a safe deployment on the robot is ensured. Experiments with a wide variety of reaching tasks on an industrial robot manipulator demonstrate that our method can efﬁciently solve complex non-convex problems with highdimensional visual sensory inputs, while still being robust to external disturbances.</p>
+
+
+<pre>@inproceedings{Meduri_Zhu_Jordana_Righetti_2023,
+  address = {London, UK},
+  title = {MPC with Sensor-Based Online Cost Adaptation},
+  url = {http://arxiv.org/abs/2209.09451},
+  note = {arXiv:2209.09451 [cs]},
+  booktitle = {2023 IEEE-RAS International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Meduri, Avadesh and Zhu, Huaijiang and Jordana, Armand and Righetti, Ludovic},
+  year = {2023},
+  month = may
+}
+</pre> --></li>
+<li><!-- <span id="Kleff_Dantec_Saurel_Mansard_Righetti_2022">[3]S. Kleff, E. Dantec, G. Saurel, N. Mansard, and L. Righetti, “Introducing Force Feedback in Model Predictive Control,” Kyoto, Japan, Oct. 2022, doi: 10.1109/IROS47612.2022.9982003.</span>
+<br> -->
+
+
+S. 
+
+Kleff,
+
+
+
+E. 
+
+Dantec,
+
+
+
+G. 
+
+Saurel,
+
+
+
+N. 
+
+Mansard,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Introducing Force Feedback in Model Predictive Control,"
+
+
+
+    in <i>2022 IEEE/RSJ International Conference on Intelligent Robots and Systems</i>,
+
+
+ Oct,
+ 2022.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="In the literature about model predictive control (MPC), contact forces are planned rather than controlled. In this paper, we propose a novel paradigm to incorporate effort measurements into a predictive controller, hence allowing to control them by direct measurement feedback. We first demonstrate why the classical optimal control formulation, based on position and velocity state feedback, cannot handle direct feedback on force information. Following previous approaches in force control, we then propose to augment the classical formulations with a model of the robot actuation, which naturally allows to generate online trajectories that adapt to sensed position, velocity and torques. We propose a complete implementation of this idea on the upper part of a real humanoid robot, and show through hardware experiments that this new formulation incorporating effort feedback outperforms classical MPC in challenging tasks where physical interaction with the environment is crucial.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Kleff_Dantec_Saurel_Mansard_Righetti_2022,
+  address = {Kyoto, Japan},
+  title = {Introducing Force Feedback in Model Predictive Control},
+  url = {https://hal.archives-ouvertes.fr/hal-03594295/document},
+  doi = {10.1109/IROS47612.2022.9982003},
+  booktitle = {2022 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  publisher = {IEEE},
+  author = {Kleff, Sebastien and Dantec, Ewen and Saurel, Guilhem and Mansard, Nicolas and Righetti, Ludovic},
+  year = {2022},
+  month = oct
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://hal.archives-ouvertes.fr/hal-03594295/document">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>In the literature about model predictive control (MPC), contact forces are planned rather than controlled. In this paper, we propose a novel paradigm to incorporate effort measurements into a predictive controller, hence allowing to control them by direct measurement feedback. We first demonstrate why the classical optimal control formulation, based on position and velocity state feedback, cannot handle direct feedback on force information. Following previous approaches in force control, we then propose to augment the classical formulations with a model of the robot actuation, which naturally allows to generate online trajectories that adapt to sensed position, velocity and torques. We propose a complete implementation of this idea on the upper part of a real humanoid robot, and show through hardware experiments that this new formulation incorporating effort feedback outperforms classical MPC in challenging tasks where physical interaction with the environment is crucial.</p>
+
+
+<pre>@inproceedings{Kleff_Dantec_Saurel_Mansard_Righetti_2022,
+  address = {Kyoto, Japan},
+  title = {Introducing Force Feedback in Model Predictive Control},
+  url = {https://hal.archives-ouvertes.fr/hal-03594295/document},
+  doi = {10.1109/IROS47612.2022.9982003},
+  booktitle = {2022 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  publisher = {IEEE},
+  author = {Kleff, Sebastien and Dantec, Ewen and Saurel, Guilhem and Mansard, Nicolas and Righetti, Ludovic},
+  year = {2022},
+  month = oct
+}
+</pre> --></li>
+<li><!-- <span id="Kleff_Mansard_Righetti_2022">[4]S. Kleff, N. Mansard, and L. Righetti, “On the Derivation of the Contact Dynamics in Arbitrary Frames (Application to Polishing with Talos),” Okinawa, Japan, 2022, doi: 10.1109/Humanoids53995.2022.10000208.</span>
+<br> -->
+
+
+S. 
+
+Kleff,
+
+
+
+N. 
+
+Mansard,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"On the Derivation of the Contact Dynamics in Arbitrary Frames (Application to Polishing with Talos),"
+
+
+
+    in <i>IEEE-RAS International Conference on Humanoid Robots</i>,
+
+
+
+ 2022.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Contact dynamics relies on the simultaneous satisfaction of constraints at the robot body level and at the contact level. At both levels, various formulations can be chosen that all must lead to the same results, given the same hypothesis, hence the little importance of their details. Yet when using it in an optimal control problem, a particular formulation is often imposed by the task to be performed by the robot. In this paper, we detail the formulation of the contact quantities (force, movement) in an arbitrary frame imposed by the task. In that case, we will show that we are typically not interested in working in the local frame (attached to the robot contact point), nor in the world frame, but in a user-defined frame centered at the contact location with a fixed orientation in the world. The derivations can then be used for 6D, 3D or normal (pure-sliding) contact. We implemented the corresponding derivatives on top of the contact dynamics of Pinocchio in the optimal control solver Crocoddyl. In order to show that a unique formulation is able to handle several operational orientations, we achieved several surfacing tasks in model predictive control with the robot Talos.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Kleff_Mansard_Righetti_2022,
+  address = {Okinawa, Japan},
+  title = {On the Derivation of the Contact Dynamics in Arbitrary Frames (Application to Polishing with Talos)},
+  url = {https://hal.archives-ouvertes.fr/hal-03758989/},
+  doi = {10.1109/Humanoids53995.2022.10000208},
+  booktitle = {IEEE-RAS International Conference on Humanoid Robots},
+  publisher = {IEEE},
+  author = {Kleff, Sébastien and Mansard, Nicolas and Righetti, Ludovic},
+  year = {2022}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://hal.archives-ouvertes.fr/hal-03758989/">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Contact dynamics relies on the simultaneous satisfaction of constraints at the robot body level and at the contact level. At both levels, various formulations can be chosen that all must lead to the same results, given the same hypothesis, hence the little importance of their details. Yet when using it in an optimal control problem, a particular formulation is often imposed by the task to be performed by the robot. In this paper, we detail the formulation of the contact quantities (force, movement) in an arbitrary frame imposed by the task. In that case, we will show that we are typically not interested in working in the local frame (attached to the robot contact point), nor in the world frame, but in a user-defined frame centered at the contact location with a fixed orientation in the world. The derivations can then be used for 6D, 3D or normal (pure-sliding) contact. We implemented the corresponding derivatives on top of the contact dynamics of Pinocchio in the optimal control solver Crocoddyl. In order to show that a unique formulation is able to handle several operational orientations, we achieved several surfacing tasks in model predictive control with the robot Talos.</p>
+
+
+<pre>@inproceedings{Kleff_Mansard_Righetti_2022,
+  address = {Okinawa, Japan},
+  title = {On the Derivation of the Contact Dynamics in Arbitrary Frames (Application to Polishing with Talos)},
+  url = {https://hal.archives-ouvertes.fr/hal-03758989/},
+  doi = {10.1109/Humanoids53995.2022.10000208},
+  booktitle = {IEEE-RAS International Conference on Humanoid Robots},
+  publisher = {IEEE},
+  author = {Kleff, Sébastien and Mansard, Nicolas and Righetti, Ludovic},
+  year = {2022}
+}
+</pre> --></li>
+<li><!-- <span id="Viereck_Meduri_Righetti_2022">[5]J. Viereck, A. Meduri, and L. Righetti, “ValueNetQP: Learned one-step optimal control for legged locomotion,” in <i>Proceedings of The 4th Annual Learning for Dynamics and Control Conference</i>, Jun. 2022, vol. 168, pp. 931–942, [Online]. Available at: https://proceedings.mlr.press/v168/viereck22a.html.</span>
+<br> -->
+
+
+J. 
+
+Viereck,
+
+
+
+A. 
+
+Meduri,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"ValueNetQP: Learned one-step optimal control for legged locomotion,"
+
+
+
+    in <i>Proceedings of The 4th Annual Learning for Dynamics and Control Conference</i>,
+
+ pp. 931–942,
+ Jun,
+ 2022.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Optimal control is a successful approach to generate motions for complex robots, in particular for legged locomotion. However, these techniques are often too slow to run in real time for model predictive control or one needs to drastically simplify the dynamics model. In this work, we present a method to learn to predict the gradient and hessian of the problem value function, enabling fast resolution of the predictive control problem with a one-step quadratic program. In addition, our method is able to satisfy constraints like friction cones and unilateral constraints, which are important for high dynamics locomotion tasks. We demonstrate the capability of our method in simulation and on a real quadruped robot performing trotting and bounding motions.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Viereck_Meduri_Righetti_2022,
+  series = {Proceedings of Machine Learning Research},
+  title = {ValueNetQP: Learned one-step optimal control for legged locomotion},
+  volume = {168},
+  url = {https://proceedings.mlr.press/v168/viereck22a.html},
+  booktitle = {Proceedings of The 4th Annual Learning for Dynamics and Control Conference},
+  publisher = {PMLR},
+  author = {Viereck, Julian and Meduri, Avadesh and Righetti, Ludovic},
+  year = {2022},
+  month = jun,
+  pages = {931--942},
+  collection = {Proceedings of Machine Learning Research}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://proceedings.mlr.press/v168/viereck22a.html">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Optimal control is a successful approach to generate motions for complex robots, in particular for legged locomotion. However, these techniques are often too slow to run in real time for model predictive control or one needs to drastically simplify the dynamics model. In this work, we present a method to learn to predict the gradient and hessian of the problem value function, enabling fast resolution of the predictive control problem with a one-step quadratic program. In addition, our method is able to satisfy constraints like friction cones and unilateral constraints, which are important for high dynamics locomotion tasks. We demonstrate the capability of our method in simulation and on a real quadruped robot performing trotting and bounding motions.</p>
+
+
+<pre>@inproceedings{Viereck_Meduri_Righetti_2022,
+  series = {Proceedings of Machine Learning Research},
+  title = {ValueNetQP: Learned one-step optimal control for legged locomotion},
+  volume = {168},
+  url = {https://proceedings.mlr.press/v168/viereck22a.html},
+  booktitle = {Proceedings of The 4th Annual Learning for Dynamics and Control Conference},
+  publisher = {PMLR},
+  author = {Viereck, Julian and Meduri, Avadesh and Righetti, Ludovic},
+  year = {2022},
+  month = jun,
+  pages = {931--942},
+  collection = {Proceedings of Machine Learning Research}
+}
+</pre> --></li>
+<li><!-- <span id="Daneshmand_Khadiv_Grimminger_Righetti_2021">[6]E. Daneshmand, M. Khadiv, F. Grimminger, and L. Righetti, “Variable Horizon MPC with Swing Foot Dynamics for Bipedal Walking Control,” <i>IEEE Robotics and Automation Letters</i>, vol. 6, no. 2, pp. 2349–2356, Apr. 2021, doi: 10.1109/LRA.2021.3061381.</span>
+<br> -->
+
+
+E. 
+
+Daneshmand,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+F. 
+
+Grimminger,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Variable Horizon MPC with Swing Foot Dynamics for Bipedal Walking Control,"
+
+
+
+    <i>IEEE Robotics and Automation Letters</i>,
+     vol. 6,
+     no. 2,
+
+ pp. 2349–2356,
+ Apr,
+ 2021.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="In this paper, we present a novel two-level variable Horizon Model Predictive Control (VH-MPC) framework for bipedal locomotion. In this framework, the higher level computes the landing location and timing (horizon length) of the swing foot to stabilize the unstable part of the center of mass (CoM) dynamics, using feedback from the CoM states. The lower level takes into account the swing foot dynamics and generates dynamically consistent trajectories for landing at the desired time as close as possible to the desired location. To do that, we use a simplified model of the robot dynamics projected in swing foot space that takes into account joint torque constraints as well as the friction cone constraints of the stance foot. We show the effectiveness of our proposed control framework by implementing robust walking patterns on our torque-controlled and open-source biped robot, Bolt. We report extensive simulations and real robot experiments in the presence of various disturbances and uncertainties.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Daneshmand_Khadiv_Grimminger_Righetti_2021,
+  title = {Variable Horizon MPC with Swing Foot Dynamics for Bipedal Walking Control},
+  volume = {6},
+  url = {https://arxiv.org/abs/2010.08198},
+  doi = {10.1109/LRA.2021.3061381},
+  number = {2},
+  journal = {IEEE Robotics and Automation Letters},
+  author = {Daneshmand, E and Khadiv, M and Grimminger, F and Righetti, L},
+  year = {2021},
+  month = apr,
+  pages = {2349–2356}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2010.08198">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>In this paper, we present a novel two-level variable Horizon Model Predictive Control (VH-MPC) framework for bipedal locomotion. In this framework, the higher level computes the landing location and timing (horizon length) of the swing foot to stabilize the unstable part of the center of mass (CoM) dynamics, using feedback from the CoM states. The lower level takes into account the swing foot dynamics and generates dynamically consistent trajectories for landing at the desired time as close as possible to the desired location. To do that, we use a simplified model of the robot dynamics projected in swing foot space that takes into account joint torque constraints as well as the friction cone constraints of the stance foot. We show the effectiveness of our proposed control framework by implementing robust walking patterns on our torque-controlled and open-source biped robot, Bolt. We report extensive simulations and real robot experiments in the presence of various disturbances and uncertainties.</p>
+
+
+<pre>@article{Daneshmand_Khadiv_Grimminger_Righetti_2021,
+  title = {Variable Horizon MPC with Swing Foot Dynamics for Bipedal Walking Control},
+  volume = {6},
+  url = {https://arxiv.org/abs/2010.08198},
+  doi = {10.1109/LRA.2021.3061381},
+  number = {2},
+  journal = {IEEE Robotics and Automation Letters},
+  author = {Daneshmand, E and Khadiv, M and Grimminger, F and Righetti, L},
+  year = {2021},
+  month = apr,
+  pages = {2349–2356}
+}
+</pre> --></li>
+<li><!-- <span id="Kleff_Meduri_Budhiraja_Mansard_Righetti_2021">[7]S. Kleff, A. Meduri, R. Budhiraja, N. Mansard, and L. Righetti, “High-Frequency Nonlinear Model Predictive Control of a Manipulator,” Xi’an, China, May 2021, doi: 10.1109/ICRA48506.2021.9560990.</span>
+<br> -->
+
+
+S. 
+
+Kleff,
+
+
+
+A. 
+
+Meduri,
+
+
+
+R. 
+
+Budhiraja,
+
+
+
+N. 
+
+Mansard,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"High-Frequency Nonlinear Model Predictive Control of a Manipulator,"
+
+
+
+    in <i>2021 IEEE-RAS International Conference on Robotics and Automation (ICRA)</i>,
+
+
+ May,
+ 2021.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Model Predictive Control (MPC) promises to endow robots with enough reactivity to perform complex tasks in dynamic environments by frequently updating their motion plan based on measurements. Despite its appeal, it has seldom been deployed on real machines because of scaling constraints. This paper presents the ﬁrst hardware implementation of closed-loop nonlinear MPC on a 7-DoF torque-controlled robot. Our controller leverages a state-of-the art optimal control solver, namely Differential Dynamic Programming (DDP), in order to replan state and control trajectories at real-time rates (1kHz). In addition to this experimental proof of concept, an exhaustive performance analysis shows that our controller outperforms open-loop MPC on a rapid cyclic end-effector task. We also exhibit the importance of a sufﬁcient preview horizon and full robot dynamics through comparisons with inverse dynamics and kinematic optimization.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Kleff_Meduri_Budhiraja_Mansard_Righetti_2021,
+  address = {Xi’an, China},
+  title = {High-Frequency Nonlinear Model Predictive Control of a Manipulator},
+  url = {https://hal.archives-ouvertes.fr/hal-02993058/document},
+  doi = {10.1109/ICRA48506.2021.9560990},
+  booktitle = {2021 IEEE-RAS International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Kleff, Sebastien and Meduri, Avadesh and Budhiraja, Rohan and Mansard, Nicolas and Righetti, Ludovic},
+  year = {2021},
+  month = may
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://hal.archives-ouvertes.fr/hal-02993058/document">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Model Predictive Control (MPC) promises to endow robots with enough reactivity to perform complex tasks in dynamic environments by frequently updating their motion plan based on measurements. Despite its appeal, it has seldom been deployed on real machines because of scaling constraints. This paper presents the ﬁrst hardware implementation of closed-loop nonlinear MPC on a 7-DoF torque-controlled robot. Our controller leverages a state-of-the art optimal control solver, namely Differential Dynamic Programming (DDP), in order to replan state and control trajectories at real-time rates (1kHz). In addition to this experimental proof of concept, an exhaustive performance analysis shows that our controller outperforms open-loop MPC on a rapid cyclic end-effector task. We also exhibit the importance of a sufﬁcient preview horizon and full robot dynamics through comparisons with inverse dynamics and kinematic optimization.</p>
+
+
+<pre>@inproceedings{Kleff_Meduri_Budhiraja_Mansard_Righetti_2021,
+  address = {Xi’an, China},
+  title = {High-Frequency Nonlinear Model Predictive Control of a Manipulator},
+  url = {https://hal.archives-ouvertes.fr/hal-02993058/document},
+  doi = {10.1109/ICRA48506.2021.9560990},
+  booktitle = {2021 IEEE-RAS International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Kleff, Sebastien and Meduri, Avadesh and Budhiraja, Rohan and Mansard, Nicolas and Righetti, Ludovic},
+  year = {2021},
+  month = may
+}
+</pre> --></li></ol> 
+            </div>
+        </div>
+
+        
+<footer class="fixed-bottom">
+  <div class="container text-center">
+    &copy; Copyright 2025 Ludovic  Righetti. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with custom theme.
+
+    Last updated: November 03, 2025.
+  </div>
+</footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>

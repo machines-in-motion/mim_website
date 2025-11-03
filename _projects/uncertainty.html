@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+    <head>
+            <!-- Metadata, OpenGraph and Schema.org -->
+        <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ludovic Righetti" />
+
+<!-- SEO tags -->
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Reasoning about uncertainty | Machines in Motion Laboratory</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Reasoning about uncertainty" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is the website of the machines in motion laboratory, a robotics research laboratory at New York University headed by Ludovic Righetti. We conduct fundamental and applied robotics research with a particular focus on autonomous dexterous manipulation and legged locomotion. The website lists the labs activities, publications, group members and latest news." />
+<meta property="og:description" content="This is the website of the machines in motion laboratory, a robotics research laboratory at New York University headed by Ludovic Righetti. We conduct fundamental and applied robotics research with a particular focus on autonomous dexterous manipulation and legged locomotion. The website lists the labs activities, publications, group members and latest news." />
+<link rel="canonical" href="https://www.machinesinmotion.org/_projects/uncertainty.html" />
+<meta property="og:url" content="https://www.machinesinmotion.org/_projects/uncertainty.html" />
+<meta property="og:site_name" content="Machines in Motion Laboratory" />
+<meta property="og:image" content="https://www.machinesinmotion.org/projects/uncertainty.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.machinesinmotion.org/projects/uncertainty.jpg" />
+<meta property="twitter:title" content="Reasoning about uncertainty" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"This is the website of the machines in motion laboratory, a robotics research laboratory at New York University headed by Ludovic Righetti. We conduct fundamental and applied robotics research with a particular focus on autonomous dexterous manipulation and legged locomotion. The website lists the labs activities, publications, group members and latest news.","headline":"Reasoning about uncertainty","image":"https://www.machinesinmotion.org/projects/uncertainty.jpg","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.machinesinmotion.org/assets/img/mim_logo_black.png"}},"url":"https://www.machinesinmotion.org/_projects/uncertainty.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.3.0/css/fontawesome.min.css" integrity="sha384-IfdMaxM7xApqzQmi9UKLIQPSX+440ganmZq+rMGyqDukniVtKl003KdPruUrtXtK" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha384-wi7fdJzLKizoWPKwP8EkF2Sjc0KPB17yM6hFIZBr5olCzdyJkgB0D89mhhqX+FPI" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans" integrity="sha384-WFY3j4Mz0NysE+uREZjbXop0EKpbaguTp4OC9Lv/cer+h3S9D/KCm+W4bGpZ6+Fa" crossorigin="anonymous">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    </head>
+    <body>
+<header>
+    <!-- Navigation bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+            <a class="navbar-brand" href="/">
+                <img style="float: center; height: 60px; padding-right: 5px;" src="/assets/img/mim_logo_black.png" alt="lab logo">
+            </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/people/">
+                        People
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/research/">
+                        Research
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/education/">
+                        Education
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/publications/">
+                        Publications
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/joining/">
+                        Joining
+                    </a>
+                </li>
+                
+                 
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+        <div class="container" style="padding-bottom: 100px">
+            <div class="container">
+            <h1 style="padding-bottom: 20px">Reasoning about uncertainty</h1>
+            <img src="/assets/img/projects/uncertainty.jpg" class="img-fluid float-md-start mx-auto d-block" alt="Reasoning about uncertainty illustration" style="width:350px; height:auto; padding-left:0px; padding-right:50px;">
+            <p>Dynamic interaction of robotic systems, humans and animals with their environment
+through the creation of intermittent physical contacts is at the heart of any locomotion or manipulation behavior. Yet, the generation of robust behaviors with intermittent contacts in a dynamically changing unknown environment remains a fundamental challenge for robotics research. 
+We argue that our current inability to plan and control behaviors with
+contacts that are robust to external disturbances and environmental uncertainty constitute a major inhibitor to the deployment of robotics in unknown environments.</p>
+
+<p>In this line of research, we investigates algorithms that explicitly
+take into account uncertainty stemming from unmodeled dynamics or
+measurement noise. In particular, we design numerically efficient algorithms
+for output feedback risk-sensitive optimal control and stochastic model-predictive control. We apply these ideas to the computation of optimal movements and impedance profiles that are robust to physical interactions.</p>
+
+            </div>
+            <div class="container" style="padding-top: 50px; padding-left:0px">
+            
+            <div class="container">
+                <h2>Videos</h2>
+                <div class="row align-items-top justify-content-around">
+                    
+                    <div class="col-sm-12 col-md-6" style="padding-top: 20px; padding-bottom: 50px">
+                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>    <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/IZPyJZe7UDc" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            </div>
+            <div class="bib_section" style="padding-left:0px">
+            <h2>Selected publications</h2>
+            <ol class="bibliography"><li><!-- <span id="Gazar_Khadiv_Kleff_Del Prete_Righetti_2022">[1]A. Gazar, M. Khadiv, S. Kleff, A. Del Prete, and L. Righetti, “Nonlinear Stochastic Trajectory Optimization for Centroidal Momentum Motion Generation of Legged Robots,” Geneva, Switzerland, 2022, [Online]. Available at: http://arxiv.org/abs/2205.13264.</span>
+<br> -->
+
+
+A. 
+
+Gazar,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+S. 
+
+Kleff,
+
+
+
+A. 
+
+Del Prete,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Nonlinear Stochastic Trajectory Optimization for Centroidal Momentum Motion Generation of Legged Robots,"
+
+
+
+    in <i>International Symposium of Robotic Research</i>,
+
+
+
+ 2022.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Generation of robust trajectories for legged robots remains a challenging task due to the underlying nonlinear, hybrid and intrinsically unstable dynamics which needs to be stabilized through limited contact forces. Furthermore, disturbances arising from unmodelled contact interactions with the environment and model mismatches can hinder the quality of the planned trajectories leading to unsafe motions. In this work, we propose to use stochastic trajectory optimization for generating robust centroidal momentum trajectories to account for additive uncertainties on the model dynamics and parametric uncertainties on contact locations. Through an alternation between the robust centroidal and whole-body trajectory optimizations, we generate robust momentum trajectories while being consistent with the whole-body dynamics. We perform an extensive set of simulations subject to diﬀerent uncertainties on a quadruped robot showing that our stochastic trajectory optimization problem reduces the amount of foot slippage for diﬀerent gaits while achieving better performance over deterministic planning.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Gazar_Khadiv_Kleff_Del Prete_Righetti_2022,
+  address = {Geneva, Switzerland},
+  title = {Nonlinear Stochastic Trajectory Optimization for Centroidal Momentum Motion Generation of Legged Robots},
+  url = {http://arxiv.org/abs/2205.13264},
+  note = {arXiv:2205.13264 [cs]},
+  booktitle = {International Symposium of Robotic Research},
+  author = {Gazar, Ahmad and Khadiv, Majid and Kleff, Sébastien and Del Prete, Andrea and Righetti, Ludovic},
+  year = {2022}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="http://arxiv.org/abs/2205.13264">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Generation of robust trajectories for legged robots remains a challenging task due to the underlying nonlinear, hybrid and intrinsically unstable dynamics which needs to be stabilized through limited contact forces. Furthermore, disturbances arising from unmodelled contact interactions with the environment and model mismatches can hinder the quality of the planned trajectories leading to unsafe motions. In this work, we propose to use stochastic trajectory optimization for generating robust centroidal momentum trajectories to account for additive uncertainties on the model dynamics and parametric uncertainties on contact locations. Through an alternation between the robust centroidal and whole-body trajectory optimizations, we generate robust momentum trajectories while being consistent with the whole-body dynamics. We perform an extensive set of simulations subject to diﬀerent uncertainties on a quadruped robot showing that our stochastic trajectory optimization problem reduces the amount of foot slippage for diﬀerent gaits while achieving better performance over deterministic planning.</p>
+
+
+<pre>@inproceedings{Gazar_Khadiv_Kleff_Del Prete_Righetti_2022,
+  address = {Geneva, Switzerland},
+  title = {Nonlinear Stochastic Trajectory Optimization for Centroidal Momentum Motion Generation of Legged Robots},
+  url = {http://arxiv.org/abs/2205.13264},
+  note = {arXiv:2205.13264 [cs]},
+  booktitle = {International Symposium of Robotic Research},
+  author = {Gazar, Ahmad and Khadiv, Majid and Kleff, Sébastien and Del Prete, Andrea and Righetti, Ludovic},
+  year = {2022}
+}
+</pre> --></li>
+<li><!-- <span id="Hammoud_Jordana_Righetti_2022">[2]B. Hammoud, A. Jordana, and L. Righetti, “iRiSC: Iterative Risk Sensitive Control for Nonlinear Systems with Imperfect Observations,” 2022, [Online]. Available at: https://arxiv.org/abs/2110.06700.</span>
+<br> -->
+
+
+B. 
+
+Hammoud,
+
+
+
+A. 
+
+Jordana,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"iRiSC: Iterative Risk Sensitive Control for Nonlinear Systems with Imperfect Observations,"
+
+
+
+    in <i>American Control Conference</i>,
+
+
+
+ 2022.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="This work addresses the problem of risk-sensitive control for nonlinear systems with imperfect state observations, extending results for the linear case. In particular, we derive an algorithm that can compute local solutions with computational complexity similar to the iterative linear quadratic regulator algorithm. The proposed algorithm introduces feasibility gaps to allow the initialization with non-feasible trajectories. Moreover, an approximation for the expectation of the general nonlinear cost is proposed to enable an iterative line search solution to the planning problem. The optimal estimator is also derived along with the controls minimizing the general stochastic nonlinear cost. Finally extensive simulations are carried out to show the increased robustness the proposed framework provides when compared to the risk neutral iLQG counter part. To the authors’ best knowledge, this is the first algorithm that computes risk aware optimal controls that are a function of both the process noise and measurement uncertainty.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Hammoud_Jordana_Righetti_2022,
+  title = {iRiSC: Iterative Risk Sensitive Control for Nonlinear Systems with Imperfect Observations},
+  url = {https://arxiv.org/abs/2110.06700},
+  booktitle = {American Control Conference},
+  author = {Hammoud, Bilal and Jordana, Armand and Righetti, Ludovic},
+  year = {2022}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2110.06700">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>This work addresses the problem of risk-sensitive control for nonlinear systems with imperfect state observations, extending results for the linear case. In particular, we derive an algorithm that can compute local solutions with computational complexity similar to the iterative linear quadratic regulator algorithm. The proposed algorithm introduces feasibility gaps to allow the initialization with non-feasible trajectories. Moreover, an approximation for the expectation of the general nonlinear cost is proposed to enable an iterative line search solution to the planning problem. The optimal estimator is also derived along with the controls minimizing the general stochastic nonlinear cost. Finally extensive simulations are carried out to show the increased robustness the proposed framework provides when compared to the risk neutral iLQG counter part. To the authors’ best knowledge, this is the first algorithm that computes risk aware optimal controls that are a function of both the process noise and measurement uncertainty.</p>
+
+
+<pre>@inproceedings{Hammoud_Jordana_Righetti_2022,
+  title = {iRiSC: Iterative Risk Sensitive Control for Nonlinear Systems with Imperfect Observations},
+  url = {https://arxiv.org/abs/2110.06700},
+  booktitle = {American Control Conference},
+  author = {Hammoud, Bilal and Jordana, Armand and Righetti, Ludovic},
+  year = {2022}
+}
+</pre> --></li>
+<li><!-- <span id="Jordana_Hammoud_Righetti_2022">[3]A. Jordana, B. Hammoud, and L. Righetti, “Stagewise Newton Method for Dynamic Game Control with Imperfect State Observation,” <i>IEEE Control Systems Letters</i>, vol. 6, pp. 3241–3246, 2022, doi: 10.1109/LCSYS.2022.3184657.</span>
+<br> -->
+
+
+A. 
+
+Jordana,
+
+
+
+B. 
+
+Hammoud,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Stagewise Newton Method for Dynamic Game Control with Imperfect State Observation,"
+
+
+
+    <i>IEEE Control Systems Letters</i>,
+     vol. 6,
+    
+
+ pp. 3241–3246,
+
+ 2022.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="In this letter, we study dynamic game optimal control with imperfect state observations and introduce an iterative method to find a local Nash equilibrium. The algorithm consists of an iterative procedure combining a backward recursion similar to minimax differential dynamic programming and a forward recursion resembling a risksensitive Kalman smoother. A coupling equation renders the resulting control dependent on the estimation. In the end, the algorithm is equivalent to a Newton step but has linear complexity in the time horizon length. Furthermore, a merit function and a line search procedure are introduced to guarantee convergence of the iterative scheme. The resulting controller reasons about uncertainty by planning for the worst case disturbances. Lastly, the low computational cost of the proposed algorithm makes it a promising method to do output-feedback model predictive control on complex systems at high frequency. Numerical simulations on realistic robotic problems illustrate the risk-sensitive behavior of the resulting controller.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Jordana_Hammoud_Righetti_2022,
+  title = {Stagewise Newton Method for Dynamic Game Control with Imperfect State Observation},
+  volume = {6},
+  url = {https://arxiv.org/abs/2206.11341},
+  doi = {10.1109/LCSYS.2022.3184657},
+  journal = {IEEE Control Systems Letters},
+  author = {Jordana, Armand and Hammoud, Bilal and Righetti, Ludovic},
+  year = {2022},
+  pages = {3241–3246}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2206.11341">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>In this letter, we study dynamic game optimal control with imperfect state observations and introduce an iterative method to find a local Nash equilibrium. The algorithm consists of an iterative procedure combining a backward recursion similar to minimax differential dynamic programming and a forward recursion resembling a risksensitive Kalman smoother. A coupling equation renders the resulting control dependent on the estimation. In the end, the algorithm is equivalent to a Newton step but has linear complexity in the time horizon length. Furthermore, a merit function and a line search procedure are introduced to guarantee convergence of the iterative scheme. The resulting controller reasons about uncertainty by planning for the worst case disturbances. Lastly, the low computational cost of the proposed algorithm makes it a promising method to do output-feedback model predictive control on complex systems at high frequency. Numerical simulations on realistic robotic problems illustrate the risk-sensitive behavior of the resulting controller.</p>
+
+
+<pre>@article{Jordana_Hammoud_Righetti_2022,
+  title = {Stagewise Newton Method for Dynamic Game Control with Imperfect State Observation},
+  volume = {6},
+  url = {https://arxiv.org/abs/2206.11341},
+  doi = {10.1109/LCSYS.2022.3184657},
+  journal = {IEEE Control Systems Letters},
+  author = {Jordana, Armand and Hammoud, Bilal and Righetti, Ludovic},
+  year = {2022},
+  pages = {3241–3246}
+}
+</pre> --></li>
+<li><!-- <span id="Gazar_Khadiv_Del Prete_Righetti_2021">[4]A. Gazar, M. Khadiv, A. Del Prete, and L. Righetti, “Stochastic and Robust MPC for Bipedal Locomotion: A Comparative Study on Robustness and Performance,” Munich, Germany, Jul. 2021, doi: 10.1109/HUMANOIDS47582.2021.9555783.</span>
+<br> -->
+
+
+A. 
+
+Gazar,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+A. 
+
+Del Prete,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Stochastic and Robust MPC for Bipedal Locomotion: A Comparative Study on Robustness and Performance,"
+
+
+
+    in <i>2021 IEEE-RAS 18th International Conference on Humanoid Robots (Humanoids)</i>,
+
+
+ Jul,
+ 2021.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Linear Model Predictive Control (MPC) has been successfully used for generating feasible walking motions for humanoid robots. However, the effect of uncertainties on constraints satisfaction has only been studied using Robust MPC (RMPC) approaches, which account for the worst-case realization of bounded disturbances at each time instant. In this letter, we propose for the first time to use linear stochastic MPC (SMPC) to account for uncertainties in bipedal walking. We show that SMPC offers more flexibility to the user (or a high level decision maker) by tolerating small (user-defined) probabilities of constraint violation. Therefore, SMPC can be tuned to achieve a constraint satisfaction probability that is arbitrarily close to 100%, but without sacrificing performance as much as tube-based RMPC. We compare SMPC against RMPC in terms of robustness (constraint satisfaction) and performance (optimality). Our results highlight the benefits of SMPC and its interest for the robotics community as a powerful mathematical tool for dealing with uncertainties.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Gazar_Khadiv_Del Prete_Righetti_2021,
+  address = {Munich, Germany},
+  title = {Stochastic and Robust MPC for Bipedal Locomotion: A Comparative Study on Robustness and Performance},
+  url = {https://arxiv.org/abs/2005.07555},
+  doi = {10.1109/HUMANOIDS47582.2021.9555783},
+  booktitle = {2021 IEEE-RAS 18th International Conference on Humanoid Robots (Humanoids)},
+  publisher = {IEEE},
+  author = {Gazar, Ahmad and Khadiv, Majid and Del Prete, Andrea and Righetti, Ludovic},
+  year = {2021},
+  month = jul
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2005.07555">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Linear Model Predictive Control (MPC) has been successfully used for generating feasible walking motions for humanoid robots. However, the effect of uncertainties on constraints satisfaction has only been studied using Robust MPC (RMPC) approaches, which account for the worst-case realization of bounded disturbances at each time instant. In this letter, we propose for the first time to use linear stochastic MPC (SMPC) to account for uncertainties in bipedal walking. We show that SMPC offers more flexibility to the user (or a high level decision maker) by tolerating small (user-defined) probabilities of constraint violation. Therefore, SMPC can be tuned to achieve a constraint satisfaction probability that is arbitrarily close to 100%, but without sacrificing performance as much as tube-based RMPC. We compare SMPC against RMPC in terms of robustness (constraint satisfaction) and performance (optimality). Our results highlight the benefits of SMPC and its interest for the robotics community as a powerful mathematical tool for dealing with uncertainties.</p>
+
+
+<pre>@inproceedings{Gazar_Khadiv_Del Prete_Righetti_2021,
+  address = {Munich, Germany},
+  title = {Stochastic and Robust MPC for Bipedal Locomotion: A Comparative Study on Robustness and Performance},
+  url = {https://arxiv.org/abs/2005.07555},
+  doi = {10.1109/HUMANOIDS47582.2021.9555783},
+  booktitle = {2021 IEEE-RAS 18th International Conference on Humanoid Robots (Humanoids)},
+  publisher = {IEEE},
+  author = {Gazar, Ahmad and Khadiv, Majid and Del Prete, Andrea and Righetti, Ludovic},
+  year = {2021},
+  month = jul
+}
+</pre> --></li>
+<li><!-- <span id="Hammoud_Khadiv_Righetti_2021">[5]B. Hammoud, M. Khadiv, and L. Righetti, “Impedance Optimization for Uncertain Contact Interactions Through Risk Sensitive Optimal Control,” <i>IEEE Robotics and Automation Letters</i>, vol. 6, no. 3, pp. 4766–4773, Jul. 2021, doi: 10.1109/LRA.2021.3068951.</span>
+<br> -->
+
+
+B. 
+
+Hammoud,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Impedance Optimization for Uncertain Contact Interactions Through Risk Sensitive Optimal Control,"
+
+
+
+    <i>IEEE Robotics and Automation Letters</i>,
+     vol. 6,
+     no. 3,
+
+ pp. 4766–4773,
+ Jul,
+ 2021.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="This paper addresses the problem of computing optimal impedance schedules for legged locomotion tasks involving complex contact interactions. We formulate the problem of impedance regulation as a trade-off between disturbance rejection and measurement uncertainty. We extend a stochastic optimal control algorithm known as Risk Sensitive Control to take into account measurement uncertainty and propose a formal way to include such uncertainty for unknown contact locations. The approach can efficiently generate optimal state and control trajectories along with local feedback control gains, i.e. impedance schedules. Extensive simulations demonstrate the capabilities of the approach in generating meaningful stiffness and damping modulation patterns before and after contact interaction. For example, contact forces are reduced during early contacts, damping increases to anticipate a high impact event and tracking is automatically traded-off for increased stability. In particular, we show a significant improvement in performance during jumping and trotting tasks with a simulated quadruped robot.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Hammoud_Khadiv_Righetti_2021,
+  title = {Impedance Optimization for Uncertain Contact Interactions Through Risk Sensitive Optimal Control},
+  volume = {6},
+  url = {https://arxiv.org/abs/2011.04684},
+  doi = {10.1109/LRA.2021.3068951},
+  number = {3},
+  journal = {IEEE Robotics and Automation Letters},
+  author = {Hammoud, B. and Khadiv, M. and Righetti, L.},
+  year = {2021},
+  month = jul,
+  pages = {4766–4773}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2011.04684">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>This paper addresses the problem of computing optimal impedance schedules for legged locomotion tasks involving complex contact interactions. We formulate the problem of impedance regulation as a trade-off between disturbance rejection and measurement uncertainty. We extend a stochastic optimal control algorithm known as Risk Sensitive Control to take into account measurement uncertainty and propose a formal way to include such uncertainty for unknown contact locations. The approach can efficiently generate optimal state and control trajectories along with local feedback control gains, i.e. impedance schedules. Extensive simulations demonstrate the capabilities of the approach in generating meaningful stiffness and damping modulation patterns before and after contact interaction. For example, contact forces are reduced during early contacts, damping increases to anticipate a high impact event and tracking is automatically traded-off for increased stability. In particular, we show a significant improvement in performance during jumping and trotting tasks with a simulated quadruped robot.</p>
+
+
+<pre>@article{Hammoud_Khadiv_Righetti_2021,
+  title = {Impedance Optimization for Uncertain Contact Interactions Through Risk Sensitive Optimal Control},
+  volume = {6},
+  url = {https://arxiv.org/abs/2011.04684},
+  doi = {10.1109/LRA.2021.3068951},
+  number = {3},
+  journal = {IEEE Robotics and Automation Letters},
+  author = {Hammoud, B. and Khadiv, M. and Righetti, L.},
+  year = {2021},
+  month = jul,
+  pages = {4766–4773}
+}
+</pre> --></li></ol> 
+            </div>
+        </div>
+
+        
+<footer class="fixed-bottom">
+  <div class="container text-center">
+    &copy; Copyright 2025 Ludovic  Righetti. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with custom theme.
+
+    Last updated: November 03, 2025.
+  </div>
+</footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>

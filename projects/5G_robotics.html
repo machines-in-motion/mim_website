@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+    <head>
+            <!-- Metadata, OpenGraph and Schema.org -->
+        <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ludovic Righetti" />
+
+<!-- SEO tags -->
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>5G robotics | Machines in Motion Laboratory</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="5G robotics" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Wireless communication based on fifth generation (5G) technology offers unprecedented opportunities for the deployment of mobile robots in industry and consumer environments as it promises both high data bandwidth and low latency communication. This in turn enables mobile robots to remotely execute computationally demanding perception, planning and control algorithms instead of executing them locally. In particular, the low-latency guarantees of 5G wireless can potentially be leveraged to offload even fast millisecond-scale force and torque control loops to the edge. At the same time, the rich multi-modal sensor data that mobile robots use for visual perception can be transmitted over high data-rate 5G links. Further, 5G enables high-throughput robot-to-robot communication, enabling complex interactions between teams of robots. Finally, the directionality of mmWave signals enable to further use wireless as a sensor modality for localization purposes. Together, these new capabilities can enable mobile robots with improved autonomy, range, form-factor, cost and reliability." />
+<meta property="og:description" content="Wireless communication based on fifth generation (5G) technology offers unprecedented opportunities for the deployment of mobile robots in industry and consumer environments as it promises both high data bandwidth and low latency communication. This in turn enables mobile robots to remotely execute computationally demanding perception, planning and control algorithms instead of executing them locally. In particular, the low-latency guarantees of 5G wireless can potentially be leveraged to offload even fast millisecond-scale force and torque control loops to the edge. At the same time, the rich multi-modal sensor data that mobile robots use for visual perception can be transmitted over high data-rate 5G links. Further, 5G enables high-throughput robot-to-robot communication, enabling complex interactions between teams of robots. Finally, the directionality of mmWave signals enable to further use wireless as a sensor modality for localization purposes. Together, these new capabilities can enable mobile robots with improved autonomy, range, form-factor, cost and reliability." />
+<link rel="canonical" href="https://www.machinesinmotion.org/projects/5G_robotics.html" />
+<meta property="og:url" content="https://www.machinesinmotion.org/projects/5G_robotics.html" />
+<meta property="og:site_name" content="Machines in Motion Laboratory" />
+<meta property="og:image" content="https://www.machinesinmotion.org/projects/5Grobotics.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-11-03T16:00:05-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.machinesinmotion.org/projects/5Grobotics.jpg" />
+<meta property="twitter:title" content="5G robotics" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-11-03T16:00:05-05:00","datePublished":"2025-11-03T16:00:05-05:00","description":"Wireless communication based on fifth generation (5G) technology offers unprecedented opportunities for the deployment of mobile robots in industry and consumer environments as it promises both high data bandwidth and low latency communication. This in turn enables mobile robots to remotely execute computationally demanding perception, planning and control algorithms instead of executing them locally. In particular, the low-latency guarantees of 5G wireless can potentially be leveraged to offload even fast millisecond-scale force and torque control loops to the edge. At the same time, the rich multi-modal sensor data that mobile robots use for visual perception can be transmitted over high data-rate 5G links. Further, 5G enables high-throughput robot-to-robot communication, enabling complex interactions between teams of robots. Finally, the directionality of mmWave signals enable to further use wireless as a sensor modality for localization purposes. Together, these new capabilities can enable mobile robots with improved autonomy, range, form-factor, cost and reliability.","headline":"5G robotics","image":"https://www.machinesinmotion.org/projects/5Grobotics.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.machinesinmotion.org/projects/5G_robotics.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.machinesinmotion.org/assets/img/mim_logo_black.png"}},"url":"https://www.machinesinmotion.org/projects/5G_robotics.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.3.0/css/fontawesome.min.css" integrity="sha384-IfdMaxM7xApqzQmi9UKLIQPSX+440ganmZq+rMGyqDukniVtKl003KdPruUrtXtK" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha384-wi7fdJzLKizoWPKwP8EkF2Sjc0KPB17yM6hFIZBr5olCzdyJkgB0D89mhhqX+FPI" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans" integrity="sha384-WFY3j4Mz0NysE+uREZjbXop0EKpbaguTp4OC9Lv/cer+h3S9D/KCm+W4bGpZ6+Fa" crossorigin="anonymous">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    </head>
+    <body>
+<header>
+    <!-- Navigation bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+            <a class="navbar-brand" href="/">
+                <img style="float: center; height: 60px; padding-right: 5px;" src="/assets/img/mim_logo_black.png" alt="lab logo">
+            </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/people/">
+                        People
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/research/">
+                        Research
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/education/">
+                        Education
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/publications/">
+                        Publications
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/joining/">
+                        Joining
+                    </a>
+                </li>
+                
+                 
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+        <div class="container" style="padding-bottom: 100px">
+            <div class="container">
+            <h1 style="padding-bottom: 20px">5G robotics</h1>
+            <img src="/assets/img/projects/5Grobotics.jpg" class="img-fluid float-md-start mx-auto d-block" alt="5G robotics illustration" style="width:350px; height:auto; padding-left:0px; padding-right:50px;">
+            <p>Wireless communication based on fifth generation (5G) technology offers unprecedented opportunities for the deployment of mobile robots in industry and consumer environments as it promises both high data bandwidth and low latency communication. This in turn enables mobile robots to remotely execute computationally demanding perception, planning and control algorithms instead of executing them locally. In particular, the low-latency guarantees of 5G wireless can potentially be leveraged to offload even fast millisecond-scale force and torque control loops to the edge. At the same time, the rich multi-modal sensor data that mobile robots use for visual perception can be transmitted over high data-rate 5G links. Further, 5G enables high-throughput robot-to-robot communication, enabling complex interactions between teams of robots. Finally, the directionality of mmWave signals enable to further use wireless as a sensor modality for localization purposes. Together, these new capabilities can enable mobile robots with improved autonomy, range, form-factor, cost and reliability.</p>
+
+<p>In this line of research, in collaboration wireless and low-power computing experts Profs. <a href="https://engineering.nyu.edu/faculty/elza-erkip">E. Erkip</a>, <a href="https://engineering.nyu.edu/faculty/siddharth-garg">S. Garg</a>, and <a href="https://engineering.nyu.edu/faculty/sundeep-rangan">S. Rangan</a> at NYU,
+we investigate how 5G wireless can benefit robotics. In particular:</p>
+<ol>
+  <li>We investigate methods to offload the computation of optimization-based control loops to the network edge</li>
+  <li>We build <a href="https://github.com/huaijiangzhu/delay_robust_invdyn">robot simulations</a> and <a href="https://github.com/nyu-wireless/mmwRobotNav">datasets</a> that incorporate realistic 5G transmission modeling</li>
+  <li>We design algorithms to plan under wireless transmission uncertainty, e.g. to locate a wireless emitter or maximize reception coverage during robot movement</li>
+</ol>
+
+<p>This project is mainly supported by the National Science Foundation National Robotics Initiative grant <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1925079&amp;HistoricalAwards=false">NRI: FND: Action-perception loops over 5G millimeter wave wireless for cooperative manipulation</a>. Part of the work has also been partially supported by a grant from OPPO.</p>
+
+            </div>
+            <div class="container" style="padding-top: 50px; padding-left:0px">
+            
+            </div>
+            <div class="bib_section" style="padding-left:0px">
+            <h2>Selected publications</h2>
+            <ol class="bibliography"><li><!-- <span id="Pfeiffer_Jia_Yin_Veldanda_Hu_Trivedi_Zhang_Garg_Erkip_Rangan_et al._2023">[1]K. Pfeiffer <i>et al.</i>, “Path Planning Under Uncertainty to Localize mmWave Sources,” London, UK, May 2023, [Online]. Available at: http://arxiv.org/abs/2303.03739.</span>
+<br> -->
+
+
+K. 
+
+Pfeiffer,
+
+
+
+Y. 
+
+Jia,
+
+
+
+M. 
+
+Yin,
+
+
+
+A. 
+
+K. 
+
+Veldanda,
+
+
+
+Y. 
+
+Hu,
+
+
+
+A. 
+
+Trivedi,
+
+
+
+J. 
+
+Zhang,
+
+
+
+S. 
+
+Garg,
+
+
+
+E. 
+
+Erkip,
+
+
+
+S. 
+
+Rangan,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Path Planning Under Uncertainty to Localize mmWave Sources,"
+
+
+
+    in <i>2023 IEEE-RAS International Conference on Robotics and Automation (ICRA)</i>,
+
+
+ May,
+ 2023.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="In this paper, we study a navigation problem where a mobile robot needs to locate a mmWave wireless signal. Using the directionality properties of the signal, we propose an estimation and path planning algorithm that can efﬁciently navigate in cluttered indoor environments. We formulate Extended Kalman ﬁlters for emitter location estimation in cases where the signal is received in line-of-sight or after reﬂections. We then propose to plan motion trajectories based on belief-space dynamics in order to minimize the uncertainty of the position estimates. The associated non-linear optimization problem is solved by a state-of-the-art constrained iLQR solver. In particular, we propose a method that can handle a large number of obstacles (∼ 300) with reasonable computation times. We validate the approach in an extensive set of simulations. We show that our estimators can help increase navigation success rate and that planning to reduce estimation uncertainty can improve the overall task completion speed.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Pfeiffer_Jia_Yin_Veldanda_Hu_Trivedi_Zhang_Garg_Erkip_Rangan_et al._2023,
+  address = {London, UK},
+  title = {Path Planning Under Uncertainty to Localize mmWave Sources},
+  url = {http://arxiv.org/abs/2303.03739},
+  note = {arXiv:2303.03739 [cs]},
+  booktitle = {2023 IEEE-RAS International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Pfeiffer, Kai and Jia, Yuze and Yin, Mingsheng and Veldanda, Akshaj Kumar and Hu, Yaqi and Trivedi, Amee and Zhang, Jeff and Garg, Siddharth and Erkip, Elza and Rangan, Sundeep and Righetti, Ludovic},
+  year = {2023},
+  month = may
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="http://arxiv.org/abs/2303.03739">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>In this paper, we study a navigation problem where a mobile robot needs to locate a mmWave wireless signal. Using the directionality properties of the signal, we propose an estimation and path planning algorithm that can efﬁciently navigate in cluttered indoor environments. We formulate Extended Kalman ﬁlters for emitter location estimation in cases where the signal is received in line-of-sight or after reﬂections. We then propose to plan motion trajectories based on belief-space dynamics in order to minimize the uncertainty of the position estimates. The associated non-linear optimization problem is solved by a state-of-the-art constrained iLQR solver. In particular, we propose a method that can handle a large number of obstacles (∼ 300) with reasonable computation times. We validate the approach in an extensive set of simulations. We show that our estimators can help increase navigation success rate and that planning to reduce estimation uncertainty can improve the overall task completion speed.</p>
+
+
+<pre>@inproceedings{Pfeiffer_Jia_Yin_Veldanda_Hu_Trivedi_Zhang_Garg_Erkip_Rangan_et al._2023,
+  address = {London, UK},
+  title = {Path Planning Under Uncertainty to Localize mmWave Sources},
+  url = {http://arxiv.org/abs/2303.03739},
+  note = {arXiv:2303.03739 [cs]},
+  booktitle = {2023 IEEE-RAS International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Pfeiffer, Kai and Jia, Yuze and Yin, Mingsheng and Veldanda, Akshaj Kumar and Hu, Yaqi and Trivedi, Amee and Zhang, Jeff and Garg, Siddharth and Erkip, Elza and Rangan, Sundeep and Righetti, Ludovic},
+  year = {2023},
+  month = may
+}
+</pre> --></li>
+<li><!-- <span id="Yin_Veldanda_Trivedi_Zhang_Pfeiffer_Hu_Garg_Erkip_Righetti_Rangan_2022">[2]M. Yin <i>et al.</i>, “Millimeter Wave Wireless Assisted Robot Navigation with Link State Classification,” <i>IEEE Open Journal of the Communications Society</i>, vol. 3, pp. 493–507, 2022, doi: 10.1109/OJCOMS.2022.3155572.</span>
+<br> -->
+
+
+M. 
+
+Yin,
+
+
+
+A. 
+
+K. 
+
+Veldanda,
+
+
+
+A. 
+
+Trivedi,
+
+
+
+J. 
+
+Zhang,
+
+
+
+K. 
+
+Pfeiffer,
+
+
+
+Y. 
+
+Hu,
+
+
+
+S. 
+
+Garg,
+
+
+
+E. 
+
+Erkip,
+
+
+
+L. 
+
+Righetti,
+
+
+
+S. 
+
+Rangan,
+
+
+
+"Millimeter Wave Wireless Assisted Robot Navigation with Link State Classification,"
+
+
+
+    <i>IEEE Open Journal of the Communications Society</i>,
+     vol. 3,
+    
+
+ pp. 493–507,
+
+ 2022.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="The millimeter wave (mmWave) bands have attracted considerable attention for high precision localization applications due to the ability to capture high angular and temporal resolution measurements. This paper explores mmWave-based positioning for a target localization problem where a fixed target broadcasts mmWave signals and a mobile robotic agent attempts to capture the signals to locate and navigate to the target. A three-stage procedure is proposed: First, the mobile agent uses tensor decomposition methods to detect the multipath channel components and estimate their parameters. Second, a machine-learning trained classifier is then used to predict the link state, meaning if the strongest path is line-of-sight (LOS) or non-LOS (NLOS). For the NLOS case, the link state predictor also determines if the strongest path arrived via one or more reflections. Third, based on the link state, the agent either follows the estimated angles or uses computer vision or other sensor to explore and map the environment. The method is demonstrated on a large dataset of indoor environments supplemented with ray tracing to simulate the wireless propagation. The path estimation and link state classification are also integrated into a state-of-the-art neural simultaneous localization and mapping (SLAM) module to augment camera and LIDAR-based navigation. It is shown that the link state classifier can successfully generalize to completely new environments outside the training set. In addition, the neural-SLAM module with the wireless path estimation and link state classifier provides rapid navigation to the target, close to a baseline that knows the target location.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Yin_Veldanda_Trivedi_Zhang_Pfeiffer_Hu_Garg_Erkip_Righetti_Rangan_2022,
+  title = {Millimeter Wave Wireless Assisted Robot Navigation with Link State Classification},
+  volume = {3},
+  url = {https://arxiv.org/abs/2110.14789},
+  doi = {10.1109/OJCOMS.2022.3155572},
+  journal = {IEEE Open Journal of the Communications Society},
+  author = {Yin, Mingsheng and Veldanda, Akshaj Kumar and Trivedi, Amee and Zhang, Jeff and Pfeiffer, Kai and Hu, Yaqi and Garg, Siddharth and Erkip, Elza and Righetti, Ludovic and Rangan, Sundeep},
+  year = {2022},
+  pages = {493–507}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2110.14789">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>The millimeter wave (mmWave) bands have attracted considerable attention for high precision localization applications due to the ability to capture high angular and temporal resolution measurements. This paper explores mmWave-based positioning for a target localization problem where a fixed target broadcasts mmWave signals and a mobile robotic agent attempts to capture the signals to locate and navigate to the target. A three-stage procedure is proposed: First, the mobile agent uses tensor decomposition methods to detect the multipath channel components and estimate their parameters. Second, a machine-learning trained classifier is then used to predict the link state, meaning if the strongest path is line-of-sight (LOS) or non-LOS (NLOS). For the NLOS case, the link state predictor also determines if the strongest path arrived via one or more reflections. Third, based on the link state, the agent either follows the estimated angles or uses computer vision or other sensor to explore and map the environment. The method is demonstrated on a large dataset of indoor environments supplemented with ray tracing to simulate the wireless propagation. The path estimation and link state classification are also integrated into a state-of-the-art neural simultaneous localization and mapping (SLAM) module to augment camera and LIDAR-based navigation. It is shown that the link state classifier can successfully generalize to completely new environments outside the training set. In addition, the neural-SLAM module with the wireless path estimation and link state classifier provides rapid navigation to the target, close to a baseline that knows the target location.</p>
+
+
+<pre>@article{Yin_Veldanda_Trivedi_Zhang_Pfeiffer_Hu_Garg_Erkip_Righetti_Rangan_2022,
+  title = {Millimeter Wave Wireless Assisted Robot Navigation with Link State Classification},
+  volume = {3},
+  url = {https://arxiv.org/abs/2110.14789},
+  doi = {10.1109/OJCOMS.2022.3155572},
+  journal = {IEEE Open Journal of the Communications Society},
+  author = {Yin, Mingsheng and Veldanda, Akshaj Kumar and Trivedi, Amee and Zhang, Jeff and Pfeiffer, Kai and Hu, Yaqi and Garg, Siddharth and Erkip, Elza and Righetti, Ludovic and Rangan, Sundeep},
+  year = {2022},
+  pages = {493–507}
+}
+</pre> --></li>
+<li><!-- <span id="Zhu_Sharma_Pfeiffer_Mezzavilla_Shen_Rangan_Righetti_2020">[3]H. Zhu <i>et al.</i>, “Enabling Remote Whole-Body Control with 5G Edge Computing,” Las Vegas, Oct. 2020, doi: 10.1109/IROS45743.2020.9341113.</span>
+<br> -->
+
+
+H. 
+
+Zhu,
+
+
+
+M. 
+
+Sharma,
+
+
+
+K. 
+
+Pfeiffer,
+
+
+
+M. 
+
+Mezzavilla,
+
+
+
+J. 
+
+Shen,
+
+
+
+S. 
+
+Rangan,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Enabling Remote Whole-Body Control with 5G Edge Computing,"
+
+
+
+    in <i>2020 IEEE/RSJ International Conference on Intelligent Robots and Systems</i>,
+
+
+ Oct,
+ 2020.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Real-world applications require light-weight, energy-efficient, fully autonomous robots. Yet, increasing autonomy is oftentimes synonymous with escalating computational requirements. It might thus be desirable to offload intensive computation–not only sensing and planning, but also low-level whole-body control–to remote servers in order to reduce on-board computational needs. Fifth Generation (5G) wireless cellular technology, with its low latency and high bandwidth capabilities, has the potential to unlock cloud-based high performance control of complex robots. However, state-of-the-art control algorithms for legged robots can only tolerate very low control delays, which even ultra-low latency 5G edge computing can sometimes fail to achieve. In this work, we investigate the problem of cloud-based whole-body control of legged robots over a 5G link. We propose a novel approach that consists of a standard optimization-based controller on the network edge and a local linear, approximately optimal controller that significantly reduces on-board computational needs while increasing robustness to delay and possible loss of communication. Simulation experiments on humanoid balancing and walking tasks that includes a realistic 5G communication model demonstrate significant improvement of the reliability of robot locomotion under jitter and delays likely to experienced in 5G wireless links.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Zhu_Sharma_Pfeiffer_Mezzavilla_Shen_Rangan_Righetti_2020,
+  address = {Las Vegas},
+  title = {Enabling Remote Whole-Body Control with 5G Edge Computing},
+  url = {https://arxiv.org/abs/2008.08243},
+  doi = {10.1109/IROS45743.2020.9341113},
+  booktitle = {2020 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  publisher = {IEEE},
+  author = {Zhu, H and Sharma, M and Pfeiffer, K and Mezzavilla, M and Shen, J and Rangan, S and Righetti, L},
+  year = {2020},
+  month = oct
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2008.08243">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Real-world applications require light-weight, energy-efficient, fully autonomous robots. Yet, increasing autonomy is oftentimes synonymous with escalating computational requirements. It might thus be desirable to offload intensive computation–not only sensing and planning, but also low-level whole-body control–to remote servers in order to reduce on-board computational needs. Fifth Generation (5G) wireless cellular technology, with its low latency and high bandwidth capabilities, has the potential to unlock cloud-based high performance control of complex robots. However, state-of-the-art control algorithms for legged robots can only tolerate very low control delays, which even ultra-low latency 5G edge computing can sometimes fail to achieve. In this work, we investigate the problem of cloud-based whole-body control of legged robots over a 5G link. We propose a novel approach that consists of a standard optimization-based controller on the network edge and a local linear, approximately optimal controller that significantly reduces on-board computational needs while increasing robustness to delay and possible loss of communication. Simulation experiments on humanoid balancing and walking tasks that includes a realistic 5G communication model demonstrate significant improvement of the reliability of robot locomotion under jitter and delays likely to experienced in 5G wireless links.</p>
+
+
+<pre>@inproceedings{Zhu_Sharma_Pfeiffer_Mezzavilla_Shen_Rangan_Righetti_2020,
+  address = {Las Vegas},
+  title = {Enabling Remote Whole-Body Control with 5G Edge Computing},
+  url = {https://arxiv.org/abs/2008.08243},
+  doi = {10.1109/IROS45743.2020.9341113},
+  booktitle = {2020 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  publisher = {IEEE},
+  author = {Zhu, H and Sharma, M and Pfeiffer, K and Mezzavilla, M and Shen, J and Rangan, S and Righetti, L},
+  year = {2020},
+  month = oct
+}
+</pre> --></li></ol> 
+            </div>
+        </div>
+
+        
+<footer class="fixed-bottom">
+  <div class="container text-center">
+    &copy; Copyright 2025 Ludovic  Righetti. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with custom theme.
+
+    Last updated: November 03, 2025.
+  </div>
+</footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>

@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en">
+    <head>
+            <!-- Metadata, OpenGraph and Schema.org -->
+        <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ludovic Righetti" />
+
+<!-- SEO tags -->
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Robotic manipulation | Machines in Motion Laboratory</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Robotic manipulation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="For robots to be truly useful in human environments, they need to be able to grap and manipulate objects and even use tools. Ideally, they should be able to handle new objects, new tools and be able to quickly learn new manipulation skills when necessary, either through human demonstration or through trial and error. Towards this goal, we design control, planning, perception and learning algorithms toward this goal. We further build complete manipulation systems capable of robustly achieving complex manipulation tasks." />
+<meta property="og:description" content="For robots to be truly useful in human environments, they need to be able to grap and manipulate objects and even use tools. Ideally, they should be able to handle new objects, new tools and be able to quickly learn new manipulation skills when necessary, either through human demonstration or through trial and error. Towards this goal, we design control, planning, perception and learning algorithms toward this goal. We further build complete manipulation systems capable of robustly achieving complex manipulation tasks." />
+<link rel="canonical" href="https://www.machinesinmotion.org/projects/manipulation.html" />
+<meta property="og:url" content="https://www.machinesinmotion.org/projects/manipulation.html" />
+<meta property="og:site_name" content="Machines in Motion Laboratory" />
+<meta property="og:image" content="https://www.machinesinmotion.org/projects/manipulation.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-11-03T16:00:05-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.machinesinmotion.org/projects/manipulation.jpg" />
+<meta property="twitter:title" content="Robotic manipulation" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-11-03T16:00:05-05:00","datePublished":"2025-11-03T16:00:05-05:00","description":"For robots to be truly useful in human environments, they need to be able to grap and manipulate objects and even use tools. Ideally, they should be able to handle new objects, new tools and be able to quickly learn new manipulation skills when necessary, either through human demonstration or through trial and error. Towards this goal, we design control, planning, perception and learning algorithms toward this goal. We further build complete manipulation systems capable of robustly achieving complex manipulation tasks.","headline":"Robotic manipulation","image":"https://www.machinesinmotion.org/projects/manipulation.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.machinesinmotion.org/projects/manipulation.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.machinesinmotion.org/assets/img/mim_logo_black.png"}},"url":"https://www.machinesinmotion.org/projects/manipulation.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.3.0/css/fontawesome.min.css" integrity="sha384-IfdMaxM7xApqzQmi9UKLIQPSX+440ganmZq+rMGyqDukniVtKl003KdPruUrtXtK" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha384-wi7fdJzLKizoWPKwP8EkF2Sjc0KPB17yM6hFIZBr5olCzdyJkgB0D89mhhqX+FPI" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans" integrity="sha384-WFY3j4Mz0NysE+uREZjbXop0EKpbaguTp4OC9Lv/cer+h3S9D/KCm+W4bGpZ6+Fa" crossorigin="anonymous">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    </head>
+    <body>
+<header>
+    <!-- Navigation bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+            <a class="navbar-brand" href="/">
+                <img style="float: center; height: 60px; padding-right: 5px;" src="/assets/img/mim_logo_black.png" alt="lab logo">
+            </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/people/">
+                        People
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/research/">
+                        Research
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/education/">
+                        Education
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/publications/">
+                        Publications
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/joining/">
+                        Joining
+                    </a>
+                </li>
+                
+                 
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+        <div class="container" style="padding-bottom: 100px">
+            <div class="container">
+            <h1 style="padding-bottom: 20px">Robotic manipulation</h1>
+            <img src="/assets/img/projects/manipulation.jpg" class="img-fluid float-md-start mx-auto d-block" alt="Robotic manipulation illustration" style="width:350px; height:auto; padding-left:0px; padding-right:50px;">
+            <p>For robots to be truly useful in human environments, they need to be able to grap and manipulate objects and even use tools. Ideally, they should be able to handle
+new objects, new tools and be able to quickly learn new manipulation skills
+when necessary, either through human demonstration or through trial and error.
+Towards this goal, we design control, planning, perception and learning algorithms toward this goal.
+We further build complete manipulation systems capable of robustly achieving complex manipulation tasks.
+<br /><br /><br /></p>
+
+            </div>
+            <div class="container" style="padding-top: 50px; padding-left:0px">
+            
+            <div class="container">
+                <h2>Videos</h2>
+                <div class="row align-items-top justify-content-around">
+                    
+                    <div class="col-sm-12 col-md-6" style="padding-top: 20px; padding-bottom: 50px">
+                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>    <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/2Dc3LD7mfnM" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            </div>
+            <div class="bib_section" style="padding-left:0px">
+            <h2>Selected publications</h2>
+            <ol class="bibliography"><li><!-- <span id="Zhu_Meduri_Righetti_2023">[1]H. Zhu, A. Meduri, and L. Righetti, “Efficient Object Manipulation Planning with Monte Carlo Tree Search,” no. arXiv:2206.09023, Mar. 2023, [Online]. Available at: http://arxiv.org/abs/2206.09023.</span>
+<br> -->
+
+
+H. 
+
+Zhu,
+
+
+
+A. 
+
+Meduri,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Efficient Object Manipulation Planning with Monte Carlo Tree Search,"
+
+
+
+    <i></i>,
+    
+     no. arXiv:2206.09023,
+
+
+ Mar,
+ 2023.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="This paper presents an efﬁcient approach to object manipulation planning using Monte Carlo Tree Search (MCTS) to ﬁnd contact sequences and an efﬁcient ADMMbased trajectory optimization algorithm to evaluate the dynamic feasibility of candidate contact sequences. To accelerate MCTS, we propose a methodology to learn a goal-conditioned policy-value network and a feasibility classiﬁer to direct the search towards promising nodes. Further, manipulation-speciﬁc heuristics enable to drastically reduce the search space. Systematic object manipulation experiments in a physics simulator and on real hardware demonstrate the efﬁciency of our approach. In particular, our approach scales favorably for long manipulation sequences thanks to the learned policyvalue network, signiﬁcantly improving planning success rate. All source code including the baseline can be found at https: //hzhu.io/contact-mcts.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Zhu_Meduri_Righetti_2023,
+  title = {Efficient Object Manipulation Planning with Monte Carlo Tree Search},
+  url = {http://arxiv.org/abs/2206.09023},
+  note = {preprint},
+  number = {arXiv:2206.09023},
+  publisher = {arXiv},
+  author = {Zhu, Huaijiang and Meduri, Avadesh and Righetti, Ludovic},
+  year = {2023},
+  month = mar
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="http://arxiv.org/abs/2206.09023">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>This paper presents an efﬁcient approach to object manipulation planning using Monte Carlo Tree Search (MCTS) to ﬁnd contact sequences and an efﬁcient ADMMbased trajectory optimization algorithm to evaluate the dynamic feasibility of candidate contact sequences. To accelerate MCTS, we propose a methodology to learn a goal-conditioned policy-value network and a feasibility classiﬁer to direct the search towards promising nodes. Further, manipulation-speciﬁc heuristics enable to drastically reduce the search space. Systematic object manipulation experiments in a physics simulator and on real hardware demonstrate the efﬁciency of our approach. In particular, our approach scales favorably for long manipulation sequences thanks to the learned policyvalue network, signiﬁcantly improving planning success rate. All source code including the baseline can be found at https: //hzhu.io/contact-mcts.</p>
+
+
+<pre>@article{Zhu_Meduri_Righetti_2023,
+  title = {Efficient Object Manipulation Planning with Monte Carlo Tree Search},
+  url = {http://arxiv.org/abs/2206.09023},
+  note = {preprint},
+  number = {arXiv:2206.09023},
+  publisher = {arXiv},
+  author = {Zhu, Huaijiang and Meduri, Avadesh and Righetti, Ludovic},
+  year = {2023},
+  month = mar
+}
+</pre> --></li>
+<li><!-- <span id="Meduri_Zhu_Jordana_Righetti_2023">[2]A. Meduri, H. Zhu, A. Jordana, and L. Righetti, “MPC with Sensor-Based Online Cost Adaptation,” London, UK, May 2023, [Online]. Available at: http://arxiv.org/abs/2209.09451.</span>
+<br> -->
+
+
+A. 
+
+Meduri,
+
+
+
+H. 
+
+Zhu,
+
+
+
+A. 
+
+Jordana,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"MPC with Sensor-Based Online Cost Adaptation,"
+
+
+
+    in <i>2023 IEEE-RAS International Conference on Robotics and Automation (ICRA)</i>,
+
+
+ May,
+ 2023.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Model predictive control is a powerful tool to generate complex motions for robots. However, it often requires solving non-convex problems online to produce rich behaviors, which is computationally expensive and not always practical in real time. Additionally, direct integration of high dimensional sensor data (e.g. RGB-D images) in the feedback loop is challenging with current state-space methods. This paper aims to address both issues. It introduces a model predictive control scheme, where a neural network constantly updates the cost function of a quadratic program based on sensory inputs, aiming to minimize a general non-convex task loss without solving a non-convex problem online. By updating the cost, the robot is able to adapt to changes in the environment directly from sensor measurement without requiring a new cost design. Furthermore, since the quadratic program can be solved efﬁciently with hard constraints, a safe deployment on the robot is ensured. Experiments with a wide variety of reaching tasks on an industrial robot manipulator demonstrate that our method can efﬁciently solve complex non-convex problems with highdimensional visual sensory inputs, while still being robust to external disturbances.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Meduri_Zhu_Jordana_Righetti_2023,
+  address = {London, UK},
+  title = {MPC with Sensor-Based Online Cost Adaptation},
+  url = {http://arxiv.org/abs/2209.09451},
+  note = {arXiv:2209.09451 [cs]},
+  booktitle = {2023 IEEE-RAS International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Meduri, Avadesh and Zhu, Huaijiang and Jordana, Armand and Righetti, Ludovic},
+  year = {2023},
+  month = may
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="http://arxiv.org/abs/2209.09451">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Model predictive control is a powerful tool to generate complex motions for robots. However, it often requires solving non-convex problems online to produce rich behaviors, which is computationally expensive and not always practical in real time. Additionally, direct integration of high dimensional sensor data (e.g. RGB-D images) in the feedback loop is challenging with current state-space methods. This paper aims to address both issues. It introduces a model predictive control scheme, where a neural network constantly updates the cost function of a quadratic program based on sensory inputs, aiming to minimize a general non-convex task loss without solving a non-convex problem online. By updating the cost, the robot is able to adapt to changes in the environment directly from sensor measurement without requiring a new cost design. Furthermore, since the quadratic program can be solved efﬁciently with hard constraints, a safe deployment on the robot is ensured. Experiments with a wide variety of reaching tasks on an industrial robot manipulator demonstrate that our method can efﬁciently solve complex non-convex problems with highdimensional visual sensory inputs, while still being robust to external disturbances.</p>
+
+
+<pre>@inproceedings{Meduri_Zhu_Jordana_Righetti_2023,
+  address = {London, UK},
+  title = {MPC with Sensor-Based Online Cost Adaptation},
+  url = {http://arxiv.org/abs/2209.09451},
+  note = {arXiv:2209.09451 [cs]},
+  booktitle = {2023 IEEE-RAS International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Meduri, Avadesh and Zhu, Huaijiang and Jordana, Armand and Righetti, Ludovic},
+  year = {2023},
+  month = may
+}
+</pre> --></li>
+<li><!-- <span id="Wüthrich_Widmaier_Grimminger_Akpo_Joshi_Agrawal_Hammoud_Khadiv_Bogdanovic_Berenz_et al._2020">[3]M. Wüthrich <i>et al.</i>, “TriFinger: An Open-Source Robot for Learning Dexterity,” 2020, [Online]. Available at: https://arxiv.org/abs/2008.03596.</span>
+<br> -->
+
+
+M. 
+
+Wüthrich,
+
+
+
+F. 
+
+Widmaier,
+
+
+
+F. 
+
+Grimminger,
+
+
+
+J. 
+
+Akpo,
+
+
+
+S. 
+
+Joshi,
+
+
+
+V. 
+
+Agrawal,
+
+
+
+B. 
+
+Hammoud,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+M. 
+
+Bogdanovic,
+
+
+
+V. 
+
+Berenz,
+
+
+
+J. 
+
+Viereck,
+
+
+
+M. 
+
+Naveau,
+
+
+
+L. 
+
+Righetti,
+
+
+
+B. 
+
+Schölkopf,
+
+
+
+S. 
+
+Bauer,
+
+
+
+"TriFinger: An Open-Source Robot for Learning Dexterity,"
+
+
+
+    in <i>Proceedings of the Conference on Robot Learning</i>,
+
+
+
+ 2020.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Dexterous object manipulation remains an open problem in robotics, despite the rapid progress in machine learning during the past decade. We argue that a hindrance is the high cost of experimentation on real systems, in terms of both time and money. We address this problem by proposing an open-source robotic platform which can safely operate without human supervision. The hardware is inexpensive (about SI5000[$]) yet highly dynamic, robust, and capable of complex interaction with external objects. The software operates at 1-kilohertz and performs safety checks to prevent the hardware from breaking. The easy-to-use front-end (in C++ and Python) is suitable for real-time control as well as deep reinforcement learning. In addition, the software framework is largely robot-agnostic and can hence be used independently of the hardware proposed herein. Finally, we illustrate the potential of the proposed platform through a number of experiments, including real-time optimal control, deep reinforcement learning from scratch, throwing, and writing.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Wüthrich_Widmaier_Grimminger_Akpo_Joshi_Agrawal_Hammoud_Khadiv_Bogdanovic_Berenz_et al._2020,
+  title = {TriFinger: An Open-Source Robot for Learning Dexterity},
+  archivelocation = {arXiv:2008.03596},
+  url = {https://arxiv.org/abs/2008.03596},
+  booktitle = {Proceedings of the Conference on Robot Learning},
+  author = {Wüthrich, Manuel and Widmaier, Felix and Grimminger, Felix and Akpo, Joel and Joshi, Shruti and Agrawal, Vaibhav and Hammoud, Bilal and Khadiv, Majid and Bogdanovic, Miroslav and Berenz, Vincent and Viereck, Julian and Naveau, Maximilien and Righetti, Ludovic and Schölkopf, Bernhard and Bauer, Stefan},
+  year = {2020}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2008.03596">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Dexterous object manipulation remains an open problem in robotics, despite the rapid progress in machine learning during the past decade. We argue that a hindrance is the high cost of experimentation on real systems, in terms of both time and money. We address this problem by proposing an open-source robotic platform which can safely operate without human supervision. The hardware is inexpensive (about SI5000[$]) yet highly dynamic, robust, and capable of complex interaction with external objects. The software operates at 1-kilohertz and performs safety checks to prevent the hardware from breaking. The easy-to-use front-end (in C++ and Python) is suitable for real-time control as well as deep reinforcement learning. In addition, the software framework is largely robot-agnostic and can hence be used independently of the hardware proposed herein. Finally, we illustrate the potential of the proposed platform through a number of experiments, including real-time optimal control, deep reinforcement learning from scratch, throwing, and writing.</p>
+
+
+<pre>@inproceedings{Wüthrich_Widmaier_Grimminger_Akpo_Joshi_Agrawal_Hammoud_Khadiv_Bogdanovic_Berenz_et al._2020,
+  title = {TriFinger: An Open-Source Robot for Learning Dexterity},
+  archivelocation = {arXiv:2008.03596},
+  url = {https://arxiv.org/abs/2008.03596},
+  booktitle = {Proceedings of the Conference on Robot Learning},
+  author = {Wüthrich, Manuel and Widmaier, Felix and Grimminger, Felix and Akpo, Joel and Joshi, Shruti and Agrawal, Vaibhav and Hammoud, Bilal and Khadiv, Majid and Bogdanovic, Miroslav and Berenz, Vincent and Viereck, Julian and Naveau, Maximilien and Righetti, Ludovic and Schölkopf, Bernhard and Bauer, Stefan},
+  year = {2020}
+}
+</pre> --></li>
+<li><!-- <span id="Merzic_Bogdanovic_Kappler_Righetti_Bohg_2019">[4]H. Merzic, M. Bogdanovic, D. Kappler, L. Righetti, and J. Bohg, “Leveraging Contact Forces for Learning to Grasp,” in <i>2019 IEEE International Conference on Robotics and Automation (ICRA)</i>, Montreal, May 2019, pp. 3615–3621, doi: 10.1109/ICRA.2019.8793733.</span>
+<br> -->
+
+
+H. 
+
+Merzic,
+
+
+
+M. 
+
+Bogdanovic,
+
+
+
+D. 
+
+Kappler,
+
+
+
+L. 
+
+Righetti,
+
+
+
+J. 
+
+Bohg,
+
+
+
+"Leveraging Contact Forces for Learning to Grasp,"
+
+
+
+    in <i>2019 IEEE International Conference on Robotics and Automation (ICRA)</i>,
+
+ pp. 3615–3621,
+ May,
+ 2019.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Grasping objects under uncertainty remains an open problem in robotics research. This uncertainty is often due to noisy or partial observations of the object pose or shape. To enable a robot to react appropriately to unforeseen effects, it is crucial that it continuously takes sensor feedback into account. While visual feedback is important for inferring a grasp pose and reaching for an object, contact feedback offers valuable information during manipulation and grasp acquisition. In this paper, we use model-free deep reinforcement learning to synthesize control policies that exploit contact sensing to generate robust grasping under uncertainty. We demonstrate our approach on a multi-fingered hand that exhibits more complex finger coordination than the commonly used two-fingered grippers. We conduct extensive experiments in order to assess the performance of the learned policies, with and without contact sensing. While it is possible to learn grasping policies without contact sensing, our results suggest that contact feedback allows for a significant improvement of grasping robustness under object pose uncertainty and for objects with a complex shape.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Merzic_Bogdanovic_Kappler_Righetti_Bohg_2019,
+  address = {Montreal},
+  title = {Leveraging Contact Forces for Learning to Grasp},
+  url = {https://arxiv.org/abs/1809.07004},
+  doi = {10.1109/ICRA.2019.8793733},
+  booktitle = {2019 IEEE International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Merzic, H. and Bogdanovic, M and Kappler, D and Righetti, L and Bohg, J},
+  year = {2019},
+  month = may,
+  pages = {3615–3621}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/1809.07004">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Grasping objects under uncertainty remains an open problem in robotics research. This uncertainty is often due to noisy or partial observations of the object pose or shape. To enable a robot to react appropriately to unforeseen effects, it is crucial that it continuously takes sensor feedback into account. While visual feedback is important for inferring a grasp pose and reaching for an object, contact feedback offers valuable information during manipulation and grasp acquisition. In this paper, we use model-free deep reinforcement learning to synthesize control policies that exploit contact sensing to generate robust grasping under uncertainty. We demonstrate our approach on a multi-fingered hand that exhibits more complex finger coordination than the commonly used two-fingered grippers. We conduct extensive experiments in order to assess the performance of the learned policies, with and without contact sensing. While it is possible to learn grasping policies without contact sensing, our results suggest that contact feedback allows for a significant improvement of grasping robustness under object pose uncertainty and for objects with a complex shape.</p>
+
+
+<pre>@inproceedings{Merzic_Bogdanovic_Kappler_Righetti_Bohg_2019,
+  address = {Montreal},
+  title = {Leveraging Contact Forces for Learning to Grasp},
+  url = {https://arxiv.org/abs/1809.07004},
+  doi = {10.1109/ICRA.2019.8793733},
+  booktitle = {2019 IEEE International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Merzic, H. and Bogdanovic, M and Kappler, D and Righetti, L and Bohg, J},
+  year = {2019},
+  month = may,
+  pages = {3615–3621}
+}
+</pre> --></li>
+<li><!-- <span id="Righetti_Kalakrishnan_Pastor_Binney_Kelly_Voorhies_Sukhatme_Schaal_2014">[5]L. Righetti <i>et al.</i>, “An autonomous manipulation system based on force control and optimization,” <i>Autonomous Robots</i>, vol. 36, no. 1–2, pp. 11–30, Jan. 2014, doi: 10.1007/s10514-013-9365-9.</span>
+<br> -->
+
+
+L. 
+
+Righetti,
+
+
+
+M. 
+
+Kalakrishnan,
+
+
+
+P. 
+
+Pastor,
+
+
+
+J. 
+
+Binney,
+
+
+
+J. 
+
+Kelly,
+
+
+
+R. 
+
+C. 
+
+Voorhies,
+
+
+
+G. 
+
+S. 
+
+Sukhatme,
+
+
+
+S. 
+
+Schaal,
+
+
+
+"An autonomous manipulation system based on force control and optimization,"
+
+
+
+    <i>Autonomous Robots</i>,
+     vol. 36,
+     no. 1–2,
+
+ pp. 11–30,
+ Jan,
+ 2014.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="In this paper we present an architecture for autonomous manipulation. Our approach is based on the belief that contact interactions during manipulation should be exploited to improve dexterity and that optimizing motion plans is useful to create more robust and repeatable manipulation behaviors. We therefore propose an architecture where state of the art force/torque control and optimization-based motion planning are the core components of the system. We give a detailed description of the modules that constitute the complete system and discuss the challenges inherent to creating such a system. We present experimental results for several grasping and manipulation tasks to demonstrate the performance and robustness of our approach.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Righetti_Kalakrishnan_Pastor_Binney_Kelly_Voorhies_Sukhatme_Schaal_2014,
+  title = {An autonomous manipulation system based on force control and optimization},
+  volume = {36},
+  url = {https://link.springer.com/article/10.1007/s10514-013-9365-9},
+  doi = {10.1007/s10514-013-9365-9},
+  number = {1–2},
+  journal = {Autonomous Robots},
+  author = {Righetti, L. and Kalakrishnan, M. and Pastor, P. and Binney, J and Kelly, J and Voorhies, R C and Sukhatme, G S and Schaal, S.},
+  year = {2014},
+  month = jan,
+  pages = {11–30}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://link.springer.com/article/10.1007/s10514-013-9365-9">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>In this paper we present an architecture for autonomous manipulation. Our approach is based on the belief that contact interactions during manipulation should be exploited to improve dexterity and that optimizing motion plans is useful to create more robust and repeatable manipulation behaviors. We therefore propose an architecture where state of the art force/torque control and optimization-based motion planning are the core components of the system. We give a detailed description of the modules that constitute the complete system and discuss the challenges inherent to creating such a system. We present experimental results for several grasping and manipulation tasks to demonstrate the performance and robustness of our approach.</p>
+
+
+<pre>@article{Righetti_Kalakrishnan_Pastor_Binney_Kelly_Voorhies_Sukhatme_Schaal_2014,
+  title = {An autonomous manipulation system based on force control and optimization},
+  volume = {36},
+  url = {https://link.springer.com/article/10.1007/s10514-013-9365-9},
+  doi = {10.1007/s10514-013-9365-9},
+  number = {1–2},
+  journal = {Autonomous Robots},
+  author = {Righetti, L. and Kalakrishnan, M. and Pastor, P. and Binney, J and Kelly, J and Voorhies, R C and Sukhatme, G S and Schaal, S.},
+  year = {2014},
+  month = jan,
+  pages = {11–30}
+}
+</pre> --></li>
+<li><!-- <span id="Kalakrishnan_Righetti_Pastor_Schaal_2011">[6]M. Kalakrishnan, L. Righetti, P. Pastor, and S. Schaal, “Learning Force Control Policies for Compliant Manipulation,” in <i>2011 IEEE/RSJ International Conference on Intelligent Robots and Systems</i>, San Francisco, USA, Sep. 2011, pp. 4639–4644, doi: 10.1109/IROS.2011.6095096.</span>
+<br> -->
+
+
+M. 
+
+Kalakrishnan,
+
+
+
+L. 
+
+Righetti,
+
+
+
+P. 
+
+Pastor,
+
+
+
+S. 
+
+Schaal,
+
+
+
+"Learning Force Control Policies for Compliant Manipulation,"
+
+
+
+    in <i>2011 IEEE/RSJ International Conference on Intelligent Robots and Systems</i>,
+
+ pp. 4639–4644,
+ Sep,
+ 2011.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Developing robots capable of fine manipulation skills is of major importance in order to build truly assistive robots. These robots need to be compliant in their actuation and control in order to operate safely in human environments. Manipulation tasks imply complex contact interactions with the external world, and involve reasoning about the forces and torques to be applied. Planning under contact conditions is usually impractical due to computational complexity, and a lack of precise dynamics models of the environment. We present an approach to acquiring manipulation skills on compliant robots through reinforcement learning. The initial position control policy for manipulation is initialized through kinesthetic demonstration. We augment this policy with a force/torque profile to be controlled in combination with the position trajectories. We use the Policy Improvement with Path Integrals (PI2) algorithm to learn these force/torque profiles by optimizing a cost function that measures task success. We demonstrate our approach on the Barrett WAM robot arm equipped with a 6-DOF force/torque sensor on two different manipulation tasks: opening a door with a lever door handle, and picking up a pen off the table. We show that the learnt force control policies allow successful, robust execution of the tasks.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Kalakrishnan_Righetti_Pastor_Schaal_2011,
+  address = {San Francisco, USA},
+  title = {Learning Force Control Policies for Compliant Manipulation},
+  url = {https://ieeexplore.ieee.org/abstract/document/6095096/},
+  doi = {10.1109/IROS.2011.6095096},
+  booktitle = {2011 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  publisher = {IEEE},
+  author = {Kalakrishnan, M. and Righetti, L. and Pastor, P. and Schaal, S.},
+  year = {2011},
+  month = sep,
+  pages = {4639–4644}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://ieeexplore.ieee.org/abstract/document/6095096/">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Developing robots capable of fine manipulation skills is of major importance in order to build truly assistive robots. These robots need to be compliant in their actuation and control in order to operate safely in human environments. Manipulation tasks imply complex contact interactions with the external world, and involve reasoning about the forces and torques to be applied. Planning under contact conditions is usually impractical due to computational complexity, and a lack of precise dynamics models of the environment. We present an approach to acquiring manipulation skills on compliant robots through reinforcement learning. The initial position control policy for manipulation is initialized through kinesthetic demonstration. We augment this policy with a force/torque profile to be controlled in combination with the position trajectories. We use the Policy Improvement with Path Integrals (PI2) algorithm to learn these force/torque profiles by optimizing a cost function that measures task success. We demonstrate our approach on the Barrett WAM robot arm equipped with a 6-DOF force/torque sensor on two different manipulation tasks: opening a door with a lever door handle, and picking up a pen off the table. We show that the learnt force control policies allow successful, robust execution of the tasks.</p>
+
+
+<pre>@inproceedings{Kalakrishnan_Righetti_Pastor_Schaal_2011,
+  address = {San Francisco, USA},
+  title = {Learning Force Control Policies for Compliant Manipulation},
+  url = {https://ieeexplore.ieee.org/abstract/document/6095096/},
+  doi = {10.1109/IROS.2011.6095096},
+  booktitle = {2011 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  publisher = {IEEE},
+  author = {Kalakrishnan, M. and Righetti, L. and Pastor, P. and Schaal, S.},
+  year = {2011},
+  month = sep,
+  pages = {4639–4644}
+}
+</pre> --></li>
+<li><!-- <span id="Pastor_Righetti_Kalakrishnan_Schaal_2011">[7]P. Pastor, L. Righetti, M. Kalakrishnan, and S. Schaal, “Online movement adaptation based on previous sensor experiences,” in <i>2011 IEEE/RSJ International Conference on Intelligent Robots and Systems</i>, San Francisco, USA, Sep. 2011, pp. 365–371, doi: 10.1109/IROS.2011.6095059.</span>
+<br> -->
+
+
+P. 
+
+Pastor,
+
+
+
+L. 
+
+Righetti,
+
+
+
+M. 
+
+Kalakrishnan,
+
+
+
+S. 
+
+Schaal,
+
+
+
+"Online movement adaptation based on previous sensor experiences,"
+
+
+
+    in <i>2011 IEEE/RSJ International Conference on Intelligent Robots and Systems</i>,
+
+ pp. 365–371,
+ Sep,
+ 2011.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Personal robots can only become widespread if they are capable of safely operating among humans. In uncertain and highly dynamic environments such as human households, robots need to be able to instantly adapt their behavior to unforseen events. In this paper, we propose a general framework to achieve very contact-reactive motions for robotic grasping and manipulation. Associating stereotypical movements to particular tasks enables our system to use previous sensor experiences as a predictive model for subsequent task executions. We use dynamical systems, named Dynamic Movement Primitives (DMPs), to learn goal-directed behaviors from demonstration. We exploit their dynamic properties by coupling them with the measured and predicted sensor traces. This feedback loop allows for online adaptation of the movement plan. Our system can create a rich set of possible motions that account for external perturbations and perception uncertainty to generate truly robust behaviors. As an example, we present an application to grasping with the WAM robot arm.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Pastor_Righetti_Kalakrishnan_Schaal_2011,
+  address = {San Francisco, USA},
+  title = {Online movement adaptation based on previous sensor experiences},
+  url = {https://ieeexplore.ieee.org/abstract/document/6095059/},
+  doi = {10.1109/IROS.2011.6095059},
+  booktitle = {2011 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  publisher = {IEEE},
+  author = {Pastor, P. and Righetti, L. and Kalakrishnan, M. and Schaal, S.},
+  year = {2011},
+  month = sep,
+  pages = {365–371}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://ieeexplore.ieee.org/abstract/document/6095059/">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Personal robots can only become widespread if they are capable of safely operating among humans. In uncertain and highly dynamic environments such as human households, robots need to be able to instantly adapt their behavior to unforseen events. In this paper, we propose a general framework to achieve very contact-reactive motions for robotic grasping and manipulation. Associating stereotypical movements to particular tasks enables our system to use previous sensor experiences as a predictive model for subsequent task executions. We use dynamical systems, named Dynamic Movement Primitives (DMPs), to learn goal-directed behaviors from demonstration. We exploit their dynamic properties by coupling them with the measured and predicted sensor traces. This feedback loop allows for online adaptation of the movement plan. Our system can create a rich set of possible motions that account for external perturbations and perception uncertainty to generate truly robust behaviors. As an example, we present an application to grasping with the WAM robot arm.</p>
+
+
+<pre>@inproceedings{Pastor_Righetti_Kalakrishnan_Schaal_2011,
+  address = {San Francisco, USA},
+  title = {Online movement adaptation based on previous sensor experiences},
+  url = {https://ieeexplore.ieee.org/abstract/document/6095059/},
+  doi = {10.1109/IROS.2011.6095059},
+  booktitle = {2011 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  publisher = {IEEE},
+  author = {Pastor, P. and Righetti, L. and Kalakrishnan, M. and Schaal, S.},
+  year = {2011},
+  month = sep,
+  pages = {365–371}
+}
+</pre> --></li></ol> 
+            </div>
+        </div>
+
+        
+<footer class="fixed-bottom">
+  <div class="container text-center">
+    &copy; Copyright 2025 Ludovic  Righetti. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with custom theme.
+
+    Last updated: November 03, 2025.
+  </div>
+</footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>

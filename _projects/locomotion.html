@@ -1,0 +1,1396 @@
+<!doctype html>
+<html lang="en">
+    <head>
+            <!-- Metadata, OpenGraph and Schema.org -->
+        <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ludovic Righetti" />
+
+<!-- SEO tags -->
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Legged locomotion | Machines in Motion Laboratory</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Legged locomotion" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is the website of the machines in motion laboratory, a robotics research laboratory at New York University headed by Ludovic Righetti. We conduct fundamental and applied robotics research with a particular focus on autonomous dexterous manipulation and legged locomotion. The website lists the labs activities, publications, group members and latest news." />
+<meta property="og:description" content="This is the website of the machines in motion laboratory, a robotics research laboratory at New York University headed by Ludovic Righetti. We conduct fundamental and applied robotics research with a particular focus on autonomous dexterous manipulation and legged locomotion. The website lists the labs activities, publications, group members and latest news." />
+<link rel="canonical" href="https://www.machinesinmotion.org/_projects/locomotion.html" />
+<meta property="og:url" content="https://www.machinesinmotion.org/_projects/locomotion.html" />
+<meta property="og:site_name" content="Machines in Motion Laboratory" />
+<meta property="og:image" content="https://www.machinesinmotion.org/projects/bolt.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.machinesinmotion.org/projects/bolt.png" />
+<meta property="twitter:title" content="Legged locomotion" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"This is the website of the machines in motion laboratory, a robotics research laboratory at New York University headed by Ludovic Righetti. We conduct fundamental and applied robotics research with a particular focus on autonomous dexterous manipulation and legged locomotion. The website lists the labs activities, publications, group members and latest news.","headline":"Legged locomotion","image":"https://www.machinesinmotion.org/projects/bolt.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.machinesinmotion.org/assets/img/mim_logo_black.png"}},"url":"https://www.machinesinmotion.org/_projects/locomotion.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.3.0/css/fontawesome.min.css" integrity="sha384-IfdMaxM7xApqzQmi9UKLIQPSX+440ganmZq+rMGyqDukniVtKl003KdPruUrtXtK" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha384-wi7fdJzLKizoWPKwP8EkF2Sjc0KPB17yM6hFIZBr5olCzdyJkgB0D89mhhqX+FPI" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans" integrity="sha384-WFY3j4Mz0NysE+uREZjbXop0EKpbaguTp4OC9Lv/cer+h3S9D/KCm+W4bGpZ6+Fa" crossorigin="anonymous">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    </head>
+    <body>
+<header>
+    <!-- Navigation bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+            <a class="navbar-brand" href="/">
+                <img style="float: center; height: 60px; padding-right: 5px;" src="/assets/img/mim_logo_black.png" alt="lab logo">
+            </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/people/">
+                        People
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/research/">
+                        Research
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/education/">
+                        Education
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/publications/">
+                        Publications
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/joining/">
+                        Joining
+                    </a>
+                </li>
+                
+                 
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+        <div class="container" style="padding-bottom: 100px">
+            <div class="container">
+            <h1 style="padding-bottom: 20px">Legged locomotion</h1>
+            <img src="/assets/img/projects/bolt.png" class="img-fluid float-md-start mx-auto d-block" alt="Legged locomotion illustration" style="width:350px; height:auto; padding-left:0px; padding-right:50px;">
+            <p>We are fascinated by movements, especially locomotion behaviors. Beyond this interest, robots with legs open a wide range of potential applications as they
+can move on complicated environments, whether with clutter, obstacles or holes.
+A major axis of research in our laboratory is concerned with the design
+of general purpose algorithms to endow robots with any number of legs with
+the ability to walk, run, jump and climb across any type of unknown terrains.</p>
+
+<p><br /><br /><br /></p>
+
+            </div>
+            <div class="container" style="padding-top: 50px; padding-left:0px">
+            
+            <div class="container">
+                <h2>Videos</h2>
+                <div class="row align-items-top justify-content-around">
+                    
+                    <div class="col-sm-12 col-md-6" style="padding-top: 20px; padding-bottom: 50px">
+                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>    <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/Oz5eYBGoiok" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6" style="padding-top: 20px; padding-bottom: 50px">
+                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>    <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/xzCn1nQiVPI" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6" style="padding-top: 20px; padding-bottom: 50px">
+                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>    <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/lDPJzpVzLIk" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-6" style="padding-top: 20px; padding-bottom: 50px">
+                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>    <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/vkw-xFF5b9c" frameborder="0" allowfullscreen></iframe></div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            </div>
+            <div class="bib_section" style="padding-left:0px">
+            <h2>Selected publications</h2>
+            <ol class="bibliography"><li><!-- <span id="Meduri_Shah_Viereck_Khadiv_Havoutis_Righetti_2023">[1]A. Meduri, P. Shah, J. Viereck, M. Khadiv, I. Havoutis, and L. Righetti, “BiConMP: A Nonlinear Model Predictive Control Framework for Whole Body Motion Planning,” <i>IEEE Transactions on Robotics</i>, pp. 1–18, 2023, doi: 10.1109/TRO.2022.3228390.</span>
+<br> -->
+
+
+A. 
+
+Meduri,
+
+
+
+P. 
+
+Shah,
+
+
+
+J. 
+
+Viereck,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+I. 
+
+Havoutis,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"BiConMP: A Nonlinear Model Predictive Control Framework for Whole Body Motion Planning,"
+
+
+
+    <i>IEEE Transactions on Robotics</i>,
+    
+    
+
+ pp. 1–18,
+
+ 2023.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Online planning of whole-body motions for legged robots is challenging due to the inherent nonlinearity in the robot dynamics. In this work, we propose a nonlinear model predictive control (MPC) framework, the BiConMP which can generate whole body trajectories online by efficiently exploiting the structure of the robot dynamics. BiConMP is used to generate various cyclic gaits on a real quadruped robot and its performance is evaluated on different terrain, countering unforeseen pushes, and transitioning online between different gaits. Furthermore, the ability of BiConMP to generate nontrivial acyclic whole-body dynamic motions on the robot is presented. The same approach is also used to generate various dynamic motions in MPC on a humanoid robot (Talos) and another quadruped robot (AnYmal) in simulation. Finally, an extensive empirical analysis on the effects of planning horizon and frequency on the nonlinear MPC framework is reported and discussed.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Meduri_Shah_Viereck_Khadiv_Havoutis_Righetti_2023,
+  title = {BiConMP: A Nonlinear Model Predictive Control Framework for Whole Body Motion Planning},
+  url = {https://arxiv.org/abs/2201.07601},
+  doi = {10.1109/TRO.2022.3228390},
+  journal = {IEEE Transactions on Robotics},
+  author = {Meduri, Avadesh and Shah, Paarth and Viereck, Julian and Khadiv, Majid and Havoutis, Ioannis and Righetti, Ludovic},
+  year = {2023},
+  pages = {1–18}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2201.07601">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Online planning of whole-body motions for legged robots is challenging due to the inherent nonlinearity in the robot dynamics. In this work, we propose a nonlinear model predictive control (MPC) framework, the BiConMP which can generate whole body trajectories online by efficiently exploiting the structure of the robot dynamics. BiConMP is used to generate various cyclic gaits on a real quadruped robot and its performance is evaluated on different terrain, countering unforeseen pushes, and transitioning online between different gaits. Furthermore, the ability of BiConMP to generate nontrivial acyclic whole-body dynamic motions on the robot is presented. The same approach is also used to generate various dynamic motions in MPC on a humanoid robot (Talos) and another quadruped robot (AnYmal) in simulation. Finally, an extensive empirical analysis on the effects of planning horizon and frequency on the nonlinear MPC framework is reported and discussed.</p>
+
+
+<pre>@article{Meduri_Shah_Viereck_Khadiv_Havoutis_Righetti_2023,
+  title = {BiConMP: A Nonlinear Model Predictive Control Framework for Whole Body Motion Planning},
+  url = {https://arxiv.org/abs/2201.07601},
+  doi = {10.1109/TRO.2022.3228390},
+  journal = {IEEE Transactions on Robotics},
+  author = {Meduri, Avadesh and Shah, Paarth and Viereck, Julian and Khadiv, Majid and Havoutis, Ioannis and Righetti, Ludovic},
+  year = {2023},
+  pages = {1–18}
+}
+</pre> --></li>
+<li><!-- <span id="Bogdanovic_Khadiv_Righetti_2022">[2]M. Bogdanovic, M. Khadiv, and L. Righetti, “Model-free Reinforcement Learning for Robust Locomotion using Demonstrations from Trajectory Optimization,” <i>Frontiers in Robotics and AI</i>, 2022, doi: 10.3389/frobt.2022.854212.</span>
+<br> -->
+
+
+M. 
+
+Bogdanovic,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Model-free Reinforcement Learning for Robust Locomotion using Demonstrations from Trajectory Optimization,"
+
+
+
+    <i>Frontiers in Robotics and AI</i>,
+    
+    
+
+
+
+ 2022.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="We present a general, two-stage reinforcement learning approach to create robust policies that can be deployed on real robots without any additional training using a single demonstration generated by trajectory optimization. The demonstration is used in the first stage as a starting point to facilitate initial exploration. In the second stage, the relevant task reward is optimized directly and a policy robust to environment uncertainties is computed. We demonstrate and examine in detail the performance and robustness of our approach on highly dynamic hopping and bounding tasks on a quadruped robot.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Bogdanovic_Khadiv_Righetti_2022,
+  title = {Model-free Reinforcement Learning for Robust Locomotion using Demonstrations from Trajectory Optimization},
+  url = {https://arxiv.org/abs/2107.06629},
+  doi = {10.3389/frobt.2022.854212},
+  journal = {Frontiers in Robotics and AI},
+  author = {Bogdanovic, Miroslav and Khadiv, Majid and Righetti, Ludovic},
+  year = {2022}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2107.06629">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>We present a general, two-stage reinforcement learning approach to create robust policies that can be deployed on real robots without any additional training using a single demonstration generated by trajectory optimization. The demonstration is used in the first stage as a starting point to facilitate initial exploration. In the second stage, the relevant task reward is optimized directly and a policy robust to environment uncertainties is computed. We demonstrate and examine in detail the performance and robustness of our approach on highly dynamic hopping and bounding tasks on a quadruped robot.</p>
+
+
+<pre>@article{Bogdanovic_Khadiv_Righetti_2022,
+  title = {Model-free Reinforcement Learning for Robust Locomotion using Demonstrations from Trajectory Optimization},
+  url = {https://arxiv.org/abs/2107.06629},
+  doi = {10.3389/frobt.2022.854212},
+  journal = {Frontiers in Robotics and AI},
+  author = {Bogdanovic, Miroslav and Khadiv, Majid and Righetti, Ludovic},
+  year = {2022}
+}
+</pre> --></li>
+<li><!-- <span id="Hammoud_Oliveri_Righetti_Carpentier_Del Prete_2022">[3]B. Hammoud, L. Oliveri, L. Righetti, J. Carpentier, and A. Del Prete, “Exponential Integration for Efficient and Accurate Multi-Body Simulation with Stiff Viscoelastic Contacts,” <i>Multibody System Dynamics</i>, vol. 54, pp. 443–460, Apr. 2022, doi: https://doi.org/10.1007/s11044-022-09818-z.</span>
+<br> -->
+
+
+B. 
+
+Hammoud,
+
+
+
+L. 
+
+Oliveri,
+
+
+
+L. 
+
+Righetti,
+
+
+
+J. 
+
+Carpentier,
+
+
+
+A. 
+
+Del Prete,
+
+
+
+"Exponential Integration for Efficient and Accurate Multi-Body Simulation with Stiff Viscoelastic Contacts,"
+
+
+
+    <i>Multibody System Dynamics</i>,
+     vol. 54,
+    
+
+ pp. 443–460,
+ Apr,
+ 2022.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="The simulation of multibody systems with frictional contacts is a fundamental tool for many fields, such as robotics, computer graphics, and mechanics. Hard frictional contacts are particularly troublesome to simulate because they make differential equations stiff, calling for computationally demanding implicit integration schemes. We suggest to tackle this issue by using exponential integrators, a long-standing class of integration schemes (first introduced in the 1960s) that in recent years has enjoyed a resurgence of interest. This scheme can be applied to multibody systems subject to stiff viscoelastic contacts, leading to integration errors similar to implicit Euler, but at much lower computational costs (between 2 to 100 times faster). In our tests with quadruped and biped robots, our method demonstrated a stable behavior with large time steps (10 ms) and stiff contacts (105 N/m). Its excellent properties, especially for fast and coarse simulations, make it a valuable candidate for many applications in robotics, such as simulation, model predictive control, reinforcement learning, and controller design.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Hammoud_Oliveri_Righetti_Carpentier_Del Prete_2022,
+  title = {Exponential Integration for Efficient and Accurate Multi-Body Simulation with Stiff Viscoelastic Contacts},
+  volume = {54},
+  url = {https://arxiv.org/abs/2101.06846},
+  doi = {https://doi.org/10.1007/s11044-022-09818-z},
+  journal = {Multibody System Dynamics},
+  author = {Hammoud, Bilal and Oliveri, Luca and Righetti, Ludovic and Carpentier, Justin and Del Prete, Andrea},
+  year = {2022},
+  month = apr,
+  pages = {443–460}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2101.06846">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>The simulation of multibody systems with frictional contacts is a fundamental tool for many fields, such as robotics, computer graphics, and mechanics. Hard frictional contacts are particularly troublesome to simulate because they make differential equations stiff, calling for computationally demanding implicit integration schemes. We suggest to tackle this issue by using exponential integrators, a long-standing class of integration schemes (first introduced in the 1960s) that in recent years has enjoyed a resurgence of interest. This scheme can be applied to multibody systems subject to stiff viscoelastic contacts, leading to integration errors similar to implicit Euler, but at much lower computational costs (between 2 to 100 times faster). In our tests with quadruped and biped robots, our method demonstrated a stable behavior with large time steps (10 ms) and stiff contacts (105 N/m). Its excellent properties, especially for fast and coarse simulations, make it a valuable candidate for many applications in robotics, such as simulation, model predictive control, reinforcement learning, and controller design.</p>
+
+
+<pre>@article{Hammoud_Oliveri_Righetti_Carpentier_Del Prete_2022,
+  title = {Exponential Integration for Efficient and Accurate Multi-Body Simulation with Stiff Viscoelastic Contacts},
+  volume = {54},
+  url = {https://arxiv.org/abs/2101.06846},
+  doi = {https://doi.org/10.1007/s11044-022-09818-z},
+  journal = {Multibody System Dynamics},
+  author = {Hammoud, Bilal and Oliveri, Luca and Righetti, Ludovic and Carpentier, Justin and Del Prete, Andrea},
+  year = {2022},
+  month = apr,
+  pages = {443–460}
+}
+</pre> --></li>
+<li><!-- <span id="Viereck_Meduri_Righetti_2022">[4]J. Viereck, A. Meduri, and L. Righetti, “ValueNetQP: Learned one-step optimal control for legged locomotion,” in <i>Proceedings of The 4th Annual Learning for Dynamics and Control Conference</i>, Jun. 2022, vol. 168, pp. 931–942, [Online]. Available at: https://proceedings.mlr.press/v168/viereck22a.html.</span>
+<br> -->
+
+
+J. 
+
+Viereck,
+
+
+
+A. 
+
+Meduri,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"ValueNetQP: Learned one-step optimal control for legged locomotion,"
+
+
+
+    in <i>Proceedings of The 4th Annual Learning for Dynamics and Control Conference</i>,
+
+ pp. 931–942,
+ Jun,
+ 2022.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Optimal control is a successful approach to generate motions for complex robots, in particular for legged locomotion. However, these techniques are often too slow to run in real time for model predictive control or one needs to drastically simplify the dynamics model. In this work, we present a method to learn to predict the gradient and hessian of the problem value function, enabling fast resolution of the predictive control problem with a one-step quadratic program. In addition, our method is able to satisfy constraints like friction cones and unilateral constraints, which are important for high dynamics locomotion tasks. We demonstrate the capability of our method in simulation and on a real quadruped robot performing trotting and bounding motions.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Viereck_Meduri_Righetti_2022,
+  series = {Proceedings of Machine Learning Research},
+  title = {ValueNetQP: Learned one-step optimal control for legged locomotion},
+  volume = {168},
+  url = {https://proceedings.mlr.press/v168/viereck22a.html},
+  booktitle = {Proceedings of The 4th Annual Learning for Dynamics and Control Conference},
+  publisher = {PMLR},
+  author = {Viereck, Julian and Meduri, Avadesh and Righetti, Ludovic},
+  year = {2022},
+  month = jun,
+  pages = {931--942},
+  collection = {Proceedings of Machine Learning Research}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://proceedings.mlr.press/v168/viereck22a.html">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Optimal control is a successful approach to generate motions for complex robots, in particular for legged locomotion. However, these techniques are often too slow to run in real time for model predictive control or one needs to drastically simplify the dynamics model. In this work, we present a method to learn to predict the gradient and hessian of the problem value function, enabling fast resolution of the predictive control problem with a one-step quadratic program. In addition, our method is able to satisfy constraints like friction cones and unilateral constraints, which are important for high dynamics locomotion tasks. We demonstrate the capability of our method in simulation and on a real quadruped robot performing trotting and bounding motions.</p>
+
+
+<pre>@inproceedings{Viereck_Meduri_Righetti_2022,
+  series = {Proceedings of Machine Learning Research},
+  title = {ValueNetQP: Learned one-step optimal control for legged locomotion},
+  volume = {168},
+  url = {https://proceedings.mlr.press/v168/viereck22a.html},
+  booktitle = {Proceedings of The 4th Annual Learning for Dynamics and Control Conference},
+  publisher = {PMLR},
+  author = {Viereck, Julian and Meduri, Avadesh and Righetti, Ludovic},
+  year = {2022},
+  month = jun,
+  pages = {931--942},
+  collection = {Proceedings of Machine Learning Research}
+}
+</pre> --></li>
+<li><!-- <span id="Yeganegi_Khadiv_Del Prete_Moosavian_Righetti_2022">[5]M. H. Yeganegi, M. Khadiv, A. Del Prete, S. A. A. Moosavian, and L. Righetti, “Robust walking based on MPC with viability-based feasibility guarantees,” <i>IEEE Transactions on Robotics</i>, vol. 38, no. 4, pp. 2389–2404, 2022, doi: 10.1109/TRO.2021.3127388.</span>
+<br> -->
+
+
+M. 
+
+H. 
+
+Yeganegi,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+A. 
+
+Del Prete,
+
+
+
+S. 
+
+A. 
+
+A. 
+
+Moosavian,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Robust walking based on MPC with viability-based feasibility guarantees,"
+
+
+
+    <i>IEEE Transactions on Robotics</i>,
+     vol. 38,
+     no. 4,
+
+ pp. 2389–2404,
+
+ 2022.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Model predictive control (MPC) has shown great success for controlling complex systems, such as legged robots. However, when closing the loop, the performance and feasibility of the finite horizon optimal control problem (OCP) solved at each control cycle are not guaranteed anymore. This is due to model discrepancies, the effect of low-level controllers, uncertainties, and sensor noise. To address these issues, we propose a modified version of a standard MPC approach used in legged locomotion with viability (weak forward invariance) guarantees. In this approach, instead of adding a (conservative) terminal constraint to the problem, we propose to use the measured state projected to the viability kernel in the OCP solved at each control cycle. Moreover, we use past experimental data to find the best cost weights, which measure a combination of performance, constraint satisfaction robustness, or stability (invariance). These interpretable costs measure the tradeoff between robustness and performance. For this purpose, we use Bayesian optimization to systematically design experiments that help efficiently collect data to learn a cost function leading to robust performance. Our simulation results with different realistic disturbances (i.e., external pushes, unmodeled actuator dynamics, and computational delay) show the effectiveness of our approach to create robust controllers for humanoid robots.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Yeganegi_Khadiv_Del Prete_Moosavian_Righetti_2022,
+  title = {Robust walking based on MPC with viability-based feasibility guarantees},
+  volume = {38},
+  url = {https://arxiv.org/abs/2010.04514},
+  doi = {10.1109/TRO.2021.3127388},
+  number = {4},
+  journal = {IEEE Transactions on Robotics},
+  author = {Yeganegi, Mohammad Hasan and Khadiv, Majid and Del Prete, Andrea and Moosavian, S Ali A and Righetti, Ludovic},
+  year = {2022},
+  pages = {2389–2404}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2010.04514">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Model predictive control (MPC) has shown great success for controlling complex systems, such as legged robots. However, when closing the loop, the performance and feasibility of the finite horizon optimal control problem (OCP) solved at each control cycle are not guaranteed anymore. This is due to model discrepancies, the effect of low-level controllers, uncertainties, and sensor noise. To address these issues, we propose a modified version of a standard MPC approach used in legged locomotion with viability (weak forward invariance) guarantees. In this approach, instead of adding a (conservative) terminal constraint to the problem, we propose to use the measured state projected to the viability kernel in the OCP solved at each control cycle. Moreover, we use past experimental data to find the best cost weights, which measure a combination of performance, constraint satisfaction robustness, or stability (invariance). These interpretable costs measure the tradeoff between robustness and performance. For this purpose, we use Bayesian optimization to systematically design experiments that help efficiently collect data to learn a cost function leading to robust performance. Our simulation results with different realistic disturbances (i.e., external pushes, unmodeled actuator dynamics, and computational delay) show the effectiveness of our approach to create robust controllers for humanoid robots.</p>
+
+
+<pre>@article{Yeganegi_Khadiv_Del Prete_Moosavian_Righetti_2022,
+  title = {Robust walking based on MPC with viability-based feasibility guarantees},
+  volume = {38},
+  url = {https://arxiv.org/abs/2010.04514},
+  doi = {10.1109/TRO.2021.3127388},
+  number = {4},
+  journal = {IEEE Transactions on Robotics},
+  author = {Yeganegi, Mohammad Hasan and Khadiv, Majid and Del Prete, Andrea and Moosavian, S Ali A and Righetti, Ludovic},
+  year = {2022},
+  pages = {2389–2404}
+}
+</pre> --></li>
+<li><!-- <span id="Viereck_Righetti_2021">[6]J. Viereck and L. Righetti, “Learning a Centroidal Motion Planner for Legged Locomotion,” Xi’an, China, May 2021, doi: 10.1109/ICRA48506.2021.9562022.</span>
+<br> -->
+
+
+J. 
+
+Viereck,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Learning a Centroidal Motion Planner for Legged Locomotion,"
+
+
+
+    in <i>2021 IEEE-RAS International Conference on Robotics and Automation (ICRA)</i>,
+
+
+ May,
+ 2021.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Whole-body optimizers have been successful at automatically computing complex dynamic locomotion behaviors. However they are often limited to ofﬂine planning as they are computationally too expensive to replan with a high frequency. Simpler models are then typically used for online replanning. In this paper we present a method to generate whole body movements in real-time for locomotion tasks. Our approach consists in learning a centroidal neural network that predicts the desired centroidal motion given the current state of the robot and a desired contact plan. The network is trained using an existing whole body motion optimizer. Our approach enables to learn with few training samples dynamic motions that can be used in a complete whole-body control framework at high frequency, which is usually not attainable with typical full-body optimizers. We demonstrate our method to generate a rich set of walking and jumping motions on a real quadruped robot.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Viereck_Righetti_2021,
+  address = {Xi’an, China},
+  title = {Learning a Centroidal Motion Planner for Legged Locomotion},
+  url = {https://arxiv.org/abs/2011.02818},
+  doi = {10.1109/ICRA48506.2021.9562022},
+  booktitle = {2021 IEEE-RAS International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Viereck, Julian and Righetti, Ludovic},
+  year = {2021},
+  month = may
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2011.02818">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Whole-body optimizers have been successful at automatically computing complex dynamic locomotion behaviors. However they are often limited to ofﬂine planning as they are computationally too expensive to replan with a high frequency. Simpler models are then typically used for online replanning. In this paper we present a method to generate whole body movements in real-time for locomotion tasks. Our approach consists in learning a centroidal neural network that predicts the desired centroidal motion given the current state of the robot and a desired contact plan. The network is trained using an existing whole body motion optimizer. Our approach enables to learn with few training samples dynamic motions that can be used in a complete whole-body control framework at high frequency, which is usually not attainable with typical full-body optimizers. We demonstrate our method to generate a rich set of walking and jumping motions on a real quadruped robot.</p>
+
+
+<pre>@inproceedings{Viereck_Righetti_2021,
+  address = {Xi’an, China},
+  title = {Learning a Centroidal Motion Planner for Legged Locomotion},
+  url = {https://arxiv.org/abs/2011.02818},
+  doi = {10.1109/ICRA48506.2021.9562022},
+  booktitle = {2021 IEEE-RAS International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Viereck, Julian and Righetti, Ludovic},
+  year = {2021},
+  month = may
+}
+</pre> --></li>
+<li><!-- <span id="Daneshmand_Khadiv_Grimminger_Righetti_2021">[7]E. Daneshmand, M. Khadiv, F. Grimminger, and L. Righetti, “Variable Horizon MPC with Swing Foot Dynamics for Bipedal Walking Control,” <i>IEEE Robotics and Automation Letters</i>, vol. 6, no. 2, pp. 2349–2356, Apr. 2021, doi: 10.1109/LRA.2021.3061381.</span>
+<br> -->
+
+
+E. 
+
+Daneshmand,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+F. 
+
+Grimminger,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Variable Horizon MPC with Swing Foot Dynamics for Bipedal Walking Control,"
+
+
+
+    <i>IEEE Robotics and Automation Letters</i>,
+     vol. 6,
+     no. 2,
+
+ pp. 2349–2356,
+ Apr,
+ 2021.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="In this paper, we present a novel two-level variable Horizon Model Predictive Control (VH-MPC) framework for bipedal locomotion. In this framework, the higher level computes the landing location and timing (horizon length) of the swing foot to stabilize the unstable part of the center of mass (CoM) dynamics, using feedback from the CoM states. The lower level takes into account the swing foot dynamics and generates dynamically consistent trajectories for landing at the desired time as close as possible to the desired location. To do that, we use a simplified model of the robot dynamics projected in swing foot space that takes into account joint torque constraints as well as the friction cone constraints of the stance foot. We show the effectiveness of our proposed control framework by implementing robust walking patterns on our torque-controlled and open-source biped robot, Bolt. We report extensive simulations and real robot experiments in the presence of various disturbances and uncertainties.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Daneshmand_Khadiv_Grimminger_Righetti_2021,
+  title = {Variable Horizon MPC with Swing Foot Dynamics for Bipedal Walking Control},
+  volume = {6},
+  url = {https://arxiv.org/abs/2010.08198},
+  doi = {10.1109/LRA.2021.3061381},
+  number = {2},
+  journal = {IEEE Robotics and Automation Letters},
+  author = {Daneshmand, E and Khadiv, M and Grimminger, F and Righetti, L},
+  year = {2021},
+  month = apr,
+  pages = {2349–2356}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2010.08198">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>In this paper, we present a novel two-level variable Horizon Model Predictive Control (VH-MPC) framework for bipedal locomotion. In this framework, the higher level computes the landing location and timing (horizon length) of the swing foot to stabilize the unstable part of the center of mass (CoM) dynamics, using feedback from the CoM states. The lower level takes into account the swing foot dynamics and generates dynamically consistent trajectories for landing at the desired time as close as possible to the desired location. To do that, we use a simplified model of the robot dynamics projected in swing foot space that takes into account joint torque constraints as well as the friction cone constraints of the stance foot. We show the effectiveness of our proposed control framework by implementing robust walking patterns on our torque-controlled and open-source biped robot, Bolt. We report extensive simulations and real robot experiments in the presence of various disturbances and uncertainties.</p>
+
+
+<pre>@article{Daneshmand_Khadiv_Grimminger_Righetti_2021,
+  title = {Variable Horizon MPC with Swing Foot Dynamics for Bipedal Walking Control},
+  volume = {6},
+  url = {https://arxiv.org/abs/2010.08198},
+  doi = {10.1109/LRA.2021.3061381},
+  number = {2},
+  journal = {IEEE Robotics and Automation Letters},
+  author = {Daneshmand, E and Khadiv, M and Grimminger, F and Righetti, L},
+  year = {2021},
+  month = apr,
+  pages = {2349–2356}
+}
+</pre> --></li>
+<li><!-- <span id="Ponton_Khadiv_Meduri_Righetti_2021">[8]B. Ponton, M. Khadiv, A. Meduri, and L. Righetti, “Efficient Multi-Contact Pattern Generation with Sequential Convex Approximations of the Centroidal Dynamics,” <i>IEEE Transactions on Robotics</i>, vol. 37, no. 5, pp. 1661–1679, Feb. 2021, doi: 10.1109/TRO.2020.3048125.</span>
+<br> -->
+
+
+B. 
+
+Ponton,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+A. 
+
+Meduri,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Efficient Multi-Contact Pattern Generation with Sequential Convex Approximations of the Centroidal Dynamics,"
+
+
+
+    <i>IEEE Transactions on Robotics</i>,
+     vol. 37,
+     no. 5,
+
+ pp. 1661–1679,
+ Feb,
+ 2021.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="This paper investigates the problem of efficient computation of physically consistent multi-contact behaviors. Recent work showed that under mild assumptions, the problem could be decomposed into simpler kinematic and centroidal dynamic optimization problems. Based on this approach, we propose a general convex relaxation of the centroidal dynamics leading to two computationally efficient algorithms based on iterative resolutions of second order cone programs. They op- timize centroidal trajectories, contact forces and, importantly, the timing of the motions. We include the approach in a kino- dynamic optimization method to generate full-body movements. Finally, the approach is embedded in a mixed-integer solver to further find dynamically consistent contact sequences. Extensive numerical experiments demonstrate the computational efficiency of the approach, suggesting that it could be used in a fast receding horizon control loop. Executions of the planned motions on simulated humanoids and quadrupeds and on a real quadruped robot further show the quality of the optimized motions.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Ponton_Khadiv_Meduri_Righetti_2021,
+  title = {Efficient Multi-Contact Pattern Generation with Sequential Convex Approximations of the Centroidal Dynamics},
+  volume = {37},
+  url = {https://arxiv.org/abs/2010.01215},
+  doi = {10.1109/TRO.2020.3048125},
+  number = {5},
+  journal = {IEEE Transactions on Robotics},
+  author = {Ponton, B and Khadiv, M and Meduri, A. and Righetti, L},
+  year = {2021},
+  month = feb,
+  pages = {1661–1679}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2010.01215">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>This paper investigates the problem of efficient computation of physically consistent multi-contact behaviors. Recent work showed that under mild assumptions, the problem could be decomposed into simpler kinematic and centroidal dynamic optimization problems. Based on this approach, we propose a general convex relaxation of the centroidal dynamics leading to two computationally efficient algorithms based on iterative resolutions of second order cone programs. They op- timize centroidal trajectories, contact forces and, importantly, the timing of the motions. We include the approach in a kino- dynamic optimization method to generate full-body movements. Finally, the approach is embedded in a mixed-integer solver to further find dynamically consistent contact sequences. Extensive numerical experiments demonstrate the computational efficiency of the approach, suggesting that it could be used in a fast receding horizon control loop. Executions of the planned motions on simulated humanoids and quadrupeds and on a real quadruped robot further show the quality of the optimized motions.</p>
+
+
+<pre>@article{Ponton_Khadiv_Meduri_Righetti_2021,
+  title = {Efficient Multi-Contact Pattern Generation with Sequential Convex Approximations of the Centroidal Dynamics},
+  volume = {37},
+  url = {https://arxiv.org/abs/2010.01215},
+  doi = {10.1109/TRO.2020.3048125},
+  number = {5},
+  journal = {IEEE Transactions on Robotics},
+  author = {Ponton, B and Khadiv, M and Meduri, A. and Righetti, L},
+  year = {2021},
+  month = feb,
+  pages = {1661–1679}
+}
+</pre> --></li>
+<li><!-- <span id="Hammoud_Khadiv_Righetti_2021">[9]B. Hammoud, M. Khadiv, and L. Righetti, “Impedance Optimization for Uncertain Contact Interactions Through Risk Sensitive Optimal Control,” <i>IEEE Robotics and Automation Letters</i>, vol. 6, no. 3, pp. 4766–4773, Jul. 2021, doi: 10.1109/LRA.2021.3068951.</span>
+<br> -->
+
+
+B. 
+
+Hammoud,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Impedance Optimization for Uncertain Contact Interactions Through Risk Sensitive Optimal Control,"
+
+
+
+    <i>IEEE Robotics and Automation Letters</i>,
+     vol. 6,
+     no. 3,
+
+ pp. 4766–4773,
+ Jul,
+ 2021.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="This paper addresses the problem of computing optimal impedance schedules for legged locomotion tasks involving complex contact interactions. We formulate the problem of impedance regulation as a trade-off between disturbance rejection and measurement uncertainty. We extend a stochastic optimal control algorithm known as Risk Sensitive Control to take into account measurement uncertainty and propose a formal way to include such uncertainty for unknown contact locations. The approach can efficiently generate optimal state and control trajectories along with local feedback control gains, i.e. impedance schedules. Extensive simulations demonstrate the capabilities of the approach in generating meaningful stiffness and damping modulation patterns before and after contact interaction. For example, contact forces are reduced during early contacts, damping increases to anticipate a high impact event and tracking is automatically traded-off for increased stability. In particular, we show a significant improvement in performance during jumping and trotting tasks with a simulated quadruped robot.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Hammoud_Khadiv_Righetti_2021,
+  title = {Impedance Optimization for Uncertain Contact Interactions Through Risk Sensitive Optimal Control},
+  volume = {6},
+  url = {https://arxiv.org/abs/2011.04684},
+  doi = {10.1109/LRA.2021.3068951},
+  number = {3},
+  journal = {IEEE Robotics and Automation Letters},
+  author = {Hammoud, B. and Khadiv, M. and Righetti, L.},
+  year = {2021},
+  month = jul,
+  pages = {4766–4773}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2011.04684">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>This paper addresses the problem of computing optimal impedance schedules for legged locomotion tasks involving complex contact interactions. We formulate the problem of impedance regulation as a trade-off between disturbance rejection and measurement uncertainty. We extend a stochastic optimal control algorithm known as Risk Sensitive Control to take into account measurement uncertainty and propose a formal way to include such uncertainty for unknown contact locations. The approach can efficiently generate optimal state and control trajectories along with local feedback control gains, i.e. impedance schedules. Extensive simulations demonstrate the capabilities of the approach in generating meaningful stiffness and damping modulation patterns before and after contact interaction. For example, contact forces are reduced during early contacts, damping increases to anticipate a high impact event and tracking is automatically traded-off for increased stability. In particular, we show a significant improvement in performance during jumping and trotting tasks with a simulated quadruped robot.</p>
+
+
+<pre>@article{Hammoud_Khadiv_Righetti_2021,
+  title = {Impedance Optimization for Uncertain Contact Interactions Through Risk Sensitive Optimal Control},
+  volume = {6},
+  url = {https://arxiv.org/abs/2011.04684},
+  doi = {10.1109/LRA.2021.3068951},
+  number = {3},
+  journal = {IEEE Robotics and Automation Letters},
+  author = {Hammoud, B. and Khadiv, M. and Righetti, L.},
+  year = {2021},
+  month = jul,
+  pages = {4766–4773}
+}
+</pre> --></li>
+<li><!-- <span id="Meduri_Khadiv_Righetti_2021">[10]A. Meduri, M. Khadiv, and L. Righetti, “DeepQ Stepper: A Framework for Reactive Dynamic Walking on Uneven Terrain,” Xi’an, China, May 2021, doi: 10.1109/ICRA48506.2021.9562093.</span>
+<br> -->
+
+
+A. 
+
+Meduri,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"DeepQ Stepper: A Framework for Reactive Dynamic Walking on Uneven Terrain,"
+
+
+
+    in <i>2021 IEEE-RAS International Conference on Robotics and Automation (ICRA)</i>,
+
+
+ May,
+ 2021.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Reactive stepping and push recovery for biped robots is often restricted to ﬂat terrains because of the difﬁculty in computing capture regions for nonlinear dynamic models. In this paper, we address this limitation by proposing a novel 3D reactive stepper, the DeepQ stepper, that can approximately learn the 3D capture regions of both simpliﬁed and full robot dynamic models using reinforcement learning, which can then be used to ﬁnd optimal steps. The stepper can take into account the entire dynamics of the robot, ignored in most reactive steppers, leading to a signiﬁcant improvement in performance. The DeepQ stepper can handle nonconvex terrain with obstacles, walk on restricted surfaces like stepping stones while tracking different velocities, and recover from external disturbances for a constant low computational cost.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@inproceedings{Meduri_Khadiv_Righetti_2021,
+  address = {Xi’an, China},
+  title = {DeepQ Stepper: A Framework for Reactive Dynamic Walking on Uneven Terrain},
+  url = {https://arxiv.org/abs/2010.14834},
+  doi = {10.1109/ICRA48506.2021.9562093},
+  booktitle = {2021 IEEE-RAS International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Meduri, Avadesh and Khadiv, Majid and Righetti, Ludovic},
+  year = {2021},
+  month = may
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/2010.14834">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Reactive stepping and push recovery for biped robots is often restricted to ﬂat terrains because of the difﬁculty in computing capture regions for nonlinear dynamic models. In this paper, we address this limitation by proposing a novel 3D reactive stepper, the DeepQ stepper, that can approximately learn the 3D capture regions of both simpliﬁed and full robot dynamic models using reinforcement learning, which can then be used to ﬁnd optimal steps. The stepper can take into account the entire dynamics of the robot, ignored in most reactive steppers, leading to a signiﬁcant improvement in performance. The DeepQ stepper can handle nonconvex terrain with obstacles, walk on restricted surfaces like stepping stones while tracking different velocities, and recover from external disturbances for a constant low computational cost.</p>
+
+
+<pre>@inproceedings{Meduri_Khadiv_Righetti_2021,
+  address = {Xi’an, China},
+  title = {DeepQ Stepper: A Framework for Reactive Dynamic Walking on Uneven Terrain},
+  url = {https://arxiv.org/abs/2010.14834},
+  doi = {10.1109/ICRA48506.2021.9562093},
+  booktitle = {2021 IEEE-RAS International Conference on Robotics and Automation (ICRA)},
+  publisher = {IEEE},
+  author = {Meduri, Avadesh and Khadiv, Majid and Righetti, Ludovic},
+  year = {2021},
+  month = may
+}
+</pre> --></li>
+<li><!-- <span id="Khadiv_Herzog_Moosavian_Righetti_2020">[11]M. Khadiv, A. Herzog, S. A. A. Moosavian, and L. Righetti, “Walking Control Based on Step Timing Adaptation,” <i>IEEE Transactions on Robotics</i>, vol. 36, no. 3, pp. 629–643, Apr. 2020, doi: 10.1109/TRO.2020.2982584.</span>
+<br> -->
+
+
+M. 
+
+Khadiv,
+
+
+
+A. 
+
+Herzog,
+
+
+
+S. 
+
+A. 
+
+A. 
+
+Moosavian,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Walking Control Based on Step Timing Adaptation,"
+
+
+
+    <i>IEEE Transactions on Robotics</i>,
+     vol. 36,
+     no. 3,
+
+ pp. 629–643,
+ Apr,
+ 2020.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Step adjustment can improve the gait robustness of biped robots; however, the adaptation of step timing is often ne- glected as it gives rise to nonconvex problems when optimized over several footsteps. In this article, we argue that it is not necessary to optimize walking over several steps to ensure gait viability and show that it is sufficient to merely select the next step timing and location. Using this insight, we propose a novel walking pattern generator that optimally selects step location and timing at every control cycle. Our approach is computationally simple compared to standard approaches in the literature, yet guarantees that any viable state will remain viable in the future. We propose a swing foot adaptation strategy and integrate the pattern generator with an inverse dynamics controller that does not explicitly control the center of mass nor the foot center of pressure. This is particularly useful for biped robots with limited control authority over their foot center of pressure, such as robots with point feet or passive ankles. Extensive simulations on a humanoid robot with passive ankles demonstrate the capabilities of the approach in various walking situations, including external pushes and foot slippage, and emphasize the importance of step timing adaptation to stabilize walking.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Khadiv_Herzog_Moosavian_Righetti_2020,
+  title = {Walking Control Based on Step Timing Adaptation},
+  volume = {36},
+  url = {https://arxiv.org/pdf/1704.01271.pdf},
+  doi = {10.1109/TRO.2020.2982584},
+  number = {3},
+  journal = {IEEE Transactions on Robotics},
+  author = {Khadiv, M and Herzog, A. and Moosavian, S A A and Righetti, L},
+  year = {2020},
+  month = apr,
+  pages = {629–643}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/pdf/1704.01271.pdf">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Step adjustment can improve the gait robustness of biped robots; however, the adaptation of step timing is often ne- glected as it gives rise to nonconvex problems when optimized over several footsteps. In this article, we argue that it is not necessary to optimize walking over several steps to ensure gait viability and show that it is sufficient to merely select the next step timing and location. Using this insight, we propose a novel walking pattern generator that optimally selects step location and timing at every control cycle. Our approach is computationally simple compared to standard approaches in the literature, yet guarantees that any viable state will remain viable in the future. We propose a swing foot adaptation strategy and integrate the pattern generator with an inverse dynamics controller that does not explicitly control the center of mass nor the foot center of pressure. This is particularly useful for biped robots with limited control authority over their foot center of pressure, such as robots with point feet or passive ankles. Extensive simulations on a humanoid robot with passive ankles demonstrate the capabilities of the approach in various walking situations, including external pushes and foot slippage, and emphasize the importance of step timing adaptation to stabilize walking.</p>
+
+
+<pre>@article{Khadiv_Herzog_Moosavian_Righetti_2020,
+  title = {Walking Control Based on Step Timing Adaptation},
+  volume = {36},
+  url = {https://arxiv.org/pdf/1704.01271.pdf},
+  doi = {10.1109/TRO.2020.2982584},
+  number = {3},
+  journal = {IEEE Transactions on Robotics},
+  author = {Khadiv, M and Herzog, A. and Moosavian, S A A and Righetti, L},
+  year = {2020},
+  month = apr,
+  pages = {629–643}
+}
+</pre> --></li>
+<li><!-- <span id="Grimminger_Meduri_Khadiv_Viereck_Wüthrich_Naveau_Berenz_Heim_Widmaier_Flayols_et al._2020">[12]F. Grimminger <i>et al.</i>, “An Open Torque-Controlled Modular Robot Architecture for Legged Locomotion Research,” <i>IEEE Robotics and Automation Letters</i>, vol. 5, no. 2, pp. 3655–3662, Apr. 2020, doi: 10.1109/LRA.2020.2976639.</span>
+<br> -->
+
+
+F. 
+
+Grimminger,
+
+
+
+A. 
+
+Meduri,
+
+
+
+M. 
+
+Khadiv,
+
+
+
+J. 
+
+Viereck,
+
+
+
+M. 
+
+Wüthrich,
+
+
+
+M. 
+
+Naveau,
+
+
+
+V. 
+
+Berenz,
+
+
+
+S. 
+
+Heim,
+
+
+
+F. 
+
+Widmaier,
+
+
+
+T. 
+
+Flayols,
+
+
+
+J. 
+
+Fiene,
+
+
+
+A. 
+
+Badri-Spröwitz,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"An Open Torque-Controlled Modular Robot Architecture for Legged Locomotion Research,"
+
+
+
+    <i>IEEE Robotics and Automation Letters</i>,
+     vol. 5,
+     no. 2,
+
+ pp. 3655–3662,
+ Apr,
+ 2020.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="We present a new open-source torque-controlled legged robot system, with a low-cost and low-complexity actuator module at its core. It consists of a high-torque brushless DC motor and a low-gear-ratio transmission suitable for impedance and force control. We also present a novel foot contact sensor suitable for legged locomotion with hard impacts. A 2.2 kg quadruped robot with a large range of motion is assembled from eight identical actuator modules and four lower legs with foot contact sensors. Leveraging standard plastic 3D printing and off-the-shelf parts results in a lightweight and inexpensive robot, allowing for rapid distribution and duplication within the research community. We systematically characterize the achieved impedance at the foot in both static and dynamic scenarios, and measure a maximum dimensionless leg stiffness of 10.8 without active damping, which is comparable to the leg stiffness of a running human. Finally, to demonstrate the capabilities of the quadruped, we present a novel controller which combines feedforward contact forces computed from a kino-dynamic optimizer with impedance control of the center of mass and base orientation. The controller can regulate complex motions while being robust to environmental uncertainty.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Grimminger_Meduri_Khadiv_Viereck_Wüthrich_Naveau_Berenz_Heim_Widmaier_Flayols_et al._2020,
+  title = {An Open Torque-Controlled Modular Robot Architecture for Legged Locomotion Research},
+  volume = {5},
+  url = {https://arxiv.org/abs/1910.00093},
+  doi = {10.1109/LRA.2020.2976639},
+  number = {2},
+  journal = {IEEE Robotics and Automation Letters},
+  author = {Grimminger, F and Meduri, A. and Khadiv, M and Viereck, J. and Wüthrich, M. and Naveau, M. and Berenz, V. and Heim, S. and Widmaier, F. and Flayols, T. and Fiene, J. and Badri-Spröwitz, A. and Righetti, L.},
+  year = {2020},
+  month = apr,
+  pages = {3655–3662}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/1910.00093">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>We present a new open-source torque-controlled legged robot system, with a low-cost and low-complexity actuator module at its core. It consists of a high-torque brushless DC motor and a low-gear-ratio transmission suitable for impedance and force control. We also present a novel foot contact sensor suitable for legged locomotion with hard impacts. A 2.2 kg quadruped robot with a large range of motion is assembled from eight identical actuator modules and four lower legs with foot contact sensors. Leveraging standard plastic 3D printing and off-the-shelf parts results in a lightweight and inexpensive robot, allowing for rapid distribution and duplication within the research community. We systematically characterize the achieved impedance at the foot in both static and dynamic scenarios, and measure a maximum dimensionless leg stiffness of 10.8 without active damping, which is comparable to the leg stiffness of a running human. Finally, to demonstrate the capabilities of the quadruped, we present a novel controller which combines feedforward contact forces computed from a kino-dynamic optimizer with impedance control of the center of mass and base orientation. The controller can regulate complex motions while being robust to environmental uncertainty.</p>
+
+
+<pre>@article{Grimminger_Meduri_Khadiv_Viereck_Wüthrich_Naveau_Berenz_Heim_Widmaier_Flayols_et al._2020,
+  title = {An Open Torque-Controlled Modular Robot Architecture for Legged Locomotion Research},
+  volume = {5},
+  url = {https://arxiv.org/abs/1910.00093},
+  doi = {10.1109/LRA.2020.2976639},
+  number = {2},
+  journal = {IEEE Robotics and Automation Letters},
+  author = {Grimminger, F and Meduri, A. and Khadiv, M and Viereck, J. and Wüthrich, M. and Naveau, M. and Berenz, V. and Heim, S. and Widmaier, F. and Flayols, T. and Fiene, J. and Badri-Spröwitz, A. and Righetti, L.},
+  year = {2020},
+  month = apr,
+  pages = {3655–3662}
+}
+</pre> --></li>
+<li><!-- <span id="Herzog_Rotella_Mason_Grimminger_Schaal_Righetti_2016">[13]A. Herzog, N. Rotella, S. Mason, F. Grimminger, S. Schaal, and L. Righetti, “Momentum Control with Hierarchical Inverse Dynamics on a Torque-Controlled Humanoid,” <i>Autonomous Robots</i>, vol. 40, no. 3, pp. 473–491, Mar. 2016, doi: 10.1007/s10514-015-9476-6.</span>
+<br> -->
+
+
+A. 
+
+Herzog,
+
+
+
+N. 
+
+Rotella,
+
+
+
+S. 
+
+Mason,
+
+
+
+F. 
+
+Grimminger,
+
+
+
+S. 
+
+Schaal,
+
+
+
+L. 
+
+Righetti,
+
+
+
+"Momentum Control with Hierarchical Inverse Dynamics on a Torque-Controlled Humanoid,"
+
+
+
+    <i>Autonomous Robots</i>,
+     vol. 40,
+     no. 3,
+
+ pp. 473–491,
+ Mar,
+ 2016.
+
+<br>
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover" data-bs-content="Hierarchical inverse dynamics based on cascades of quadratic programs have been proposed for the control of legged robots. They have important benefits but to the best of our knowledge have never been implemented on a torque controlled humanoid where model inaccuracies, sensor noise and real-time computation requirements can be problematic. Using a reformulation of existing algorithms, we propose a simplification of the problem that allows to achieve real-time control. Momentum-based control is integrated in the task hierarchy and a LQR design approach is used to compute the desired associated closed-loop behavior and improve performance. Extensive experiments on various balancing and tracking tasks show very robust performance in the face of unknown disturbances, even when the humanoid is standing on one foot. Our results demonstrate that hierarchical inverse dynamics together with momentum control can be efficiently used for feedback control under real robot conditions.">
+    Abs
+</button>
+
+
+
+
+<button type="button" class="btn_bib btn btn-sm" data-bs-custom-class="abstract-popover" data-bs-toggle="popover"  data-bs-content="@article{Herzog_Rotella_Mason_Grimminger_Schaal_Righetti_2016,
+  title = {Momentum Control with Hierarchical Inverse Dynamics on a Torque-Controlled Humanoid},
+  volume = {40},
+  url = {https://arxiv.org/abs/1410.7284},
+  doi = {10.1007/s10514-015-9476-6},
+  number = {3},
+  journal = {Autonomous Robots},
+  author = {Herzog, A. and Rotella, N and Mason, S and Grimminger, F and Schaal, S. and Righetti, L.},
+  year = {2016},
+  month = mar,
+  pages = {473–491}
+}
+" data-bs-html="true">
+    Bib
+</button>
+
+
+ 
+<a href="https://arxiv.org/abs/1410.7284">
+<i class="bi bi-link-45deg" style="font-size: 1.5rem; color: #AA5042;"></i>
+</a>
+
+
+<!-- 
+<p>Hierarchical inverse dynamics based on cascades of quadratic programs have been proposed for the control of legged robots. They have important benefits but to the best of our knowledge have never been implemented on a torque controlled humanoid where model inaccuracies, sensor noise and real-time computation requirements can be problematic. Using a reformulation of existing algorithms, we propose a simplification of the problem that allows to achieve real-time control. Momentum-based control is integrated in the task hierarchy and a LQR design approach is used to compute the desired associated closed-loop behavior and improve performance. Extensive experiments on various balancing and tracking tasks show very robust performance in the face of unknown disturbances, even when the humanoid is standing on one foot. Our results demonstrate that hierarchical inverse dynamics together with momentum control can be efficiently used for feedback control under real robot conditions.</p>
+
+
+<pre>@article{Herzog_Rotella_Mason_Grimminger_Schaal_Righetti_2016,
+  title = {Momentum Control with Hierarchical Inverse Dynamics on a Torque-Controlled Humanoid},
+  volume = {40},
+  url = {https://arxiv.org/abs/1410.7284},
+  doi = {10.1007/s10514-015-9476-6},
+  number = {3},
+  journal = {Autonomous Robots},
+  author = {Herzog, A. and Rotella, N and Mason, S and Grimminger, F and Schaal, S. and Righetti, L.},
+  year = {2016},
+  month = mar,
+  pages = {473–491}
+}
+</pre> --></li></ol> 
+            </div>
+        </div>
+
+        
+<footer class="fixed-bottom">
+  <div class="container text-center">
+    &copy; Copyright 2025 Ludovic  Righetti. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with custom theme.
+
+    Last updated: November 03, 2025.
+  </div>
+</footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+</html>
